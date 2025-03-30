@@ -1,0 +1,6 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1732782933" />
+    <testcase name="run_test_nic" classname="test_fpga_core" file="/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/KR260/fpga/tb/fpga_core/test_fpga_core.py" lineno="117" time="836.4330472946167" sim_time_ns="290156.000001" ratio_time="346.8968627429165" />
+  </testsuite>
+</testsuites>

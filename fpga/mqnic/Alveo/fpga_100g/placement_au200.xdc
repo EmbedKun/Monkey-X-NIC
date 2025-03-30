@@ -33,4 +33,8 @@ resize_pblock [get_pblocks pblock_eth] -add {CLOCKREGION_X0Y10:CLOCKREGION_X0Y14
 
 # CMACs
 set_property LOC CMACE4_X0Y8 [get_cells -hierarchical -filter {NAME =~ qsfp0_cmac_inst/cmac_inst/inst/i_cmac_usplus_top/* && REF_NAME==CMACE4}]
-set_property LOC CMACE4_X0Y7 [get_cells -hierarchical -filter {NAME =~ qsfp1_cmac_inst/cmac_inst/inst/i_cmac_usplus_top/* && REF_NAME==CMACE4}]
+#set_property LOC CMACE4_X0Y7 [get_cells -hierarchical -filter {NAME =~ qsfp1_cmac_inst/cmac_inst/inst/i_cmac_usplus_top/* && REF_NAME==CMACE4}]
+
+## bmw-tree
+#create_pblock pblock_bmw_tree
+#add_cells_to_pblock [get_pblocks pblock_bmw_tree] [get_cells -quiet [list {core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/bmw_tree}]]

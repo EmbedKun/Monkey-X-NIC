@@ -1,0 +1,13 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1732787433" />
+    <testcase name="run_test_001" classname="test_rx_hash" file="/home/playmaker/.local/lib/python3.10/site-packages/cocotb/regression.py" lineno="713" time="0.6327807903289795" sim_time_ns="11148.001" ratio_time="17617.47696892665" />
+    <testcase name="run_test_002" classname="test_rx_hash" file="/home/playmaker/.local/lib/python3.10/site-packages/cocotb/regression.py" lineno="713" time="2.0793213844299316" sim_time_ns="44460.001000000004" ratio_time="21381.976510662967" />
+    <testcase name="run_test_003" classname="test_rx_hash" file="/home/playmaker/.local/lib/python3.10/site-packages/cocotb/regression.py" lineno="713" time="0.7902042865753174" sim_time_ns="12536.000999999997" ratio_time="15864.253349383904" />
+    <testcase name="run_test_004" classname="test_rx_hash" file="/home/playmaker/.local/lib/python3.10/site-packages/cocotb/regression.py" lineno="713" time="2.412475109100342" sim_time_ns="49996.001000000004" ratio_time="20723.94480316295" />
+    <testcase name="run_test_005" classname="test_rx_hash" file="/home/playmaker/.local/lib/python3.10/site-packages/cocotb/regression.py" lineno="713" time="0.8527095317840576" sim_time_ns="13092.001000000004" ratio_time="15353.412284026697" />
+    <testcase name="run_test_006" classname="test_rx_hash" file="/home/playmaker/.local/lib/python3.10/site-packages/cocotb/regression.py" lineno="713" time="2.571422815322876" sim_time_ns="52220.00099999999" ratio_time="20307.823625436366" />
+    <testcase name="run_test_007" classname="test_rx_hash" file="/home/playmaker/.local/lib/python3.10/site-packages/cocotb/regression.py" lineno="713" time="0.9558045864105225" sim_time_ns="13944.001000000018" ratio_time="14588.757156278183" />
+    <testcase name="run_test_008" classname="test_rx_hash" file="/home/playmaker/.local/lib/python3.10/site-packages/cocotb/regression.py" lineno="713" time="2.7543840408325195" sim_time_ns="55628.00099999999" ratio_time="20196.167337357314" />
+  </testsuite>
+</testsuites>

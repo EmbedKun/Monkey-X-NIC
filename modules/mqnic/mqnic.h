@@ -606,7 +606,7 @@ void mqnic_disable_tx_ring(struct mqnic_ring *ring);
 bool mqnic_is_tx_ring_empty(const struct mqnic_ring *ring);
 bool mqnic_is_tx_ring_full(const struct mqnic_ring *ring);
 void mqnic_tx_read_cons_ptr(struct mqnic_ring *ring);
-void mqnic_tx_write_prod_ptr(struct mqnic_ring *ring);
+void mqnic_tx_write_prod_ptr(struct mqnic_ring *ring,u32 priority,u32 pktlength);
 void mqnic_free_tx_desc(struct mqnic_ring *ring, int index, int napi_budget);
 int mqnic_free_tx_buf(struct mqnic_ring *ring);
 int mqnic_process_tx_cq(struct mqnic_cq *cq, int napi_budget);

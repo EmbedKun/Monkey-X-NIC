@@ -1,0 +1,7 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../../corundum-trico.gen/sources_1/bd/cms/ipshared/ec67/hdl" --include "../../../../../corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_0/ip/ip_0/hdl" --include "../../../../../corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/hdl" --include "/tools/Xilinx/Vivado/2020.2/data/xilinx_vip/include" \
+"tb_trico_top_func_synth.v" \
+"../../../../../corundum-trico.srcs/sim_1/new/tb_trico_top.v" \
+
+# Do not sort compile order
+nosort

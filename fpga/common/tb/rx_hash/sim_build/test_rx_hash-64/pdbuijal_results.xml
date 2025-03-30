@@ -1,0 +1,13 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1732845465" />
+    <testcase name="run_test_001" classname="test_rx_hash" file="/home/playmaker/Desktop/mkxue/corundum/.tox/py3/lib/python3.10/site-packages/cocotb/regression.py" lineno="713" time="1.0935699939727783" sim_time_ns="11148.001" ratio_time="10194.13577680653" />
+    <testcase name="run_test_002" classname="test_rx_hash" file="/home/playmaker/Desktop/mkxue/corundum/.tox/py3/lib/python3.10/site-packages/cocotb/regression.py" lineno="713" time="3.220170021057129" sim_time_ns="44460.001000000004" ratio_time="13806.724709959419" />
+    <testcase name="run_test_003" classname="test_rx_hash" file="/home/playmaker/Desktop/mkxue/corundum/.tox/py3/lib/python3.10/site-packages/cocotb/regression.py" lineno="713" time="1.2160370349884033" sim_time_ns="12536.000999999997" ratio_time="10308.89737673125" />
+    <testcase name="run_test_004" classname="test_rx_hash" file="/home/playmaker/Desktop/mkxue/corundum/.tox/py3/lib/python3.10/site-packages/cocotb/regression.py" lineno="713" time="3.6860263347625732" sim_time_ns="49996.001000000004" ratio_time="13563.65811293651" />
+    <testcase name="run_test_005" classname="test_rx_hash" file="/home/playmaker/Desktop/mkxue/corundum/.tox/py3/lib/python3.10/site-packages/cocotb/regression.py" lineno="713" time="1.3188552856445312" sim_time_ns="13092.001000000004" ratio_time="9926.791166933737" />
+    <testcase name="run_test_006" classname="test_rx_hash" file="/home/playmaker/Desktop/mkxue/corundum/.tox/py3/lib/python3.10/site-packages/cocotb/regression.py" lineno="713" time="3.9143223762512207" sim_time_ns="52220.00099999999" ratio_time="13340.751215798307" />
+    <testcase name="run_test_007" classname="test_rx_hash" file="/home/playmaker/Desktop/mkxue/corundum/.tox/py3/lib/python3.10/site-packages/cocotb/regression.py" lineno="713" time="1.3854286670684814" sim_time_ns="13944.001000000018" ratio_time="10064.755646716216" />
+    <testcase name="run_test_008" classname="test_rx_hash" file="/home/playmaker/Desktop/mkxue/corundum/.tox/py3/lib/python3.10/site-packages/cocotb/regression.py" lineno="713" time="4.077011346817017" sim_time_ns="55628.00099999999" ratio_time="13644.308604495202" />
+  </testsuite>
+</testsuites>

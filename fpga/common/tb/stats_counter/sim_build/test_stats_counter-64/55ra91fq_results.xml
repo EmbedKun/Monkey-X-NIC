@@ -1,0 +1,10 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1732845465" />
+    <testcase name="run_test_acc_001" classname="test_stats_counter" file="/home/playmaker/Desktop/mkxue/corundum/.tox/py3/lib/python3.10/site-packages/cocotb/regression.py" lineno="713" time="0.279541015625" sim_time_ns="14680.001" ratio_time="52514.65859912664" />
+    <testcase name="run_test_acc_002" classname="test_stats_counter" file="/home/playmaker/Desktop/mkxue/corundum/.tox/py3/lib/python3.10/site-packages/cocotb/regression.py" lineno="713" time="0.4983482360839844" sim_time_ns="14890.001" ratio_time="29878.707140624163" />
+    <testcase name="run_test_acc_003" classname="test_stats_counter" file="/home/playmaker/Desktop/mkxue/corundum/.tox/py3/lib/python3.10/site-packages/cocotb/regression.py" lineno="713" time="0.4267404079437256" sim_time_ns="14910.000999999997" ratio_time="34939.276249569935" />
+    <testcase name="run_test_acc_004" classname="test_stats_counter" file="/home/playmaker/Desktop/mkxue/corundum/.tox/py3/lib/python3.10/site-packages/cocotb/regression.py" lineno="713" time="0.5236079692840576" sim_time_ns="14930.001000000004" ratio_time="28513.700852212336" />
+    <testcase name="run_stress_test_001" classname="test_stats_counter" file="/home/playmaker/Desktop/mkxue/corundum/.tox/py3/lib/python3.10/site-packages/cocotb/regression.py" lineno="713" time="2.5152361392974854" sim_time_ns="89270.001" ratio_time="35491.69781924867" />
+  </testsuite>
+</testsuites>

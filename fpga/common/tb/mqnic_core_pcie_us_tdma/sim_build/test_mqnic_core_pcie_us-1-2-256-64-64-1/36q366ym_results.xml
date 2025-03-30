@@ -1,0 +1,6 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1732782118" />
+    <testcase name="run_test_nic" classname="test_mqnic_core_pcie_us" file="/home/playmaker/Desktop/mkxue/corundum/fpga/common/tb/mqnic_core_pcie_us_tdma/test_mqnic_core_pcie_us.py" lineno="430" time="2158.9434394836426" sim_time_ns="981136.000001" ratio_time="454.4519240558056" />
+  </testsuite>
+</testsuites>

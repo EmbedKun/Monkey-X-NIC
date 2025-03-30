@@ -1,0 +1,11 @@
+File: ./mqnic/Alveo/fpga_100g/fpga_AU200/fpga.runs/impl_1/fpga_utilization_placed.rpt
+Project directory: ./mqnic/Alveo/fpga_100g/fpga_AU200
+Tool: Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+Date: Fri Nov 29 17:56:55 2024
+Device: xcu200fsgd2104-2
+LUTs: 83295 / 1182240 (7.05%)
+FFs:  132258 / 2364480 (5.59%)
+BRAM: 288.0 / 2160 (13.33%)
+URAM: 45 / 960 (4.69%)
+Slack: WNS 0.054 ns, TNS 0.000 ns
+

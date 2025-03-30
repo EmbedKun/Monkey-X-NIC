@@ -3,7 +3,7 @@
 
 # FPGA settings
 FPGA_PART = xcu200-fsgd2104-2-e
-FPGA_TOP = fpga
+FPGA_TOP = corundum-trico
 FPGA_ARCH = virtexuplus
 
 # Files for synthesis
@@ -11,6 +11,17 @@ SYN_FILES = rtl/fpga_au200.v
 SYN_FILES += rtl/fpga_core.v
 SYN_FILES += rtl/debounce_switch.v
 SYN_FILES += rtl/sync_signal.v
+SYN_FILES += rtl/common/metadata_fifo.v
+SYN_FILES += rtl/common/metadata_store.v
+SYN_FILES += rtl/common/mqnic_tx_scheduler_trico.v
+SYN_FILES += rtl/common/tx_queue_manager.v
+SYN_FILES += rtl/common/tx_scheduler_trico.v
+SYN_FILES += rtl/common/INFER_SDPRAM.v
+SYN_FILES += rtl/common/PIFO_TOP.sv
+SYN_FILES += rtl/common/pifo.sv
+SYN_FILES += rtl/common/trico_tree_top.sv
+SYN_FILES += rtl/common/task_distribute.sv
+SYN_FILES += rtl/common/task_fifo.sv
 SYN_FILES += rtl/common/mqnic_core_pcie_us.v
 SYN_FILES += rtl/common/mqnic_core_pcie.v
 SYN_FILES += rtl/common/mqnic_core.v
@@ -54,8 +65,6 @@ SYN_FILES += rtl/common/stats_pcie_if.v
 SYN_FILES += rtl/common/stats_pcie_tlp.v
 SYN_FILES += rtl/common/stats_dma_if_pcie.v
 SYN_FILES += rtl/common/stats_dma_latency.v
-SYN_FILES += rtl/common/mqnic_tx_scheduler_block_rr.v
-SYN_FILES += rtl/common/tx_scheduler_rr.v
 SYN_FILES += rtl/common/cmac_pad.v
 SYN_FILES += rtl/common/mac_ts_insert.v
 SYN_FILES += lib/eth/rtl/ptp_td_phc.v

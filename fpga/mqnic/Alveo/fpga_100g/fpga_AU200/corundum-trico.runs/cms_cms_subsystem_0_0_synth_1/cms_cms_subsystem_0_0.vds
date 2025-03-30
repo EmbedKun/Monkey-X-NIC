@@ -1,0 +1,216 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Jan 15 01:35:40 2025
+# Process ID: 2877100
+# Current directory: /home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.runs/cms_cms_subsystem_0_0_synth_1
+# Command line: vivado -log cms_cms_subsystem_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source cms_cms_subsystem_0_0.tcl
+# Log file: /home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.runs/cms_cms_subsystem_0_0_synth_1/cms_cms_subsystem_0_0.vds
+# Journal file: /home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.runs/cms_cms_subsystem_0_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source cms_cms_subsystem_0_0.tcl -notrace
+Command: synth_design -top cms_cms_subsystem_0_0 -part xcu200-fsgd2104-2-e -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcu200'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcu200'
+INFO: [Device 21-403] Loading part xcu200-fsgd2104-2-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 2877115
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2948.473 ; gain = 214.719 ; free physical = 43912 ; free virtual = 57601
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'cms_cms_subsystem_0_0' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/synth/cms_cms_subsystem_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'bd_fb99' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_0/synth/bd_fb99.v:10]
+INFO: [Synth 8-6157] synthesizing module 'bd_fb99_shell_cmc_subsystem_0' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.runs/cms_cms_subsystem_0_0_synth_1/.Xil/Vivado-2877100-playmaker-MZ32-AR0-00/realtime/bd_fb99_shell_cmc_subsystem_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_fb99_shell_cmc_subsystem_0' (1#1) [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.runs/cms_cms_subsystem_0_0_synth_1/.Xil/Vivado-2877100-playmaker-MZ32-AR0-00/realtime/bd_fb99_shell_cmc_subsystem_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mdm_mbdebug_tdo' of module 'bd_fb99_shell_cmc_subsystem_0' is unconnected for instance 'shell_cmc_subsystem' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_0/synth/bd_fb99.v:143]
+WARNING: [Synth 8-7071] port 'usb_uart_txd' of module 'bd_fb99_shell_cmc_subsystem_0' is unconnected for instance 'shell_cmc_subsystem' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_0/synth/bd_fb99.v:143]
+WARNING: [Synth 8-7023] instance 'shell_cmc_subsystem' of module 'bd_fb99_shell_cmc_subsystem_0' has 50 connections declared, but only 48 given [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_0/synth/bd_fb99.v:143]
+INFO: [Synth 8-6155] done synthesizing module 'bd_fb99' (2#1) [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_0/synth/bd_fb99.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'cms_cms_subsystem_0_0' (3#1) [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/synth/cms_cms_subsystem_0_0.v:57]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 2994.379 ; gain = 260.625 ; free physical = 44698 ; free virtual = 58388
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 3013.223 ; gain = 279.469 ; free physical = 44693 ; free virtual = 58382
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 3013.223 ; gain = 279.469 ; free physical = 44693 ; free virtual = 58382
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3013.223 ; gain = 0.000 ; free physical = 44687 ; free virtual = 58377
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_0/ip/ip_0/bd_fb99_shell_cmc_subsystem_0/bd_fb99_shell_cmc_subsystem_0_in_context.xdc] for cell 'inst/shell_cmc_subsystem'
+Finished Parsing XDC File [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_0/ip/ip_0/bd_fb99_shell_cmc_subsystem_0/bd_fb99_shell_cmc_subsystem_0_in_context.xdc] for cell 'inst/shell_cmc_subsystem'
+Parsing XDC File [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/synth/cms_cms_subsystem_0_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/synth/cms_cms_subsystem_0_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.runs/cms_cms_subsystem_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.runs/cms_cms_subsystem_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3120.848 ; gain = 0.000 ; free physical = 44584 ; free virtual = 58274
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3120.848 ; gain = 0.000 ; free physical = 44584 ; free virtual = 58273
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 3120.848 ; gain = 387.094 ; free physical = 44669 ; free virtual = 58359
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcu200-fsgd2104-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 3120.848 ; gain = 387.094 ; free physical = 44669 ; free virtual = 58359
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/shell_cmc_subsystem. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 3120.848 ; gain = 387.094 ; free physical = 44669 ; free virtual = 58359
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 3120.848 ; gain = 387.094 ; free physical = 44669 ; free virtual = 58360
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 6840 (col length:120)
+BRAMs: 4320 (col length: RAMB18 360 RAMB36 180)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 3120.848 ; gain = 387.094 ; free physical = 44659 ; free virtual = 58352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:53 . Memory (MB): peak = 3423.691 ; gain = 689.938 ; free physical = 44212 ; free virtual = 57905
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:53 . Memory (MB): peak = 3423.691 ; gain = 689.938 ; free physical = 44212 ; free virtual = 57905
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:53 . Memory (MB): peak = 3442.723 ; gain = 708.969 ; free physical = 44210 ; free virtual = 57903
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:55 . Memory (MB): peak = 3448.660 ; gain = 714.906 ; free physical = 44210 ; free virtual = 57904
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:55 . Memory (MB): peak = 3448.660 ; gain = 714.906 ; free physical = 44210 ; free virtual = 57904
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:55 . Memory (MB): peak = 3448.660 ; gain = 714.906 ; free physical = 44210 ; free virtual = 57904
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:55 . Memory (MB): peak = 3448.660 ; gain = 714.906 ; free physical = 44210 ; free virtual = 57904
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:55 . Memory (MB): peak = 3448.660 ; gain = 714.906 ; free physical = 44210 ; free virtual = 57904
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:55 . Memory (MB): peak = 3448.660 ; gain = 714.906 ; free physical = 44210 ; free virtual = 57904
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+------------------------------+----------+
+|      |BlackBox name                 |Instances |
++------+------------------------------+----------+
+|1     |bd_fb99_shell_cmc_subsystem_0 |         1|
++------+------------------------------+----------+
+
+Report Cell Usage: 
++------+----------------------------+------+
+|      |Cell                        |Count |
++------+----------------------------+------+
+|1     |bd_fb99_shell_cmc_subsystem |     1|
++------+----------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:55 . Memory (MB): peak = 3448.660 ; gain = 714.906 ; free physical = 44210 ; free virtual = 57904
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:48 . Memory (MB): peak = 3448.660 ; gain = 607.281 ; free physical = 44237 ; free virtual = 57930
+Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:55 . Memory (MB): peak = 3448.668 ; gain = 714.906 ; free physical = 44237 ; free virtual = 57930
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3448.668 ; gain = 0.000 ; free physical = 44230 ; free virtual = 57924
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Generating merged BMM file for the design top 'cms_cms_subsystem_0_0'...
+WARNING: [Memdata 28-146] Could not find a netlist instance for the specified SCOPED_TO_REF value of: bd_43c9
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3519.848 ; gain = 0.000 ; free physical = 44226 ; free virtual = 57919
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+19 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:43 ; elapsed = 00:01:17 . Memory (MB): peak = 3533.785 ; gain = 1161.930 ; free physical = 44359 ; free virtual = 58053
+INFO: [Common 17-1381] The checkpoint '/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.runs/cms_cms_subsystem_0_0_synth_1/cms_cms_subsystem_0_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP cms_cms_subsystem_0_0, cache-ID = a06d43f32e65a37d
+INFO: [Coretcl 2-1174] Renamed 2 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.runs/cms_cms_subsystem_0_0_synth_1/cms_cms_subsystem_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file cms_cms_subsystem_0_0_utilization_synth.rpt -pb cms_cms_subsystem_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Jan 15 01:37:15 2025...

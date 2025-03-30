@@ -58,7 +58,7 @@ dict set params RELEASE_INFO  [format "32'h%08x" $release_info]
 dict set params CMS_ENABLE "1"
 
 # Structural configuration
-dict set params IF_COUNT "2"
+dict set params IF_COUNT "1"
 dict set params PORTS_PER_IF "1"
 dict set params SCHED_PER_IF [dict get $params PORTS_PER_IF]
 dict set params PORT_MASK "0"
@@ -80,7 +80,7 @@ dict set params TX_QUEUE_OP_TABLE_SIZE "32"
 dict set params RX_QUEUE_OP_TABLE_SIZE "32"
 dict set params CQ_OP_TABLE_SIZE "32"
 dict set params EQN_WIDTH "6"
-dict set params TX_QUEUE_INDEX_WIDTH "13"
+dict set params TX_QUEUE_INDEX_WIDTH "6"
 dict set params RX_QUEUE_INDEX_WIDTH "8"
 dict set params CQN_WIDTH [expr max([dict get $params TX_QUEUE_INDEX_WIDTH], [dict get $params RX_QUEUE_INDEX_WIDTH]) + 1]
 dict set params EQ_PIPELINE "3"
@@ -104,7 +104,7 @@ dict set params TX_CPL_FIFO_DEPTH "32"
 dict set params TX_CHECKSUM_ENABLE "1"
 dict set params RX_HASH_ENABLE "1"
 dict set params RX_CHECKSUM_ENABLE "1"
-dict set params PFC_ENABLE "1"
+dict set params PFC_ENABLE "0"
 dict set params LFC_ENABLE [dict get $params PFC_ENABLE]
 dict set params TX_FIFO_DEPTH "32768"
 dict set params RX_FIFO_DEPTH "131072"

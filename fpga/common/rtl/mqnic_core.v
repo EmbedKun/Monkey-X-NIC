@@ -53,7 +53,7 @@ module mqnic_core #
     parameter RX_QUEUE_OP_TABLE_SIZE = 32,
     parameter CQ_OP_TABLE_SIZE = 32,
     parameter EQN_WIDTH = 5,
-    parameter TX_QUEUE_INDEX_WIDTH = 13,
+    parameter TX_QUEUE_INDEX_WIDTH = 8,
     parameter RX_QUEUE_INDEX_WIDTH = 8,
     parameter CQN_WIDTH = (TX_QUEUE_INDEX_WIDTH > RX_QUEUE_INDEX_WIDTH ? TX_QUEUE_INDEX_WIDTH : RX_QUEUE_INDEX_WIDTH) + 1,
     parameter EQ_PIPELINE = 3,

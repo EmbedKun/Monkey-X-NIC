@@ -1,6 +1,3 @@
-# SPDX-License-Identifier: BSD-2-Clause-Views
-# Copyright (c) 2019-2023 The Regents of the University of California
-
 ifneq ($(KERNELRELEASE),)
 
 # object files to build
@@ -40,7 +37,7 @@ KDIR ?= $(KERNEL_SRC)
 endif
 
 KDIR ?= /lib/modules/$(shell uname -r)/build
-
+CONFIG_MODULE_SIG=n
 all: modules
 
 help modules modules_install clean:

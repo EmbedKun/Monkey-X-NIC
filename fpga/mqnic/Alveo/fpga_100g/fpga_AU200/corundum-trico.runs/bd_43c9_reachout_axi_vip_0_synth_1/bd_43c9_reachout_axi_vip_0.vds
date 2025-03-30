@@ -1,0 +1,226 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Jan 15 01:24:34 2025
+# Process ID: 2874260
+# Current directory: /home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.runs/bd_43c9_reachout_axi_vip_0_synth_1
+# Command line: vivado -log bd_43c9_reachout_axi_vip_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source bd_43c9_reachout_axi_vip_0.tcl
+# Log file: /home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.runs/bd_43c9_reachout_axi_vip_0_synth_1/bd_43c9_reachout_axi_vip_0.vds
+# Journal file: /home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.runs/bd_43c9_reachout_axi_vip_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source bd_43c9_reachout_axi_vip_0.tcl -notrace
+Command: synth_design -top bd_43c9_reachout_axi_vip_0 -part xcu200-fsgd2104-2-e -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcu200'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcu200'
+INFO: [Device 21-403] Loading part xcu200-fsgd2104-2-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 2874385
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2925.504 ; gain = 215.719 ; free physical = 39156 ; free virtual = 52821
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'bd_43c9_reachout_axi_vip_0' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/ip/ip_25/synth/bd_43c9_reachout_axi_vip_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'axi_vip_v1_1_8_top' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ipshared/94c3/hdl/axi_vip_v1_1_vlsyn_rfs.sv:61]
+	Parameter C_AXI_PROTOCOL bound to: 0 - type: integer 
+	Parameter C_AXI_INTERFACE_MODE bound to: 1 - type: integer 
+	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_WDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_RDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_WID_WIDTH bound to: 0 - type: integer 
+	Parameter C_AXI_RID_WIDTH bound to: 0 - type: integer 
+	Parameter C_AXI_AWUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_AXI_ARUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_AXI_WUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_AXI_RUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_AXI_BUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_AXI_SUPPORTS_NARROW bound to: 1 - type: integer 
+	Parameter C_AXI_HAS_BURST bound to: 1 - type: integer 
+	Parameter C_AXI_HAS_LOCK bound to: 1 - type: integer 
+	Parameter C_AXI_HAS_CACHE bound to: 1 - type: integer 
+	Parameter C_AXI_HAS_REGION bound to: 1 - type: integer 
+	Parameter C_AXI_HAS_PROT bound to: 1 - type: integer 
+	Parameter C_AXI_HAS_QOS bound to: 1 - type: integer 
+	Parameter C_AXI_HAS_WSTRB bound to: 1 - type: integer 
+	Parameter C_AXI_HAS_BRESP bound to: 1 - type: integer 
+	Parameter C_AXI_HAS_RRESP bound to: 1 - type: integer 
+	Parameter C_AXI_HAS_ARESETN bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_vip_v1_1_8_top' (1#1) [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ipshared/94c3/hdl/axi_vip_v1_1_vlsyn_rfs.sv:61]
+INFO: [Synth 8-6155] done synthesizing module 'bd_43c9_reachout_axi_vip_0' (2#1) [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/ip/ip_25/synth/bd_43c9_reachout_axi_vip_0.sv:58]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 2970.410 ; gain = 260.625 ; free physical = 41101 ; free virtual = 54767
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 2986.254 ; gain = 276.469 ; free physical = 42681 ; free virtual = 56348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 2986.254 ; gain = 276.469 ; free physical = 42681 ; free virtual = 56348
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2986.254 ; gain = 0.000 ; free physical = 42705 ; free virtual = 56372
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/ip/ip_25/bd_43c9_reachout_axi_vip_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/ip/ip_25/bd_43c9_reachout_axi_vip_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.runs/bd_43c9_reachout_axi_vip_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.runs/bd_43c9_reachout_axi_vip_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3091.910 ; gain = 0.000 ; free physical = 41980 ; free virtual = 55647
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3091.910 ; gain = 0.000 ; free physical = 41937 ; free virtual = 55604
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 3091.910 ; gain = 382.125 ; free physical = 41950 ; free virtual = 55618
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcu200-fsgd2104-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 3091.910 ; gain = 382.125 ; free physical = 41950 ; free virtual = 55618
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.runs/bd_43c9_reachout_axi_vip_0_synth_1/dont_touch.xdc, line 6).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 3091.910 ; gain = 382.125 ; free physical = 41950 ; free virtual = 55618
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 3091.910 ; gain = 382.125 ; free physical = 41950 ; free virtual = 55620
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 6840 (col length:120)
+BRAMs: 4320 (col length: RAMB18 360 RAMB36 180)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:19 . Memory (MB): peak = 3091.910 ; gain = 382.125 ; free physical = 41938 ; free virtual = 55612
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:53 . Memory (MB): peak = 3389.230 ; gain = 679.445 ; free physical = 38794 ; free virtual = 52473
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:53 . Memory (MB): peak = 3389.230 ; gain = 679.445 ; free physical = 38793 ; free virtual = 52472
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:53 . Memory (MB): peak = 3408.262 ; gain = 698.477 ; free physical = 38782 ; free virtual = 52460
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:56 . Memory (MB): peak = 3414.199 ; gain = 704.414 ; free physical = 38714 ; free virtual = 52393
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:56 . Memory (MB): peak = 3414.199 ; gain = 704.414 ; free physical = 38714 ; free virtual = 52393
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:56 . Memory (MB): peak = 3414.199 ; gain = 704.414 ; free physical = 38714 ; free virtual = 52393
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:56 . Memory (MB): peak = 3414.199 ; gain = 704.414 ; free physical = 38714 ; free virtual = 52393
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:56 . Memory (MB): peak = 3414.199 ; gain = 704.414 ; free physical = 38714 ; free virtual = 52393
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:56 . Memory (MB): peak = 3414.199 ; gain = 704.414 ; free physical = 38714 ; free virtual = 52393
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++-+-----+------+
+| |Cell |Count |
++-+-----+------+
++-+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:56 . Memory (MB): peak = 3414.199 ; gain = 704.414 ; free physical = 38714 ; free virtual = 52393
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:48 . Memory (MB): peak = 3414.199 ; gain = 598.758 ; free physical = 38742 ; free virtual = 52420
+Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:56 . Memory (MB): peak = 3414.207 ; gain = 704.414 ; free physical = 38742 ; free virtual = 52420
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3414.207 ; gain = 0.000 ; free physical = 38734 ; free virtual = 52413
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3483.246 ; gain = 0.000 ; free physical = 38761 ; free virtual = 52439
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+17 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:42 ; elapsed = 00:01:17 . Memory (MB): peak = 3497.184 ; gain = 1125.297 ; free physical = 38857 ; free virtual = 52536
+INFO: [Common 17-1381] The checkpoint '/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.runs/bd_43c9_reachout_axi_vip_0_synth_1/bd_43c9_reachout_axi_vip_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP bd_43c9_reachout_axi_vip_0, cache-ID = 5a31717544354c90
+INFO: [Common 17-1381] The checkpoint '/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.runs/bd_43c9_reachout_axi_vip_0_synth_1/bd_43c9_reachout_axi_vip_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file bd_43c9_reachout_axi_vip_0_utilization_synth.rpt -pb bd_43c9_reachout_axi_vip_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Jan 15 01:26:08 2025...

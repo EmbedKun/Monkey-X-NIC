@@ -1,0 +1,1157 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Jan 15 01:33:57 2025
+# Process ID: 2876958
+# Current directory: /home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.runs/bd_fb99_shell_cmc_subsystem_0_synth_1
+# Command line: vivado -log bd_fb99_shell_cmc_subsystem_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source bd_fb99_shell_cmc_subsystem_0.tcl
+# Log file: /home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.runs/bd_fb99_shell_cmc_subsystem_0_synth_1/bd_fb99_shell_cmc_subsystem_0.vds
+# Journal file: /home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.runs/bd_fb99_shell_cmc_subsystem_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source bd_fb99_shell_cmc_subsystem_0.tcl -notrace
+Command: synth_design -top bd_fb99_shell_cmc_subsystem_0 -part xcu200-fsgd2104-2-e -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcu200'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcu200'
+INFO: [Device 21-403] Loading part xcu200-fsgd2104-2-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 2876970
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2948.441 ; gain = 214.688 ; free physical = 43916 ; free virtual = 57602
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'bd_fb99_shell_cmc_subsystem_0' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_0/ip/ip_0/synth/bd_fb99_shell_cmc_subsystem_0.v:61]
+INFO: [Synth 8-6157] synthesizing module 'bd_43c9' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:10]
+INFO: [Synth 8-6157] synthesizing module 'bd_43c9_axi_bram_ctrl_firmware_0' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.runs/bd_fb99_shell_cmc_subsystem_0_synth_1/.Xil/Vivado-2876958-playmaker-MZ32-AR0-00/realtime/bd_43c9_axi_bram_ctrl_firmware_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_43c9_axi_bram_ctrl_firmware_0' (1#1) [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.runs/bd_fb99_shell_cmc_subsystem_0_synth_1/.Xil/Vivado-2876958-playmaker-MZ32-AR0-00/realtime/bd_43c9_axi_bram_ctrl_firmware_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'bd_43c9_axi_bram_ctrl_regmap_cmc_0' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.runs/bd_fb99_shell_cmc_subsystem_0_synth_1/.Xil/Vivado-2876958-playmaker-MZ32-AR0-00/realtime/bd_43c9_axi_bram_ctrl_regmap_cmc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_43c9_axi_bram_ctrl_regmap_cmc_0' (2#1) [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.runs/bd_fb99_shell_cmc_subsystem_0_synth_1/.Xil/Vivado-2876958-playmaker-MZ32-AR0-00/realtime/bd_43c9_axi_bram_ctrl_regmap_cmc_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'bd_43c9_axi_bram_ctrl_regmap_host_0' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.runs/bd_fb99_shell_cmc_subsystem_0_synth_1/.Xil/Vivado-2876958-playmaker-MZ32-AR0-00/realtime/bd_43c9_axi_bram_ctrl_regmap_host_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_43c9_axi_bram_ctrl_regmap_host_0' (3#1) [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.runs/bd_fb99_shell_cmc_subsystem_0_synth_1/.Xil/Vivado-2876958-playmaker-MZ32-AR0-00/realtime/bd_43c9_axi_bram_ctrl_regmap_host_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'bd_43c9_axi_gpio_cmc_mb_rst_n_0' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.runs/bd_fb99_shell_cmc_subsystem_0_synth_1/.Xil/Vivado-2876958-playmaker-MZ32-AR0-00/realtime/bd_43c9_axi_gpio_cmc_mb_rst_n_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_43c9_axi_gpio_cmc_mb_rst_n_0' (4#1) [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.runs/bd_fb99_shell_cmc_subsystem_0_synth_1/.Xil/Vivado-2876958-playmaker-MZ32-AR0-00/realtime/bd_43c9_axi_gpio_cmc_mb_rst_n_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'bd_43c9_axi_gpio_hbm_temp_0' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.runs/bd_fb99_shell_cmc_subsystem_0_synth_1/.Xil/Vivado-2876958-playmaker-MZ32-AR0-00/realtime/bd_43c9_axi_gpio_hbm_temp_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_43c9_axi_gpio_hbm_temp_0' (5#1) [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.runs/bd_fb99_shell_cmc_subsystem_0_synth_1/.Xil/Vivado-2876958-playmaker-MZ32-AR0-00/realtime/bd_43c9_axi_gpio_hbm_temp_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'bd_43c9_axi_gpio_mb_intr_0' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.runs/bd_fb99_shell_cmc_subsystem_0_synth_1/.Xil/Vivado-2876958-playmaker-MZ32-AR0-00/realtime/bd_43c9_axi_gpio_mb_intr_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_43c9_axi_gpio_mb_intr_0' (6#1) [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.runs/bd_fb99_shell_cmc_subsystem_0_synth_1/.Xil/Vivado-2876958-playmaker-MZ32-AR0-00/realtime/bd_43c9_axi_gpio_mb_intr_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'bd_43c9_axi_gpio_mutex_cmc_0' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.runs/bd_fb99_shell_cmc_subsystem_0_synth_1/.Xil/Vivado-2876958-playmaker-MZ32-AR0-00/realtime/bd_43c9_axi_gpio_mutex_cmc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_43c9_axi_gpio_mutex_cmc_0' (7#1) [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.runs/bd_fb99_shell_cmc_subsystem_0_synth_1/.Xil/Vivado-2876958-playmaker-MZ32-AR0-00/realtime/bd_43c9_axi_gpio_mutex_cmc_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'bd_43c9_axi_gpio_mutex_host_0' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.runs/bd_fb99_shell_cmc_subsystem_0_synth_1/.Xil/Vivado-2876958-playmaker-MZ32-AR0-00/realtime/bd_43c9_axi_gpio_mutex_host_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_43c9_axi_gpio_mutex_host_0' (8#1) [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.runs/bd_fb99_shell_cmc_subsystem_0_synth_1/.Xil/Vivado-2876958-playmaker-MZ32-AR0-00/realtime/bd_43c9_axi_gpio_mutex_host_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'bd_43c9_axi_gpio_timebase_0' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.runs/bd_fb99_shell_cmc_subsystem_0_synth_1/.Xil/Vivado-2876958-playmaker-MZ32-AR0-00/realtime/bd_43c9_axi_gpio_timebase_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_43c9_axi_gpio_timebase_0' (9#1) [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.runs/bd_fb99_shell_cmc_subsystem_0_synth_1/.Xil/Vivado-2876958-playmaker-MZ32-AR0-00/realtime/bd_43c9_axi_gpio_timebase_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'bd_43c9_axi_gpio_wdt_0' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.runs/bd_fb99_shell_cmc_subsystem_0_synth_1/.Xil/Vivado-2876958-playmaker-MZ32-AR0-00/realtime/bd_43c9_axi_gpio_wdt_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_43c9_axi_gpio_wdt_0' (10#1) [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.runs/bd_fb99_shell_cmc_subsystem_0_synth_1/.Xil/Vivado-2876958-playmaker-MZ32-AR0-00/realtime/bd_43c9_axi_gpio_wdt_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'bd_43c9_axi_ic_cmc_local_0' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:1710]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_NRDYE9' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:4882]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_NRDYE9' (11#1) [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:4882]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_1M9SY76' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:5146]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_1M9SY76' (12#1) [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:5146]
+INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_ZYPUW6' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:5410]
+INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_ZYPUW6' (13#1) [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:5410]
+INFO: [Synth 8-6157] synthesizing module 'm03_couplers_imp_1Q5M91' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:5542]
+INFO: [Synth 8-6155] done synthesizing module 'm03_couplers_imp_1Q5M91' (14#1) [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:5542]
+INFO: [Synth 8-6157] synthesizing module 'm04_couplers_imp_AQ82PA' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:5806]
+INFO: [Synth 8-6155] done synthesizing module 'm04_couplers_imp_AQ82PA' (15#1) [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:5806]
+INFO: [Synth 8-6157] synthesizing module 'm05_couplers_imp_18ONW8D' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:6070]
+INFO: [Synth 8-6155] done synthesizing module 'm05_couplers_imp_18ONW8D' (16#1) [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:6070]
+INFO: [Synth 8-6157] synthesizing module 'm06_couplers_imp_1VB4J8P' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:6348]
+INFO: [Synth 8-6155] done synthesizing module 'm06_couplers_imp_1VB4J8P' (17#1) [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:6348]
+INFO: [Synth 8-6157] synthesizing module 'm07_couplers_imp_WIL44Q' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:6480]
+INFO: [Synth 8-6155] done synthesizing module 'm07_couplers_imp_WIL44Q' (18#1) [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:6480]
+INFO: [Synth 8-6157] synthesizing module 'm08_couplers_imp_1DUYMTB' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:6612]
+INFO: [Synth 8-6155] done synthesizing module 'm08_couplers_imp_1DUYMTB' (19#1) [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:6612]
+INFO: [Synth 8-6157] synthesizing module 'm09_couplers_imp_EG764C' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:6744]
+INFO: [Synth 8-6155] done synthesizing module 'm09_couplers_imp_EG764C' (20#1) [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:6744]
+INFO: [Synth 8-6157] synthesizing module 'm10_couplers_imp_1FV9OQO' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:6876]
+INFO: [Synth 8-6155] done synthesizing module 'm10_couplers_imp_1FV9OQO' (21#1) [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:6876]
+INFO: [Synth 8-6157] synthesizing module 'm11_couplers_imp_H0P8LF' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:7022]
+INFO: [Synth 8-6155] done synthesizing module 'm11_couplers_imp_H0P8LF' (22#1) [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:7022]
+INFO: [Synth 8-6157] synthesizing module 'm12_couplers_imp_UQQLAF' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:7154]
+INFO: [Synth 8-6155] done synthesizing module 'm12_couplers_imp_UQQLAF' (23#1) [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:7154]
+INFO: [Synth 8-6157] synthesizing module 'm13_couplers_imp_1SRIP6S' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:7300]
+INFO: [Synth 8-6155] done synthesizing module 'm13_couplers_imp_1SRIP6S' (24#1) [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:7300]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1MFS16L' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:8038]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1MFS16L' (25#1) [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:8038]
+INFO: [Synth 8-6157] synthesizing module 'bd_43c9_xbar_0' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.runs/bd_fb99_shell_cmc_subsystem_0_synth_1/.Xil/Vivado-2876958-playmaker-MZ32-AR0-00/realtime/bd_43c9_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_43c9_xbar_0' (26#1) [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.runs/bd_fb99_shell_cmc_subsystem_0_synth_1/.Xil/Vivado-2876958-playmaker-MZ32-AR0-00/realtime/bd_43c9_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_43c9_axi_ic_cmc_local_0' (27#1) [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:1710]
+WARNING: [Synth 8-7071] port 'M12_AXI_araddr' of module 'bd_43c9_axi_ic_cmc_local_0' is unconnected for instance 'axi_ic_cmc_local' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:861]
+WARNING: [Synth 8-7071] port 'M12_AXI_arprot' of module 'bd_43c9_axi_ic_cmc_local_0' is unconnected for instance 'axi_ic_cmc_local' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:861]
+WARNING: [Synth 8-7071] port 'M12_AXI_arvalid' of module 'bd_43c9_axi_ic_cmc_local_0' is unconnected for instance 'axi_ic_cmc_local' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:861]
+WARNING: [Synth 8-7071] port 'M12_AXI_awaddr' of module 'bd_43c9_axi_ic_cmc_local_0' is unconnected for instance 'axi_ic_cmc_local' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:861]
+WARNING: [Synth 8-7071] port 'M12_AXI_awprot' of module 'bd_43c9_axi_ic_cmc_local_0' is unconnected for instance 'axi_ic_cmc_local' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:861]
+WARNING: [Synth 8-7071] port 'M12_AXI_awvalid' of module 'bd_43c9_axi_ic_cmc_local_0' is unconnected for instance 'axi_ic_cmc_local' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:861]
+WARNING: [Synth 8-7071] port 'M12_AXI_bready' of module 'bd_43c9_axi_ic_cmc_local_0' is unconnected for instance 'axi_ic_cmc_local' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:861]
+WARNING: [Synth 8-7071] port 'M12_AXI_rready' of module 'bd_43c9_axi_ic_cmc_local_0' is unconnected for instance 'axi_ic_cmc_local' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:861]
+WARNING: [Synth 8-7071] port 'M12_AXI_wdata' of module 'bd_43c9_axi_ic_cmc_local_0' is unconnected for instance 'axi_ic_cmc_local' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:861]
+WARNING: [Synth 8-7071] port 'M12_AXI_wstrb' of module 'bd_43c9_axi_ic_cmc_local_0' is unconnected for instance 'axi_ic_cmc_local' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:861]
+WARNING: [Synth 8-7071] port 'M12_AXI_wvalid' of module 'bd_43c9_axi_ic_cmc_local_0' is unconnected for instance 'axi_ic_cmc_local' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:861]
+WARNING: [Synth 8-7071] port 'M13_AXI_araddr' of module 'bd_43c9_axi_ic_cmc_local_0' is unconnected for instance 'axi_ic_cmc_local' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:861]
+WARNING: [Synth 8-7071] port 'M13_AXI_arprot' of module 'bd_43c9_axi_ic_cmc_local_0' is unconnected for instance 'axi_ic_cmc_local' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:861]
+WARNING: [Synth 8-7071] port 'M13_AXI_arvalid' of module 'bd_43c9_axi_ic_cmc_local_0' is unconnected for instance 'axi_ic_cmc_local' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:861]
+WARNING: [Synth 8-7071] port 'M13_AXI_awaddr' of module 'bd_43c9_axi_ic_cmc_local_0' is unconnected for instance 'axi_ic_cmc_local' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:861]
+WARNING: [Synth 8-7071] port 'M13_AXI_awprot' of module 'bd_43c9_axi_ic_cmc_local_0' is unconnected for instance 'axi_ic_cmc_local' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:861]
+WARNING: [Synth 8-7071] port 'M13_AXI_awvalid' of module 'bd_43c9_axi_ic_cmc_local_0' is unconnected for instance 'axi_ic_cmc_local' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:861]
+WARNING: [Synth 8-7071] port 'M13_AXI_bready' of module 'bd_43c9_axi_ic_cmc_local_0' is unconnected for instance 'axi_ic_cmc_local' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:861]
+WARNING: [Synth 8-7071] port 'M13_AXI_rready' of module 'bd_43c9_axi_ic_cmc_local_0' is unconnected for instance 'axi_ic_cmc_local' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:861]
+WARNING: [Synth 8-7071] port 'M13_AXI_wdata' of module 'bd_43c9_axi_ic_cmc_local_0' is unconnected for instance 'axi_ic_cmc_local' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:861]
+WARNING: [Synth 8-7071] port 'M13_AXI_wstrb' of module 'bd_43c9_axi_ic_cmc_local_0' is unconnected for instance 'axi_ic_cmc_local' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:861]
+WARNING: [Synth 8-7071] port 'M13_AXI_wvalid' of module 'bd_43c9_axi_ic_cmc_local_0' is unconnected for instance 'axi_ic_cmc_local' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:861]
+WARNING: [Synth 8-7023] instance 'axi_ic_cmc_local' of module 'bd_43c9_axi_ic_cmc_local_0' has 295 connections declared, but only 273 given [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:861]
+INFO: [Synth 8-6157] synthesizing module 'bd_43c9_axi_ic_mgmt_0' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:3742]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_8KSOCS' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:4736]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_8KSOCS' (28#1) [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:4736]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_16J9SSV' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:5014]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_16J9SSV' (29#1) [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:5014]
+INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_1KA3CZV' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:5278]
+INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_1KA3CZV' (30#1) [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:5278]
+INFO: [Synth 8-6157] synthesizing module 'm03_couplers_imp_LHIFUW' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:5674]
+INFO: [Synth 8-6155] done synthesizing module 'm03_couplers_imp_LHIFUW' (31#1) [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:5674]
+INFO: [Synth 8-6157] synthesizing module 'm04_couplers_imp_UHLIF7' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:5938]
+INFO: [Synth 8-6155] done synthesizing module 'm04_couplers_imp_UHLIF7' (32#1) [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:5938]
+INFO: [Synth 8-6157] synthesizing module 'm05_couplers_imp_1T01U4G' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:6202]
+INFO: [Synth 8-6155] done synthesizing module 'm05_couplers_imp_1T01U4G' (33#1) [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:6202]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_16OLCR4' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:7892]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_16OLCR4' (34#1) [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:7892]
+INFO: [Synth 8-6157] synthesizing module 'bd_43c9_xbar_1' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.runs/bd_fb99_shell_cmc_subsystem_0_synth_1/.Xil/Vivado-2876958-playmaker-MZ32-AR0-00/realtime/bd_43c9_xbar_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_43c9_xbar_1' (35#1) [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.runs/bd_fb99_shell_cmc_subsystem_0_synth_1/.Xil/Vivado-2876958-playmaker-MZ32-AR0-00/realtime/bd_43c9_xbar_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_43c9_axi_ic_mgmt_0' (36#1) [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:3742]
+INFO: [Synth 8-6157] synthesizing module 'bd_43c9_axi_intc_cmc_0' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.runs/bd_fb99_shell_cmc_subsystem_0_synth_1/.Xil/Vivado-2876958-playmaker-MZ32-AR0-00/realtime/bd_43c9_axi_intc_cmc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_43c9_axi_intc_cmc_0' (37#1) [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.runs/bd_fb99_shell_cmc_subsystem_0_synth_1/.Xil/Vivado-2876958-playmaker-MZ32-AR0-00/realtime/bd_43c9_axi_intc_cmc_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'bd_43c9_axi_intc_host_0' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.runs/bd_fb99_shell_cmc_subsystem_0_synth_1/.Xil/Vivado-2876958-playmaker-MZ32-AR0-00/realtime/bd_43c9_axi_intc_host_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_43c9_axi_intc_host_0' (38#1) [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.runs/bd_fb99_shell_cmc_subsystem_0_synth_1/.Xil/Vivado-2876958-playmaker-MZ32-AR0-00/realtime/bd_43c9_axi_intc_host_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'bd_43c9_axi_timebase_wdt_0' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.runs/bd_fb99_shell_cmc_subsystem_0_synth_1/.Xil/Vivado-2876958-playmaker-MZ32-AR0-00/realtime/bd_43c9_axi_timebase_wdt_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_43c9_axi_timebase_wdt_0' (39#1) [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.runs/bd_fb99_shell_cmc_subsystem_0_synth_1/.Xil/Vivado-2876958-playmaker-MZ32-AR0-00/realtime/bd_43c9_axi_timebase_wdt_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'timebase_interrupt' of module 'bd_43c9_axi_timebase_wdt_0' is unconnected for instance 'axi_timebase_wdt' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:1325]
+WARNING: [Synth 8-7023] instance 'axi_timebase_wdt' of module 'bd_43c9_axi_timebase_wdt_0' has 23 connections declared, but only 22 given [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:1325]
+INFO: [Synth 8-6157] synthesizing module 'bd_43c9_axi_uartlite_satellite_0' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.runs/bd_fb99_shell_cmc_subsystem_0_synth_1/.Xil/Vivado-2876958-playmaker-MZ32-AR0-00/realtime/bd_43c9_axi_uartlite_satellite_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_43c9_axi_uartlite_satellite_0' (40#1) [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.runs/bd_fb99_shell_cmc_subsystem_0_synth_1/.Xil/Vivado-2876958-playmaker-MZ32-AR0-00/realtime/bd_43c9_axi_uartlite_satellite_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'bd_43c9_axi_uartlite_usb_0' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.runs/bd_fb99_shell_cmc_subsystem_0_synth_1/.Xil/Vivado-2876958-playmaker-MZ32-AR0-00/realtime/bd_43c9_axi_uartlite_usb_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_43c9_axi_uartlite_usb_0' (41#1) [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.runs/bd_fb99_shell_cmc_subsystem_0_synth_1/.Xil/Vivado-2876958-playmaker-MZ32-AR0-00/realtime/bd_43c9_axi_uartlite_usb_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'bd_43c9_build_info_cmc_0' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.runs/bd_fb99_shell_cmc_subsystem_0_synth_1/.Xil/Vivado-2876958-playmaker-MZ32-AR0-00/realtime/bd_43c9_build_info_cmc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_43c9_build_info_cmc_0' (42#1) [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.runs/bd_fb99_shell_cmc_subsystem_0_synth_1/.Xil/Vivado-2876958-playmaker-MZ32-AR0-00/realtime/bd_43c9_build_info_cmc_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'bd_43c9_build_info_host_0' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.runs/bd_fb99_shell_cmc_subsystem_0_synth_1/.Xil/Vivado-2876958-playmaker-MZ32-AR0-00/realtime/bd_43c9_build_info_host_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_43c9_build_info_host_0' (43#1) [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.runs/bd_fb99_shell_cmc_subsystem_0_synth_1/.Xil/Vivado-2876958-playmaker-MZ32-AR0-00/realtime/bd_43c9_build_info_host_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'bd_43c9_concat_hbm_temp_0' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/ip/ip_32/synth/bd_43c9_concat_hbm_temp_0.v:60]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_4_xlconcat' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+	Parameter IN0_WIDTH bound to: 7 - type: integer 
+	Parameter IN1_WIDTH bound to: 1 - type: integer 
+	Parameter IN2_WIDTH bound to: 7 - type: integer 
+	Parameter IN3_WIDTH bound to: 1 - type: integer 
+	Parameter IN4_WIDTH bound to: 1 - type: integer 
+	Parameter IN5_WIDTH bound to: 1 - type: integer 
+	Parameter IN6_WIDTH bound to: 1 - type: integer 
+	Parameter IN7_WIDTH bound to: 1 - type: integer 
+	Parameter IN8_WIDTH bound to: 1 - type: integer 
+	Parameter IN9_WIDTH bound to: 1 - type: integer 
+	Parameter IN10_WIDTH bound to: 1 - type: integer 
+	Parameter IN11_WIDTH bound to: 1 - type: integer 
+	Parameter IN12_WIDTH bound to: 1 - type: integer 
+	Parameter IN13_WIDTH bound to: 1 - type: integer 
+	Parameter IN14_WIDTH bound to: 1 - type: integer 
+	Parameter IN15_WIDTH bound to: 1 - type: integer 
+	Parameter IN16_WIDTH bound to: 1 - type: integer 
+	Parameter IN17_WIDTH bound to: 1 - type: integer 
+	Parameter IN18_WIDTH bound to: 1 - type: integer 
+	Parameter IN19_WIDTH bound to: 1 - type: integer 
+	Parameter IN20_WIDTH bound to: 1 - type: integer 
+	Parameter IN21_WIDTH bound to: 1 - type: integer 
+	Parameter IN22_WIDTH bound to: 1 - type: integer 
+	Parameter IN23_WIDTH bound to: 1 - type: integer 
+	Parameter IN24_WIDTH bound to: 1 - type: integer 
+	Parameter IN25_WIDTH bound to: 1 - type: integer 
+	Parameter IN26_WIDTH bound to: 1 - type: integer 
+	Parameter IN27_WIDTH bound to: 1 - type: integer 
+	Parameter IN28_WIDTH bound to: 1 - type: integer 
+	Parameter IN29_WIDTH bound to: 1 - type: integer 
+	Parameter IN30_WIDTH bound to: 1 - type: integer 
+	Parameter IN31_WIDTH bound to: 1 - type: integer 
+	Parameter IN32_WIDTH bound to: 1 - type: integer 
+	Parameter IN33_WIDTH bound to: 1 - type: integer 
+	Parameter IN34_WIDTH bound to: 1 - type: integer 
+	Parameter IN35_WIDTH bound to: 1 - type: integer 
+	Parameter IN36_WIDTH bound to: 1 - type: integer 
+	Parameter IN37_WIDTH bound to: 1 - type: integer 
+	Parameter IN38_WIDTH bound to: 1 - type: integer 
+	Parameter IN39_WIDTH bound to: 1 - type: integer 
+	Parameter IN40_WIDTH bound to: 1 - type: integer 
+	Parameter IN41_WIDTH bound to: 1 - type: integer 
+	Parameter IN42_WIDTH bound to: 1 - type: integer 
+	Parameter IN43_WIDTH bound to: 1 - type: integer 
+	Parameter IN44_WIDTH bound to: 1 - type: integer 
+	Parameter IN45_WIDTH bound to: 1 - type: integer 
+	Parameter IN46_WIDTH bound to: 1 - type: integer 
+	Parameter IN47_WIDTH bound to: 1 - type: integer 
+	Parameter IN48_WIDTH bound to: 1 - type: integer 
+	Parameter IN49_WIDTH bound to: 1 - type: integer 
+	Parameter IN50_WIDTH bound to: 1 - type: integer 
+	Parameter IN51_WIDTH bound to: 1 - type: integer 
+	Parameter IN52_WIDTH bound to: 1 - type: integer 
+	Parameter IN53_WIDTH bound to: 1 - type: integer 
+	Parameter IN54_WIDTH bound to: 1 - type: integer 
+	Parameter IN55_WIDTH bound to: 1 - type: integer 
+	Parameter IN56_WIDTH bound to: 1 - type: integer 
+	Parameter IN57_WIDTH bound to: 1 - type: integer 
+	Parameter IN58_WIDTH bound to: 1 - type: integer 
+	Parameter IN59_WIDTH bound to: 1 - type: integer 
+	Parameter IN60_WIDTH bound to: 1 - type: integer 
+	Parameter IN61_WIDTH bound to: 1 - type: integer 
+	Parameter IN62_WIDTH bound to: 1 - type: integer 
+	Parameter IN63_WIDTH bound to: 1 - type: integer 
+	Parameter IN64_WIDTH bound to: 1 - type: integer 
+	Parameter IN65_WIDTH bound to: 1 - type: integer 
+	Parameter IN66_WIDTH bound to: 1 - type: integer 
+	Parameter IN67_WIDTH bound to: 1 - type: integer 
+	Parameter IN68_WIDTH bound to: 1 - type: integer 
+	Parameter IN69_WIDTH bound to: 1 - type: integer 
+	Parameter IN70_WIDTH bound to: 1 - type: integer 
+	Parameter IN71_WIDTH bound to: 1 - type: integer 
+	Parameter IN72_WIDTH bound to: 1 - type: integer 
+	Parameter IN73_WIDTH bound to: 1 - type: integer 
+	Parameter IN74_WIDTH bound to: 1 - type: integer 
+	Parameter IN75_WIDTH bound to: 1 - type: integer 
+	Parameter IN76_WIDTH bound to: 1 - type: integer 
+	Parameter IN77_WIDTH bound to: 1 - type: integer 
+	Parameter IN78_WIDTH bound to: 1 - type: integer 
+	Parameter IN79_WIDTH bound to: 1 - type: integer 
+	Parameter IN80_WIDTH bound to: 1 - type: integer 
+	Parameter IN81_WIDTH bound to: 1 - type: integer 
+	Parameter IN82_WIDTH bound to: 1 - type: integer 
+	Parameter IN83_WIDTH bound to: 1 - type: integer 
+	Parameter IN84_WIDTH bound to: 1 - type: integer 
+	Parameter IN85_WIDTH bound to: 1 - type: integer 
+	Parameter IN86_WIDTH bound to: 1 - type: integer 
+	Parameter IN87_WIDTH bound to: 1 - type: integer 
+	Parameter IN88_WIDTH bound to: 1 - type: integer 
+	Parameter IN89_WIDTH bound to: 1 - type: integer 
+	Parameter IN90_WIDTH bound to: 1 - type: integer 
+	Parameter IN91_WIDTH bound to: 1 - type: integer 
+	Parameter IN92_WIDTH bound to: 1 - type: integer 
+	Parameter IN93_WIDTH bound to: 1 - type: integer 
+	Parameter IN94_WIDTH bound to: 1 - type: integer 
+	Parameter IN95_WIDTH bound to: 1 - type: integer 
+	Parameter IN96_WIDTH bound to: 1 - type: integer 
+	Parameter IN97_WIDTH bound to: 1 - type: integer 
+	Parameter IN98_WIDTH bound to: 1 - type: integer 
+	Parameter IN99_WIDTH bound to: 1 - type: integer 
+	Parameter IN100_WIDTH bound to: 1 - type: integer 
+	Parameter IN101_WIDTH bound to: 1 - type: integer 
+	Parameter IN102_WIDTH bound to: 1 - type: integer 
+	Parameter IN103_WIDTH bound to: 1 - type: integer 
+	Parameter IN104_WIDTH bound to: 1 - type: integer 
+	Parameter IN105_WIDTH bound to: 1 - type: integer 
+	Parameter IN106_WIDTH bound to: 1 - type: integer 
+	Parameter IN107_WIDTH bound to: 1 - type: integer 
+	Parameter IN108_WIDTH bound to: 1 - type: integer 
+	Parameter IN109_WIDTH bound to: 1 - type: integer 
+	Parameter IN110_WIDTH bound to: 1 - type: integer 
+	Parameter IN111_WIDTH bound to: 1 - type: integer 
+	Parameter IN112_WIDTH bound to: 1 - type: integer 
+	Parameter IN113_WIDTH bound to: 1 - type: integer 
+	Parameter IN114_WIDTH bound to: 1 - type: integer 
+	Parameter IN115_WIDTH bound to: 1 - type: integer 
+	Parameter IN116_WIDTH bound to: 1 - type: integer 
+	Parameter IN117_WIDTH bound to: 1 - type: integer 
+	Parameter IN118_WIDTH bound to: 1 - type: integer 
+	Parameter IN119_WIDTH bound to: 1 - type: integer 
+	Parameter IN120_WIDTH bound to: 1 - type: integer 
+	Parameter IN121_WIDTH bound to: 1 - type: integer 
+	Parameter IN122_WIDTH bound to: 1 - type: integer 
+	Parameter IN123_WIDTH bound to: 1 - type: integer 
+	Parameter IN124_WIDTH bound to: 1 - type: integer 
+	Parameter IN125_WIDTH bound to: 1 - type: integer 
+	Parameter IN126_WIDTH bound to: 1 - type: integer 
+	Parameter IN127_WIDTH bound to: 1 - type: integer 
+	Parameter dout_width bound to: 15 - type: integer 
+	Parameter NUM_PORTS bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_4_xlconcat' (44#1) [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'bd_43c9_concat_hbm_temp_0' (45#1) [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/ip/ip_32/synth/bd_43c9_concat_hbm_temp_0.v:60]
+INFO: [Synth 8-6157] synthesizing module 'bd_43c9_concat_host_interrupts_0' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/ip/ip_33/synth/bd_43c9_concat_host_interrupts_0.v:60]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_4_xlconcat__parameterized0' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+	Parameter IN0_WIDTH bound to: 1 - type: integer 
+	Parameter IN1_WIDTH bound to: 31 - type: integer 
+	Parameter IN2_WIDTH bound to: 1 - type: integer 
+	Parameter IN3_WIDTH bound to: 1 - type: integer 
+	Parameter IN4_WIDTH bound to: 1 - type: integer 
+	Parameter IN5_WIDTH bound to: 1 - type: integer 
+	Parameter IN6_WIDTH bound to: 1 - type: integer 
+	Parameter IN7_WIDTH bound to: 1 - type: integer 
+	Parameter IN8_WIDTH bound to: 1 - type: integer 
+	Parameter IN9_WIDTH bound to: 1 - type: integer 
+	Parameter IN10_WIDTH bound to: 1 - type: integer 
+	Parameter IN11_WIDTH bound to: 1 - type: integer 
+	Parameter IN12_WIDTH bound to: 1 - type: integer 
+	Parameter IN13_WIDTH bound to: 1 - type: integer 
+	Parameter IN14_WIDTH bound to: 1 - type: integer 
+	Parameter IN15_WIDTH bound to: 1 - type: integer 
+	Parameter IN16_WIDTH bound to: 1 - type: integer 
+	Parameter IN17_WIDTH bound to: 1 - type: integer 
+	Parameter IN18_WIDTH bound to: 1 - type: integer 
+	Parameter IN19_WIDTH bound to: 1 - type: integer 
+	Parameter IN20_WIDTH bound to: 1 - type: integer 
+	Parameter IN21_WIDTH bound to: 1 - type: integer 
+	Parameter IN22_WIDTH bound to: 1 - type: integer 
+	Parameter IN23_WIDTH bound to: 1 - type: integer 
+	Parameter IN24_WIDTH bound to: 1 - type: integer 
+	Parameter IN25_WIDTH bound to: 1 - type: integer 
+	Parameter IN26_WIDTH bound to: 1 - type: integer 
+	Parameter IN27_WIDTH bound to: 1 - type: integer 
+	Parameter IN28_WIDTH bound to: 1 - type: integer 
+	Parameter IN29_WIDTH bound to: 1 - type: integer 
+	Parameter IN30_WIDTH bound to: 1 - type: integer 
+	Parameter IN31_WIDTH bound to: 1 - type: integer 
+	Parameter IN32_WIDTH bound to: 1 - type: integer 
+	Parameter IN33_WIDTH bound to: 1 - type: integer 
+	Parameter IN34_WIDTH bound to: 1 - type: integer 
+	Parameter IN35_WIDTH bound to: 1 - type: integer 
+	Parameter IN36_WIDTH bound to: 1 - type: integer 
+	Parameter IN37_WIDTH bound to: 1 - type: integer 
+	Parameter IN38_WIDTH bound to: 1 - type: integer 
+	Parameter IN39_WIDTH bound to: 1 - type: integer 
+	Parameter IN40_WIDTH bound to: 1 - type: integer 
+	Parameter IN41_WIDTH bound to: 1 - type: integer 
+	Parameter IN42_WIDTH bound to: 1 - type: integer 
+	Parameter IN43_WIDTH bound to: 1 - type: integer 
+	Parameter IN44_WIDTH bound to: 1 - type: integer 
+	Parameter IN45_WIDTH bound to: 1 - type: integer 
+	Parameter IN46_WIDTH bound to: 1 - type: integer 
+	Parameter IN47_WIDTH bound to: 1 - type: integer 
+	Parameter IN48_WIDTH bound to: 1 - type: integer 
+	Parameter IN49_WIDTH bound to: 1 - type: integer 
+	Parameter IN50_WIDTH bound to: 1 - type: integer 
+	Parameter IN51_WIDTH bound to: 1 - type: integer 
+	Parameter IN52_WIDTH bound to: 1 - type: integer 
+	Parameter IN53_WIDTH bound to: 1 - type: integer 
+	Parameter IN54_WIDTH bound to: 1 - type: integer 
+	Parameter IN55_WIDTH bound to: 1 - type: integer 
+	Parameter IN56_WIDTH bound to: 1 - type: integer 
+	Parameter IN57_WIDTH bound to: 1 - type: integer 
+	Parameter IN58_WIDTH bound to: 1 - type: integer 
+	Parameter IN59_WIDTH bound to: 1 - type: integer 
+	Parameter IN60_WIDTH bound to: 1 - type: integer 
+	Parameter IN61_WIDTH bound to: 1 - type: integer 
+	Parameter IN62_WIDTH bound to: 1 - type: integer 
+	Parameter IN63_WIDTH bound to: 1 - type: integer 
+	Parameter IN64_WIDTH bound to: 1 - type: integer 
+	Parameter IN65_WIDTH bound to: 1 - type: integer 
+	Parameter IN66_WIDTH bound to: 1 - type: integer 
+	Parameter IN67_WIDTH bound to: 1 - type: integer 
+	Parameter IN68_WIDTH bound to: 1 - type: integer 
+	Parameter IN69_WIDTH bound to: 1 - type: integer 
+	Parameter IN70_WIDTH bound to: 1 - type: integer 
+	Parameter IN71_WIDTH bound to: 1 - type: integer 
+	Parameter IN72_WIDTH bound to: 1 - type: integer 
+	Parameter IN73_WIDTH bound to: 1 - type: integer 
+	Parameter IN74_WIDTH bound to: 1 - type: integer 
+	Parameter IN75_WIDTH bound to: 1 - type: integer 
+	Parameter IN76_WIDTH bound to: 1 - type: integer 
+	Parameter IN77_WIDTH bound to: 1 - type: integer 
+	Parameter IN78_WIDTH bound to: 1 - type: integer 
+	Parameter IN79_WIDTH bound to: 1 - type: integer 
+	Parameter IN80_WIDTH bound to: 1 - type: integer 
+	Parameter IN81_WIDTH bound to: 1 - type: integer 
+	Parameter IN82_WIDTH bound to: 1 - type: integer 
+	Parameter IN83_WIDTH bound to: 1 - type: integer 
+	Parameter IN84_WIDTH bound to: 1 - type: integer 
+	Parameter IN85_WIDTH bound to: 1 - type: integer 
+	Parameter IN86_WIDTH bound to: 1 - type: integer 
+	Parameter IN87_WIDTH bound to: 1 - type: integer 
+	Parameter IN88_WIDTH bound to: 1 - type: integer 
+	Parameter IN89_WIDTH bound to: 1 - type: integer 
+	Parameter IN90_WIDTH bound to: 1 - type: integer 
+	Parameter IN91_WIDTH bound to: 1 - type: integer 
+	Parameter IN92_WIDTH bound to: 1 - type: integer 
+	Parameter IN93_WIDTH bound to: 1 - type: integer 
+	Parameter IN94_WIDTH bound to: 1 - type: integer 
+	Parameter IN95_WIDTH bound to: 1 - type: integer 
+	Parameter IN96_WIDTH bound to: 1 - type: integer 
+	Parameter IN97_WIDTH bound to: 1 - type: integer 
+	Parameter IN98_WIDTH bound to: 1 - type: integer 
+	Parameter IN99_WIDTH bound to: 1 - type: integer 
+	Parameter IN100_WIDTH bound to: 1 - type: integer 
+	Parameter IN101_WIDTH bound to: 1 - type: integer 
+	Parameter IN102_WIDTH bound to: 1 - type: integer 
+	Parameter IN103_WIDTH bound to: 1 - type: integer 
+	Parameter IN104_WIDTH bound to: 1 - type: integer 
+	Parameter IN105_WIDTH bound to: 1 - type: integer 
+	Parameter IN106_WIDTH bound to: 1 - type: integer 
+	Parameter IN107_WIDTH bound to: 1 - type: integer 
+	Parameter IN108_WIDTH bound to: 1 - type: integer 
+	Parameter IN109_WIDTH bound to: 1 - type: integer 
+	Parameter IN110_WIDTH bound to: 1 - type: integer 
+	Parameter IN111_WIDTH bound to: 1 - type: integer 
+	Parameter IN112_WIDTH bound to: 1 - type: integer 
+	Parameter IN113_WIDTH bound to: 1 - type: integer 
+	Parameter IN114_WIDTH bound to: 1 - type: integer 
+	Parameter IN115_WIDTH bound to: 1 - type: integer 
+	Parameter IN116_WIDTH bound to: 1 - type: integer 
+	Parameter IN117_WIDTH bound to: 1 - type: integer 
+	Parameter IN118_WIDTH bound to: 1 - type: integer 
+	Parameter IN119_WIDTH bound to: 1 - type: integer 
+	Parameter IN120_WIDTH bound to: 1 - type: integer 
+	Parameter IN121_WIDTH bound to: 1 - type: integer 
+	Parameter IN122_WIDTH bound to: 1 - type: integer 
+	Parameter IN123_WIDTH bound to: 1 - type: integer 
+	Parameter IN124_WIDTH bound to: 1 - type: integer 
+	Parameter IN125_WIDTH bound to: 1 - type: integer 
+	Parameter IN126_WIDTH bound to: 1 - type: integer 
+	Parameter IN127_WIDTH bound to: 1 - type: integer 
+	Parameter dout_width bound to: 32 - type: integer 
+	Parameter NUM_PORTS bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_4_xlconcat__parameterized0' (45#1) [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'bd_43c9_concat_host_interrupts_0' (46#1) [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/ip/ip_33/synth/bd_43c9_concat_host_interrupts_0.v:60]
+INFO: [Synth 8-6157] synthesizing module 'bd_43c9_concat_intr_cmc_0' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/ip/ip_31/synth/bd_43c9_concat_intr_cmc_0.v:60]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_4_xlconcat__parameterized1' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+	Parameter IN0_WIDTH bound to: 4 - type: integer 
+	Parameter IN1_WIDTH bound to: 1 - type: integer 
+	Parameter IN2_WIDTH bound to: 1 - type: integer 
+	Parameter IN3_WIDTH bound to: 1 - type: integer 
+	Parameter IN4_WIDTH bound to: 1 - type: integer 
+	Parameter IN5_WIDTH bound to: 1 - type: integer 
+	Parameter IN6_WIDTH bound to: 1 - type: integer 
+	Parameter IN7_WIDTH bound to: 1 - type: integer 
+	Parameter IN8_WIDTH bound to: 1 - type: integer 
+	Parameter IN9_WIDTH bound to: 1 - type: integer 
+	Parameter IN10_WIDTH bound to: 1 - type: integer 
+	Parameter IN11_WIDTH bound to: 1 - type: integer 
+	Parameter IN12_WIDTH bound to: 1 - type: integer 
+	Parameter IN13_WIDTH bound to: 1 - type: integer 
+	Parameter IN14_WIDTH bound to: 1 - type: integer 
+	Parameter IN15_WIDTH bound to: 1 - type: integer 
+	Parameter IN16_WIDTH bound to: 1 - type: integer 
+	Parameter IN17_WIDTH bound to: 1 - type: integer 
+	Parameter IN18_WIDTH bound to: 1 - type: integer 
+	Parameter IN19_WIDTH bound to: 1 - type: integer 
+	Parameter IN20_WIDTH bound to: 1 - type: integer 
+	Parameter IN21_WIDTH bound to: 1 - type: integer 
+	Parameter IN22_WIDTH bound to: 1 - type: integer 
+	Parameter IN23_WIDTH bound to: 1 - type: integer 
+	Parameter IN24_WIDTH bound to: 1 - type: integer 
+	Parameter IN25_WIDTH bound to: 1 - type: integer 
+	Parameter IN26_WIDTH bound to: 1 - type: integer 
+	Parameter IN27_WIDTH bound to: 1 - type: integer 
+	Parameter IN28_WIDTH bound to: 1 - type: integer 
+	Parameter IN29_WIDTH bound to: 1 - type: integer 
+	Parameter IN30_WIDTH bound to: 1 - type: integer 
+	Parameter IN31_WIDTH bound to: 1 - type: integer 
+	Parameter IN32_WIDTH bound to: 1 - type: integer 
+	Parameter IN33_WIDTH bound to: 1 - type: integer 
+	Parameter IN34_WIDTH bound to: 1 - type: integer 
+	Parameter IN35_WIDTH bound to: 1 - type: integer 
+	Parameter IN36_WIDTH bound to: 1 - type: integer 
+	Parameter IN37_WIDTH bound to: 1 - type: integer 
+	Parameter IN38_WIDTH bound to: 1 - type: integer 
+	Parameter IN39_WIDTH bound to: 1 - type: integer 
+	Parameter IN40_WIDTH bound to: 1 - type: integer 
+	Parameter IN41_WIDTH bound to: 1 - type: integer 
+	Parameter IN42_WIDTH bound to: 1 - type: integer 
+	Parameter IN43_WIDTH bound to: 1 - type: integer 
+	Parameter IN44_WIDTH bound to: 1 - type: integer 
+	Parameter IN45_WIDTH bound to: 1 - type: integer 
+	Parameter IN46_WIDTH bound to: 1 - type: integer 
+	Parameter IN47_WIDTH bound to: 1 - type: integer 
+	Parameter IN48_WIDTH bound to: 1 - type: integer 
+	Parameter IN49_WIDTH bound to: 1 - type: integer 
+	Parameter IN50_WIDTH bound to: 1 - type: integer 
+	Parameter IN51_WIDTH bound to: 1 - type: integer 
+	Parameter IN52_WIDTH bound to: 1 - type: integer 
+	Parameter IN53_WIDTH bound to: 1 - type: integer 
+	Parameter IN54_WIDTH bound to: 1 - type: integer 
+	Parameter IN55_WIDTH bound to: 1 - type: integer 
+	Parameter IN56_WIDTH bound to: 1 - type: integer 
+	Parameter IN57_WIDTH bound to: 1 - type: integer 
+	Parameter IN58_WIDTH bound to: 1 - type: integer 
+	Parameter IN59_WIDTH bound to: 1 - type: integer 
+	Parameter IN60_WIDTH bound to: 1 - type: integer 
+	Parameter IN61_WIDTH bound to: 1 - type: integer 
+	Parameter IN62_WIDTH bound to: 1 - type: integer 
+	Parameter IN63_WIDTH bound to: 1 - type: integer 
+	Parameter IN64_WIDTH bound to: 1 - type: integer 
+	Parameter IN65_WIDTH bound to: 1 - type: integer 
+	Parameter IN66_WIDTH bound to: 1 - type: integer 
+	Parameter IN67_WIDTH bound to: 1 - type: integer 
+	Parameter IN68_WIDTH bound to: 1 - type: integer 
+	Parameter IN69_WIDTH bound to: 1 - type: integer 
+	Parameter IN70_WIDTH bound to: 1 - type: integer 
+	Parameter IN71_WIDTH bound to: 1 - type: integer 
+	Parameter IN72_WIDTH bound to: 1 - type: integer 
+	Parameter IN73_WIDTH bound to: 1 - type: integer 
+	Parameter IN74_WIDTH bound to: 1 - type: integer 
+	Parameter IN75_WIDTH bound to: 1 - type: integer 
+	Parameter IN76_WIDTH bound to: 1 - type: integer 
+	Parameter IN77_WIDTH bound to: 1 - type: integer 
+	Parameter IN78_WIDTH bound to: 1 - type: integer 
+	Parameter IN79_WIDTH bound to: 1 - type: integer 
+	Parameter IN80_WIDTH bound to: 1 - type: integer 
+	Parameter IN81_WIDTH bound to: 1 - type: integer 
+	Parameter IN82_WIDTH bound to: 1 - type: integer 
+	Parameter IN83_WIDTH bound to: 1 - type: integer 
+	Parameter IN84_WIDTH bound to: 1 - type: integer 
+	Parameter IN85_WIDTH bound to: 1 - type: integer 
+	Parameter IN86_WIDTH bound to: 1 - type: integer 
+	Parameter IN87_WIDTH bound to: 1 - type: integer 
+	Parameter IN88_WIDTH bound to: 1 - type: integer 
+	Parameter IN89_WIDTH bound to: 1 - type: integer 
+	Parameter IN90_WIDTH bound to: 1 - type: integer 
+	Parameter IN91_WIDTH bound to: 1 - type: integer 
+	Parameter IN92_WIDTH bound to: 1 - type: integer 
+	Parameter IN93_WIDTH bound to: 1 - type: integer 
+	Parameter IN94_WIDTH bound to: 1 - type: integer 
+	Parameter IN95_WIDTH bound to: 1 - type: integer 
+	Parameter IN96_WIDTH bound to: 1 - type: integer 
+	Parameter IN97_WIDTH bound to: 1 - type: integer 
+	Parameter IN98_WIDTH bound to: 1 - type: integer 
+	Parameter IN99_WIDTH bound to: 1 - type: integer 
+	Parameter IN100_WIDTH bound to: 1 - type: integer 
+	Parameter IN101_WIDTH bound to: 1 - type: integer 
+	Parameter IN102_WIDTH bound to: 1 - type: integer 
+	Parameter IN103_WIDTH bound to: 1 - type: integer 
+	Parameter IN104_WIDTH bound to: 1 - type: integer 
+	Parameter IN105_WIDTH bound to: 1 - type: integer 
+	Parameter IN106_WIDTH bound to: 1 - type: integer 
+	Parameter IN107_WIDTH bound to: 1 - type: integer 
+	Parameter IN108_WIDTH bound to: 1 - type: integer 
+	Parameter IN109_WIDTH bound to: 1 - type: integer 
+	Parameter IN110_WIDTH bound to: 1 - type: integer 
+	Parameter IN111_WIDTH bound to: 1 - type: integer 
+	Parameter IN112_WIDTH bound to: 1 - type: integer 
+	Parameter IN113_WIDTH bound to: 1 - type: integer 
+	Parameter IN114_WIDTH bound to: 1 - type: integer 
+	Parameter IN115_WIDTH bound to: 1 - type: integer 
+	Parameter IN116_WIDTH bound to: 1 - type: integer 
+	Parameter IN117_WIDTH bound to: 1 - type: integer 
+	Parameter IN118_WIDTH bound to: 1 - type: integer 
+	Parameter IN119_WIDTH bound to: 1 - type: integer 
+	Parameter IN120_WIDTH bound to: 1 - type: integer 
+	Parameter IN121_WIDTH bound to: 1 - type: integer 
+	Parameter IN122_WIDTH bound to: 1 - type: integer 
+	Parameter IN123_WIDTH bound to: 1 - type: integer 
+	Parameter IN124_WIDTH bound to: 1 - type: integer 
+	Parameter IN125_WIDTH bound to: 1 - type: integer 
+	Parameter IN126_WIDTH bound to: 1 - type: integer 
+	Parameter IN127_WIDTH bound to: 1 - type: integer 
+	Parameter dout_width bound to: 17 - type: integer 
+	Parameter NUM_PORTS bound to: 14 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_4_xlconcat__parameterized1' (46#1) [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'bd_43c9_concat_intr_cmc_0' (47#1) [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/ip/ip_31/synth/bd_43c9_concat_intr_cmc_0.v:60]
+INFO: [Synth 8-6157] synthesizing module 'bd_43c9_freerun_counter_0' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.runs/bd_fb99_shell_cmc_subsystem_0_synth_1/.Xil/Vivado-2876958-playmaker-MZ32-AR0-00/realtime/bd_43c9_freerun_counter_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_43c9_freerun_counter_0' (48#1) [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.runs/bd_fb99_shell_cmc_subsystem_0_synth_1/.Xil/Vivado-2876958-playmaker-MZ32-AR0-00/realtime/bd_43c9_freerun_counter_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'bd_43c9_gnd_bus_1_hbm_0' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/ip/ip_34/synth/bd_43c9_gnd_bus_1_hbm_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_7_xlconstant' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
+	Parameter CONST_VAL bound to: 1'b0 
+	Parameter CONST_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_7_xlconstant' (49#1) [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'bd_43c9_gnd_bus_1_hbm_0' (50#1) [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/ip/ip_34/synth/bd_43c9_gnd_bus_1_hbm_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'bd_43c9_gnd_bus_1_interrupts_0' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/ip/ip_35/synth/bd_43c9_gnd_bus_1_interrupts_0.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'bd_43c9_gnd_bus_1_interrupts_0' (51#1) [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/ip/ip_35/synth/bd_43c9_gnd_bus_1_interrupts_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'bd_43c9_microblaze_axi_vip_0' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.runs/bd_fb99_shell_cmc_subsystem_0_synth_1/.Xil/Vivado-2876958-playmaker-MZ32-AR0-00/realtime/bd_43c9_microblaze_axi_vip_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_43c9_microblaze_axi_vip_0' (52#1) [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.runs/bd_fb99_shell_cmc_subsystem_0_synth_1/.Xil/Vivado-2876958-playmaker-MZ32-AR0-00/realtime/bd_43c9_microblaze_axi_vip_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'bd_43c9_microblaze_cmc_0' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.runs/bd_fb99_shell_cmc_subsystem_0_synth_1/.Xil/Vivado-2876958-playmaker-MZ32-AR0-00/realtime/bd_43c9_microblaze_cmc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_43c9_microblaze_cmc_0' (53#1) [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.runs/bd_fb99_shell_cmc_subsystem_0_synth_1/.Xil/Vivado-2876958-playmaker-MZ32-AR0-00/realtime/bd_43c9_microblaze_cmc_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'microblaze_local_memory_imp_1DJ37Y' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:7446]
+INFO: [Synth 8-6157] synthesizing module 'bd_43c9_dlmb_0' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.runs/bd_fb99_shell_cmc_subsystem_0_synth_1/.Xil/Vivado-2876958-playmaker-MZ32-AR0-00/realtime/bd_43c9_dlmb_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_43c9_dlmb_0' (54#1) [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.runs/bd_fb99_shell_cmc_subsystem_0_synth_1/.Xil/Vivado-2876958-playmaker-MZ32-AR0-00/realtime/bd_43c9_dlmb_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'bd_43c9_dlmb_0' is unconnected for instance 'dlmb' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:7588]
+WARNING: [Synth 8-7023] instance 'dlmb' of module 'bd_43c9_dlmb_0' has 25 connections declared, but only 24 given [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:7588]
+INFO: [Synth 8-6157] synthesizing module 'bd_43c9_ilmb_0' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.runs/bd_fb99_shell_cmc_subsystem_0_synth_1/.Xil/Vivado-2876958-playmaker-MZ32-AR0-00/realtime/bd_43c9_ilmb_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_43c9_ilmb_0' (55#1) [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.runs/bd_fb99_shell_cmc_subsystem_0_synth_1/.Xil/Vivado-2876958-playmaker-MZ32-AR0-00/realtime/bd_43c9_ilmb_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'bd_43c9_ilmb_0' is unconnected for instance 'ilmb' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:7613]
+WARNING: [Synth 8-7023] instance 'ilmb' of module 'bd_43c9_ilmb_0' has 25 connections declared, but only 24 given [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:7613]
+INFO: [Synth 8-6157] synthesizing module 'bd_43c9_lmb_bram_0' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.runs/bd_fb99_shell_cmc_subsystem_0_synth_1/.Xil/Vivado-2876958-playmaker-MZ32-AR0-00/realtime/bd_43c9_lmb_bram_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_43c9_lmb_bram_0' (56#1) [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.runs/bd_fb99_shell_cmc_subsystem_0_synth_1/.Xil/Vivado-2876958-playmaker-MZ32-AR0-00/realtime/bd_43c9_lmb_bram_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'rsta_busy' of module 'bd_43c9_lmb_bram_0' is unconnected for instance 'lmb_bram' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:7638]
+WARNING: [Synth 8-7071] port 'rstb_busy' of module 'bd_43c9_lmb_bram_0' is unconnected for instance 'lmb_bram' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:7638]
+WARNING: [Synth 8-7023] instance 'lmb_bram' of module 'bd_43c9_lmb_bram_0' has 16 connections declared, but only 14 given [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:7638]
+INFO: [Synth 8-6157] synthesizing module 'bd_43c9_lmb_bram_if_cntlr_0' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.runs/bd_fb99_shell_cmc_subsystem_0_synth_1/.Xil/Vivado-2876958-playmaker-MZ32-AR0-00/realtime/bd_43c9_lmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_43c9_lmb_bram_if_cntlr_0' (57#1) [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.runs/bd_fb99_shell_cmc_subsystem_0_synth_1/.Xil/Vivado-2876958-playmaker-MZ32-AR0-00/realtime/bd_43c9_lmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'microblaze_local_memory_imp_1DJ37Y' (58#1) [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:7446]
+INFO: [Synth 8-6157] synthesizing module 'bd_43c9_msp432_bsl_crc_gen_0' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.runs/bd_fb99_shell_cmc_subsystem_0_synth_1/.Xil/Vivado-2876958-playmaker-MZ32-AR0-00/realtime/bd_43c9_msp432_bsl_crc_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_43c9_msp432_bsl_crc_gen_0' (59#1) [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.runs/bd_fb99_shell_cmc_subsystem_0_synth_1/.Xil/Vivado-2876958-playmaker-MZ32-AR0-00/realtime/bd_43c9_msp432_bsl_crc_gen_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'bd_43c9_psreset_cmc_0' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.runs/bd_fb99_shell_cmc_subsystem_0_synth_1/.Xil/Vivado-2876958-playmaker-MZ32-AR0-00/realtime/bd_43c9_psreset_cmc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_43c9_psreset_cmc_0' (60#1) [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.runs/bd_fb99_shell_cmc_subsystem_0_synth_1/.Xil/Vivado-2876958-playmaker-MZ32-AR0-00/realtime/bd_43c9_psreset_cmc_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'bd_43c9_psreset_cmc_0' is unconnected for instance 'psreset_cmc' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:1610]
+WARNING: [Synth 8-7023] instance 'psreset_cmc' of module 'bd_43c9_psreset_cmc_0' has 10 connections declared, but only 9 given [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:1610]
+INFO: [Synth 8-6157] synthesizing module 'qsfp_gpio_hierarchy_imp_HVJBXI' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:7689]
+INFO: [Synth 8-6157] synthesizing module 'bd_43c9_axi_gpio_qsfp_0' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.runs/bd_fb99_shell_cmc_subsystem_0_synth_1/.Xil/Vivado-2876958-playmaker-MZ32-AR0-00/realtime/bd_43c9_axi_gpio_qsfp_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_43c9_axi_gpio_qsfp_0' (61#1) [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.runs/bd_fb99_shell_cmc_subsystem_0_synth_1/.Xil/Vivado-2876958-playmaker-MZ32-AR0-00/realtime/bd_43c9_axi_gpio_qsfp_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'gpio_io_t' of module 'bd_43c9_axi_gpio_qsfp_0' is unconnected for instance 'axi_gpio_qsfp' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:7806]
+WARNING: [Synth 8-7071] port 'gpio2_io_t' of module 'bd_43c9_axi_gpio_qsfp_0' is unconnected for instance 'axi_gpio_qsfp' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:7806]
+WARNING: [Synth 8-7023] instance 'axi_gpio_qsfp' of module 'bd_43c9_axi_gpio_qsfp_0' has 26 connections declared, but only 24 given [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:7806]
+INFO: [Synth 8-6157] synthesizing module 'bd_43c9_concat_1_0' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/ip/ip_38/synth/bd_43c9_concat_1_0.v:60]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_4_xlconcat__parameterized2' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+	Parameter IN0_WIDTH bound to: 1 - type: integer 
+	Parameter IN1_WIDTH bound to: 1 - type: integer 
+	Parameter IN2_WIDTH bound to: 1 - type: integer 
+	Parameter IN3_WIDTH bound to: 1 - type: integer 
+	Parameter IN4_WIDTH bound to: 1 - type: integer 
+	Parameter IN5_WIDTH bound to: 1 - type: integer 
+	Parameter IN6_WIDTH bound to: 1 - type: integer 
+	Parameter IN7_WIDTH bound to: 1 - type: integer 
+	Parameter IN8_WIDTH bound to: 1 - type: integer 
+	Parameter IN9_WIDTH bound to: 1 - type: integer 
+	Parameter IN10_WIDTH bound to: 1 - type: integer 
+	Parameter IN11_WIDTH bound to: 1 - type: integer 
+	Parameter IN12_WIDTH bound to: 1 - type: integer 
+	Parameter IN13_WIDTH bound to: 1 - type: integer 
+	Parameter IN14_WIDTH bound to: 1 - type: integer 
+	Parameter IN15_WIDTH bound to: 1 - type: integer 
+	Parameter IN16_WIDTH bound to: 1 - type: integer 
+	Parameter IN17_WIDTH bound to: 1 - type: integer 
+	Parameter IN18_WIDTH bound to: 1 - type: integer 
+	Parameter IN19_WIDTH bound to: 1 - type: integer 
+	Parameter IN20_WIDTH bound to: 1 - type: integer 
+	Parameter IN21_WIDTH bound to: 1 - type: integer 
+	Parameter IN22_WIDTH bound to: 1 - type: integer 
+	Parameter IN23_WIDTH bound to: 1 - type: integer 
+	Parameter IN24_WIDTH bound to: 1 - type: integer 
+	Parameter IN25_WIDTH bound to: 1 - type: integer 
+	Parameter IN26_WIDTH bound to: 1 - type: integer 
+	Parameter IN27_WIDTH bound to: 1 - type: integer 
+	Parameter IN28_WIDTH bound to: 1 - type: integer 
+	Parameter IN29_WIDTH bound to: 1 - type: integer 
+	Parameter IN30_WIDTH bound to: 1 - type: integer 
+	Parameter IN31_WIDTH bound to: 1 - type: integer 
+	Parameter IN32_WIDTH bound to: 1 - type: integer 
+	Parameter IN33_WIDTH bound to: 1 - type: integer 
+	Parameter IN34_WIDTH bound to: 1 - type: integer 
+	Parameter IN35_WIDTH bound to: 1 - type: integer 
+	Parameter IN36_WIDTH bound to: 1 - type: integer 
+	Parameter IN37_WIDTH bound to: 1 - type: integer 
+	Parameter IN38_WIDTH bound to: 1 - type: integer 
+	Parameter IN39_WIDTH bound to: 1 - type: integer 
+	Parameter IN40_WIDTH bound to: 1 - type: integer 
+	Parameter IN41_WIDTH bound to: 1 - type: integer 
+	Parameter IN42_WIDTH bound to: 1 - type: integer 
+	Parameter IN43_WIDTH bound to: 1 - type: integer 
+	Parameter IN44_WIDTH bound to: 1 - type: integer 
+	Parameter IN45_WIDTH bound to: 1 - type: integer 
+	Parameter IN46_WIDTH bound to: 1 - type: integer 
+	Parameter IN47_WIDTH bound to: 1 - type: integer 
+	Parameter IN48_WIDTH bound to: 1 - type: integer 
+	Parameter IN49_WIDTH bound to: 1 - type: integer 
+	Parameter IN50_WIDTH bound to: 1 - type: integer 
+	Parameter IN51_WIDTH bound to: 1 - type: integer 
+	Parameter IN52_WIDTH bound to: 1 - type: integer 
+	Parameter IN53_WIDTH bound to: 1 - type: integer 
+	Parameter IN54_WIDTH bound to: 1 - type: integer 
+	Parameter IN55_WIDTH bound to: 1 - type: integer 
+	Parameter IN56_WIDTH bound to: 1 - type: integer 
+	Parameter IN57_WIDTH bound to: 1 - type: integer 
+	Parameter IN58_WIDTH bound to: 1 - type: integer 
+	Parameter IN59_WIDTH bound to: 1 - type: integer 
+	Parameter IN60_WIDTH bound to: 1 - type: integer 
+	Parameter IN61_WIDTH bound to: 1 - type: integer 
+	Parameter IN62_WIDTH bound to: 1 - type: integer 
+	Parameter IN63_WIDTH bound to: 1 - type: integer 
+	Parameter IN64_WIDTH bound to: 1 - type: integer 
+	Parameter IN65_WIDTH bound to: 1 - type: integer 
+	Parameter IN66_WIDTH bound to: 1 - type: integer 
+	Parameter IN67_WIDTH bound to: 1 - type: integer 
+	Parameter IN68_WIDTH bound to: 1 - type: integer 
+	Parameter IN69_WIDTH bound to: 1 - type: integer 
+	Parameter IN70_WIDTH bound to: 1 - type: integer 
+	Parameter IN71_WIDTH bound to: 1 - type: integer 
+	Parameter IN72_WIDTH bound to: 1 - type: integer 
+	Parameter IN73_WIDTH bound to: 1 - type: integer 
+	Parameter IN74_WIDTH bound to: 1 - type: integer 
+	Parameter IN75_WIDTH bound to: 1 - type: integer 
+	Parameter IN76_WIDTH bound to: 1 - type: integer 
+	Parameter IN77_WIDTH bound to: 1 - type: integer 
+	Parameter IN78_WIDTH bound to: 1 - type: integer 
+	Parameter IN79_WIDTH bound to: 1 - type: integer 
+	Parameter IN80_WIDTH bound to: 1 - type: integer 
+	Parameter IN81_WIDTH bound to: 1 - type: integer 
+	Parameter IN82_WIDTH bound to: 1 - type: integer 
+	Parameter IN83_WIDTH bound to: 1 - type: integer 
+	Parameter IN84_WIDTH bound to: 1 - type: integer 
+	Parameter IN85_WIDTH bound to: 1 - type: integer 
+	Parameter IN86_WIDTH bound to: 1 - type: integer 
+	Parameter IN87_WIDTH bound to: 1 - type: integer 
+	Parameter IN88_WIDTH bound to: 1 - type: integer 
+	Parameter IN89_WIDTH bound to: 1 - type: integer 
+	Parameter IN90_WIDTH bound to: 1 - type: integer 
+	Parameter IN91_WIDTH bound to: 1 - type: integer 
+	Parameter IN92_WIDTH bound to: 1 - type: integer 
+	Parameter IN93_WIDTH bound to: 1 - type: integer 
+	Parameter IN94_WIDTH bound to: 1 - type: integer 
+	Parameter IN95_WIDTH bound to: 1 - type: integer 
+	Parameter IN96_WIDTH bound to: 1 - type: integer 
+	Parameter IN97_WIDTH bound to: 1 - type: integer 
+	Parameter IN98_WIDTH bound to: 1 - type: integer 
+	Parameter IN99_WIDTH bound to: 1 - type: integer 
+	Parameter IN100_WIDTH bound to: 1 - type: integer 
+	Parameter IN101_WIDTH bound to: 1 - type: integer 
+	Parameter IN102_WIDTH bound to: 1 - type: integer 
+	Parameter IN103_WIDTH bound to: 1 - type: integer 
+	Parameter IN104_WIDTH bound to: 1 - type: integer 
+	Parameter IN105_WIDTH bound to: 1 - type: integer 
+	Parameter IN106_WIDTH bound to: 1 - type: integer 
+	Parameter IN107_WIDTH bound to: 1 - type: integer 
+	Parameter IN108_WIDTH bound to: 1 - type: integer 
+	Parameter IN109_WIDTH bound to: 1 - type: integer 
+	Parameter IN110_WIDTH bound to: 1 - type: integer 
+	Parameter IN111_WIDTH bound to: 1 - type: integer 
+	Parameter IN112_WIDTH bound to: 1 - type: integer 
+	Parameter IN113_WIDTH bound to: 1 - type: integer 
+	Parameter IN114_WIDTH bound to: 1 - type: integer 
+	Parameter IN115_WIDTH bound to: 1 - type: integer 
+	Parameter IN116_WIDTH bound to: 1 - type: integer 
+	Parameter IN117_WIDTH bound to: 1 - type: integer 
+	Parameter IN118_WIDTH bound to: 1 - type: integer 
+	Parameter IN119_WIDTH bound to: 1 - type: integer 
+	Parameter IN120_WIDTH bound to: 1 - type: integer 
+	Parameter IN121_WIDTH bound to: 1 - type: integer 
+	Parameter IN122_WIDTH bound to: 1 - type: integer 
+	Parameter IN123_WIDTH bound to: 1 - type: integer 
+	Parameter IN124_WIDTH bound to: 1 - type: integer 
+	Parameter IN125_WIDTH bound to: 1 - type: integer 
+	Parameter IN126_WIDTH bound to: 1 - type: integer 
+	Parameter IN127_WIDTH bound to: 1 - type: integer 
+	Parameter dout_width bound to: 5 - type: integer 
+	Parameter NUM_PORTS bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_4_xlconcat__parameterized2' (61#1) [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'bd_43c9_concat_1_0' (62#1) [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/ip/ip_38/synth/bd_43c9_concat_1_0.v:60]
+INFO: [Synth 8-6157] synthesizing module 'bd_43c9_concat_2_0' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/ip/ip_39/synth/bd_43c9_concat_2_0.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'bd_43c9_concat_2_0' (63#1) [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/ip/ip_39/synth/bd_43c9_concat_2_0.v:60]
+INFO: [Synth 8-6157] synthesizing module 'bd_43c9_gnd_bus_1_0' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/ip/ip_40/synth/bd_43c9_gnd_bus_1_0.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'bd_43c9_gnd_bus_1_0' (64#1) [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/ip/ip_40/synth/bd_43c9_gnd_bus_1_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'bd_43c9_slice_gpio1_0_0' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/ip/ip_41/synth/bd_43c9_slice_gpio1_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+	Parameter DIN_WIDTH bound to: 5 - type: integer 
+	Parameter DIN_FROM bound to: 0 - type: integer 
+	Parameter DIN_TO bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice' (65#1) [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'bd_43c9_slice_gpio1_0_0' (66#1) [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/ip/ip_41/synth/bd_43c9_slice_gpio1_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'bd_43c9_slice_gpio1_1_0' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/ip/ip_42/synth/bd_43c9_slice_gpio1_1_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice__parameterized0' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+	Parameter DIN_WIDTH bound to: 5 - type: integer 
+	Parameter DIN_FROM bound to: 1 - type: integer 
+	Parameter DIN_TO bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice__parameterized0' (66#1) [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'bd_43c9_slice_gpio1_1_0' (67#1) [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/ip/ip_42/synth/bd_43c9_slice_gpio1_1_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'bd_43c9_slice_gpio1_2_0' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/ip/ip_43/synth/bd_43c9_slice_gpio1_2_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice__parameterized1' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+	Parameter DIN_WIDTH bound to: 5 - type: integer 
+	Parameter DIN_FROM bound to: 2 - type: integer 
+	Parameter DIN_TO bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice__parameterized1' (67#1) [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'bd_43c9_slice_gpio1_2_0' (68#1) [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/ip/ip_43/synth/bd_43c9_slice_gpio1_2_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'bd_43c9_slice_gpio2_0_0' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/ip/ip_44/synth/bd_43c9_slice_gpio2_0_0.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'bd_43c9_slice_gpio2_0_0' (69#1) [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/ip/ip_44/synth/bd_43c9_slice_gpio2_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'bd_43c9_slice_gpio2_1_0' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/ip/ip_45/synth/bd_43c9_slice_gpio2_1_0.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'bd_43c9_slice_gpio2_1_0' (70#1) [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/ip/ip_45/synth/bd_43c9_slice_gpio2_1_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'bd_43c9_slice_gpio2_2_0' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/ip/ip_46/synth/bd_43c9_slice_gpio2_2_0.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'bd_43c9_slice_gpio2_2_0' (71#1) [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/ip/ip_46/synth/bd_43c9_slice_gpio2_2_0.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'qsfp_gpio_hierarchy_imp_HVJBXI' (72#1) [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:7689]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:1651]
+INFO: [Synth 8-6157] synthesizing module 'bd_43c9_reachout_axi_vip_0' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.runs/bd_fb99_shell_cmc_subsystem_0_synth_1/.Xil/Vivado-2876958-playmaker-MZ32-AR0-00/realtime/bd_43c9_reachout_axi_vip_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_43c9_reachout_axi_vip_0' (73#1) [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.runs/bd_fb99_shell_cmc_subsystem_0_synth_1/.Xil/Vivado-2876958-playmaker-MZ32-AR0-00/realtime/bd_43c9_reachout_axi_vip_0_stub.v:6]
+WARNING: [Synth 8-7071] port 's_axi_awready' of module 'bd_43c9_reachout_axi_vip_0' is unconnected for instance 'reachout_axi_vip' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:1651]
+WARNING: [Synth 8-7071] port 's_axi_wready' of module 'bd_43c9_reachout_axi_vip_0' is unconnected for instance 'reachout_axi_vip' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:1651]
+WARNING: [Synth 8-7071] port 's_axi_bresp' of module 'bd_43c9_reachout_axi_vip_0' is unconnected for instance 'reachout_axi_vip' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:1651]
+WARNING: [Synth 8-7071] port 's_axi_bvalid' of module 'bd_43c9_reachout_axi_vip_0' is unconnected for instance 'reachout_axi_vip' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:1651]
+WARNING: [Synth 8-7071] port 's_axi_arready' of module 'bd_43c9_reachout_axi_vip_0' is unconnected for instance 'reachout_axi_vip' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:1651]
+WARNING: [Synth 8-7071] port 's_axi_rdata' of module 'bd_43c9_reachout_axi_vip_0' is unconnected for instance 'reachout_axi_vip' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:1651]
+WARNING: [Synth 8-7071] port 's_axi_rresp' of module 'bd_43c9_reachout_axi_vip_0' is unconnected for instance 'reachout_axi_vip' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:1651]
+WARNING: [Synth 8-7071] port 's_axi_rlast' of module 'bd_43c9_reachout_axi_vip_0' is unconnected for instance 'reachout_axi_vip' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:1651]
+WARNING: [Synth 8-7071] port 's_axi_rvalid' of module 'bd_43c9_reachout_axi_vip_0' is unconnected for instance 'reachout_axi_vip' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:1651]
+WARNING: [Synth 8-7071] port 'm_axi_awaddr' of module 'bd_43c9_reachout_axi_vip_0' is unconnected for instance 'reachout_axi_vip' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:1651]
+WARNING: [Synth 8-7071] port 'm_axi_awlen' of module 'bd_43c9_reachout_axi_vip_0' is unconnected for instance 'reachout_axi_vip' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:1651]
+WARNING: [Synth 8-7071] port 'm_axi_awsize' of module 'bd_43c9_reachout_axi_vip_0' is unconnected for instance 'reachout_axi_vip' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:1651]
+WARNING: [Synth 8-7071] port 'm_axi_awburst' of module 'bd_43c9_reachout_axi_vip_0' is unconnected for instance 'reachout_axi_vip' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:1651]
+WARNING: [Synth 8-7071] port 'm_axi_awlock' of module 'bd_43c9_reachout_axi_vip_0' is unconnected for instance 'reachout_axi_vip' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:1651]
+WARNING: [Synth 8-7071] port 'm_axi_awcache' of module 'bd_43c9_reachout_axi_vip_0' is unconnected for instance 'reachout_axi_vip' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:1651]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'bd_43c9_reachout_axi_vip_0' is unconnected for instance 'reachout_axi_vip' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:1651]
+WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'bd_43c9_reachout_axi_vip_0' is unconnected for instance 'reachout_axi_vip' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:1651]
+WARNING: [Synth 8-7071] port 'm_axi_awqos' of module 'bd_43c9_reachout_axi_vip_0' is unconnected for instance 'reachout_axi_vip' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:1651]
+WARNING: [Synth 8-7071] port 'm_axi_awvalid' of module 'bd_43c9_reachout_axi_vip_0' is unconnected for instance 'reachout_axi_vip' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:1651]
+WARNING: [Synth 8-7071] port 'm_axi_wdata' of module 'bd_43c9_reachout_axi_vip_0' is unconnected for instance 'reachout_axi_vip' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:1651]
+WARNING: [Synth 8-7071] port 'm_axi_wstrb' of module 'bd_43c9_reachout_axi_vip_0' is unconnected for instance 'reachout_axi_vip' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:1651]
+WARNING: [Synth 8-7071] port 'm_axi_wlast' of module 'bd_43c9_reachout_axi_vip_0' is unconnected for instance 'reachout_axi_vip' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:1651]
+WARNING: [Synth 8-7071] port 'm_axi_wvalid' of module 'bd_43c9_reachout_axi_vip_0' is unconnected for instance 'reachout_axi_vip' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:1651]
+WARNING: [Synth 8-7071] port 'm_axi_bready' of module 'bd_43c9_reachout_axi_vip_0' is unconnected for instance 'reachout_axi_vip' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:1651]
+WARNING: [Synth 8-7071] port 'm_axi_araddr' of module 'bd_43c9_reachout_axi_vip_0' is unconnected for instance 'reachout_axi_vip' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:1651]
+WARNING: [Synth 8-7071] port 'm_axi_arlen' of module 'bd_43c9_reachout_axi_vip_0' is unconnected for instance 'reachout_axi_vip' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:1651]
+WARNING: [Synth 8-7071] port 'm_axi_arsize' of module 'bd_43c9_reachout_axi_vip_0' is unconnected for instance 'reachout_axi_vip' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:1651]
+WARNING: [Synth 8-7071] port 'm_axi_arburst' of module 'bd_43c9_reachout_axi_vip_0' is unconnected for instance 'reachout_axi_vip' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:1651]
+WARNING: [Synth 8-7071] port 'm_axi_arlock' of module 'bd_43c9_reachout_axi_vip_0' is unconnected for instance 'reachout_axi_vip' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:1651]
+WARNING: [Synth 8-7071] port 'm_axi_arcache' of module 'bd_43c9_reachout_axi_vip_0' is unconnected for instance 'reachout_axi_vip' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:1651]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'bd_43c9_reachout_axi_vip_0' is unconnected for instance 'reachout_axi_vip' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:1651]
+WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'bd_43c9_reachout_axi_vip_0' is unconnected for instance 'reachout_axi_vip' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:1651]
+WARNING: [Synth 8-7071] port 'm_axi_arqos' of module 'bd_43c9_reachout_axi_vip_0' is unconnected for instance 'reachout_axi_vip' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:1651]
+WARNING: [Synth 8-7071] port 'm_axi_arvalid' of module 'bd_43c9_reachout_axi_vip_0' is unconnected for instance 'reachout_axi_vip' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:1651]
+WARNING: [Synth 8-7071] port 'm_axi_rready' of module 'bd_43c9_reachout_axi_vip_0' is unconnected for instance 'reachout_axi_vip' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:1651]
+WARNING: [Synth 8-7023] instance 'reachout_axi_vip' of module 'bd_43c9_reachout_axi_vip_0' has 72 connections declared, but only 37 given [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:1651]
+INFO: [Synth 8-6157] synthesizing module 'bd_43c9_reg_map_bram_0' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.runs/bd_fb99_shell_cmc_subsystem_0_synth_1/.Xil/Vivado-2876958-playmaker-MZ32-AR0-00/realtime/bd_43c9_reg_map_bram_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_43c9_reg_map_bram_0' (74#1) [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.runs/bd_fb99_shell_cmc_subsystem_0_synth_1/.Xil/Vivado-2876958-playmaker-MZ32-AR0-00/realtime/bd_43c9_reg_map_bram_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'rsta_busy' of module 'bd_43c9_reg_map_bram_0' is unconnected for instance 'reg_map_bram' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:1689]
+WARNING: [Synth 8-7071] port 'rstb_busy' of module 'bd_43c9_reg_map_bram_0' is unconnected for instance 'reg_map_bram' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:1689]
+WARNING: [Synth 8-7023] instance 'reg_map_bram' of module 'bd_43c9_reg_map_bram_0' has 16 connections declared, but only 14 given [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:1689]
+INFO: [Synth 8-6157] synthesizing module 'reset_gen_imp_1P693MG' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:7867]
+INFO: [Synth 8-6157] synthesizing module 'bd_43c9_and_gate_0' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.runs/bd_fb99_shell_cmc_subsystem_0_synth_1/.Xil/Vivado-2876958-playmaker-MZ32-AR0-00/realtime/bd_43c9_and_gate_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_43c9_and_gate_0' (75#1) [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.runs/bd_fb99_shell_cmc_subsystem_0_synth_1/.Xil/Vivado-2876958-playmaker-MZ32-AR0-00/realtime/bd_43c9_and_gate_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'bd_43c9_reset_inverter_0' [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.runs/bd_fb99_shell_cmc_subsystem_0_synth_1/.Xil/Vivado-2876958-playmaker-MZ32-AR0-00/realtime/bd_43c9_reset_inverter_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_43c9_reset_inverter_0' (76#1) [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.runs/bd_fb99_shell_cmc_subsystem_0_synth_1/.Xil/Vivado-2876958-playmaker-MZ32-AR0-00/realtime/bd_43c9_reset_inverter_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'reset_gen_imp_1P693MG' (77#1) [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:7867]
+INFO: [Synth 8-6155] done synthesizing module 'bd_43c9' (78#1) [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/synth/bd_43c9.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'bd_fb99_shell_cmc_subsystem_0' (79#1) [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_0/ip/ip_0/synth/bd_fb99_shell_cmc_subsystem_0.v:61]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 3008.316 ; gain = 274.562 ; free physical = 44697 ; free virtual = 58384
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 3024.160 ; gain = 290.406 ; free physical = 44693 ; free virtual = 58380
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 3024.160 ; gain = 290.406 ; free physical = 44693 ; free virtual = 58380
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.06 . Memory (MB): peak = 3024.160 ; gain = 0.000 ; free physical = 44687 ; free virtual = 58375
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/ip/ip_0/bd_43c9_build_info_cmc_0/bd_43c9_build_info_cmc_0_in_context.xdc] for cell 'inst/build_info_cmc'
+Finished Parsing XDC File [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/ip/ip_0/bd_43c9_build_info_cmc_0/bd_43c9_build_info_cmc_0_in_context.xdc] for cell 'inst/build_info_cmc'
+Parsing XDC File [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/ip/ip_1/bd_43c9_build_info_host_0/bd_43c9_build_info_cmc_0_in_context.xdc] for cell 'inst/build_info_host'
+Finished Parsing XDC File [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/ip/ip_1/bd_43c9_build_info_host_0/bd_43c9_build_info_cmc_0_in_context.xdc] for cell 'inst/build_info_host'
+Parsing XDC File [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/ip/ip_2/bd_43c9_axi_gpio_timebase_0/bd_43c9_axi_gpio_timebase_0_in_context.xdc] for cell 'inst/axi_gpio_timebase'
+Finished Parsing XDC File [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/ip/ip_2/bd_43c9_axi_gpio_timebase_0/bd_43c9_axi_gpio_timebase_0_in_context.xdc] for cell 'inst/axi_gpio_timebase'
+Parsing XDC File [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/ip/ip_3/bd_43c9_axi_gpio_cmc_mb_rst_n_0/bd_43c9_axi_gpio_wdt_0_in_context.xdc] for cell 'inst/axi_gpio_cmc_mb_rst_n'
+Finished Parsing XDC File [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/ip/ip_3/bd_43c9_axi_gpio_cmc_mb_rst_n_0/bd_43c9_axi_gpio_wdt_0_in_context.xdc] for cell 'inst/axi_gpio_cmc_mb_rst_n'
+Parsing XDC File [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/ip/ip_4/bd_43c9_axi_gpio_hbm_temp_0/bd_43c9_axi_gpio_hbm_temp_0_in_context.xdc] for cell 'inst/axi_gpio_hbm_temp'
+Finished Parsing XDC File [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/ip/ip_4/bd_43c9_axi_gpio_hbm_temp_0/bd_43c9_axi_gpio_hbm_temp_0_in_context.xdc] for cell 'inst/axi_gpio_hbm_temp'
+Parsing XDC File [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/ip/ip_5/bd_43c9_axi_gpio_wdt_0/bd_43c9_axi_gpio_wdt_0_in_context.xdc] for cell 'inst/axi_gpio_wdt'
+Finished Parsing XDC File [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/ip/ip_5/bd_43c9_axi_gpio_wdt_0/bd_43c9_axi_gpio_wdt_0_in_context.xdc] for cell 'inst/axi_gpio_wdt'
+Parsing XDC File [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/ip/ip_6/bd_43c9_axi_gpio_mb_intr_0/bd_43c9_axi_gpio_mb_intr_0_in_context.xdc] for cell 'inst/axi_gpio_mb_intr'
+Finished Parsing XDC File [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/ip/ip_6/bd_43c9_axi_gpio_mb_intr_0/bd_43c9_axi_gpio_mb_intr_0_in_context.xdc] for cell 'inst/axi_gpio_mb_intr'
+Parsing XDC File [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/ip/ip_7/bd_43c9_axi_gpio_mutex_cmc_0/bd_43c9_axi_gpio_mutex_cmc_0_in_context.xdc] for cell 'inst/axi_gpio_mutex_cmc'
+Finished Parsing XDC File [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/ip/ip_7/bd_43c9_axi_gpio_mutex_cmc_0/bd_43c9_axi_gpio_mutex_cmc_0_in_context.xdc] for cell 'inst/axi_gpio_mutex_cmc'
+Parsing XDC File [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/ip/ip_8/bd_43c9_axi_gpio_mutex_host_0/bd_43c9_axi_gpio_mutex_host_0_in_context.xdc] for cell 'inst/axi_gpio_mutex_host'
+Finished Parsing XDC File [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/ip/ip_8/bd_43c9_axi_gpio_mutex_host_0/bd_43c9_axi_gpio_mutex_host_0_in_context.xdc] for cell 'inst/axi_gpio_mutex_host'
+Parsing XDC File [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/ip/ip_9/bd_43c9_axi_intc_cmc_0/bd_43c9_axi_intc_cmc_0_in_context.xdc] for cell 'inst/axi_intc_cmc'
+Finished Parsing XDC File [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/ip/ip_9/bd_43c9_axi_intc_cmc_0/bd_43c9_axi_intc_cmc_0_in_context.xdc] for cell 'inst/axi_intc_cmc'
+Parsing XDC File [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/ip/ip_10/bd_43c9_axi_intc_host_0/bd_43c9_axi_intc_host_0_in_context.xdc] for cell 'inst/axi_intc_host'
+Finished Parsing XDC File [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/ip/ip_10/bd_43c9_axi_intc_host_0/bd_43c9_axi_intc_host_0_in_context.xdc] for cell 'inst/axi_intc_host'
+Parsing XDC File [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/ip/ip_11/bd_43c9_axi_timebase_wdt_0/bd_43c9_axi_timebase_wdt_0_in_context.xdc] for cell 'inst/axi_timebase_wdt'
+Finished Parsing XDC File [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/ip/ip_11/bd_43c9_axi_timebase_wdt_0/bd_43c9_axi_timebase_wdt_0_in_context.xdc] for cell 'inst/axi_timebase_wdt'
+Parsing XDC File [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/ip/ip_12/bd_43c9_axi_uartlite_satellite_0/bd_43c9_axi_uartlite_satellite_0_in_context.xdc] for cell 'inst/axi_uartlite_satellite'
+Finished Parsing XDC File [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/ip/ip_12/bd_43c9_axi_uartlite_satellite_0/bd_43c9_axi_uartlite_satellite_0_in_context.xdc] for cell 'inst/axi_uartlite_satellite'
+Parsing XDC File [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/ip/ip_13/bd_43c9_axi_uartlite_usb_0/bd_43c9_axi_uartlite_usb_0_in_context.xdc] for cell 'inst/axi_uartlite_usb'
+Finished Parsing XDC File [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/ip/ip_13/bd_43c9_axi_uartlite_usb_0/bd_43c9_axi_uartlite_usb_0_in_context.xdc] for cell 'inst/axi_uartlite_usb'
+Parsing XDC File [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/ip/ip_15/bd_43c9_xbar_0/bd_43c9_xbar_0_in_context.xdc] for cell 'inst/axi_ic_cmc_local/xbar'
+Finished Parsing XDC File [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/ip/ip_15/bd_43c9_xbar_0/bd_43c9_xbar_0_in_context.xdc] for cell 'inst/axi_ic_cmc_local/xbar'
+Parsing XDC File [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/ip/ip_17/bd_43c9_xbar_1/bd_43c9_xbar_1_in_context.xdc] for cell 'inst/axi_ic_mgmt/xbar'
+Finished Parsing XDC File [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/ip/ip_17/bd_43c9_xbar_1/bd_43c9_xbar_1_in_context.xdc] for cell 'inst/axi_ic_mgmt/xbar'
+Parsing XDC File [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/ip/ip_18/bd_43c9_axi_bram_ctrl_firmware_0/bd_43c9_axi_bram_ctrl_firmware_0_in_context.xdc] for cell 'inst/axi_bram_ctrl_firmware'
+Finished Parsing XDC File [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/ip/ip_18/bd_43c9_axi_bram_ctrl_firmware_0/bd_43c9_axi_bram_ctrl_firmware_0_in_context.xdc] for cell 'inst/axi_bram_ctrl_firmware'
+Parsing XDC File [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/ip/ip_19/bd_43c9_dlmb_0/bd_43c9_dlmb_0_in_context.xdc] for cell 'inst/microblaze_local_memory/dlmb'
+Finished Parsing XDC File [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/ip/ip_19/bd_43c9_dlmb_0/bd_43c9_dlmb_0_in_context.xdc] for cell 'inst/microblaze_local_memory/dlmb'
+Parsing XDC File [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/ip/ip_20/bd_43c9_ilmb_0/bd_43c9_dlmb_0_in_context.xdc] for cell 'inst/microblaze_local_memory/ilmb'
+Finished Parsing XDC File [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/ip/ip_20/bd_43c9_ilmb_0/bd_43c9_dlmb_0_in_context.xdc] for cell 'inst/microblaze_local_memory/ilmb'
+Parsing XDC File [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/ip/ip_21/bd_43c9_lmb_bram_0/bd_43c9_lmb_bram_0_in_context.xdc] for cell 'inst/microblaze_local_memory/lmb_bram'
+Finished Parsing XDC File [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/ip/ip_21/bd_43c9_lmb_bram_0/bd_43c9_lmb_bram_0_in_context.xdc] for cell 'inst/microblaze_local_memory/lmb_bram'
+Parsing XDC File [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/ip/ip_22/bd_43c9_lmb_bram_if_cntlr_0/bd_43c9_lmb_bram_if_cntlr_0_in_context.xdc] for cell 'inst/microblaze_local_memory/lmb_bram_if_cntlr'
+Finished Parsing XDC File [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/ip/ip_22/bd_43c9_lmb_bram_if_cntlr_0/bd_43c9_lmb_bram_if_cntlr_0_in_context.xdc] for cell 'inst/microblaze_local_memory/lmb_bram_if_cntlr'
+Parsing XDC File [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/ip/ip_23/bd_43c9_microblaze_cmc_0/bd_43c9_microblaze_cmc_0_in_context.xdc] for cell 'inst/microblaze_cmc'
+Finished Parsing XDC File [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/ip/ip_23/bd_43c9_microblaze_cmc_0/bd_43c9_microblaze_cmc_0_in_context.xdc] for cell 'inst/microblaze_cmc'
+Parsing XDC File [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/ip/ip_24/bd_43c9_microblaze_axi_vip_0/bd_43c9_microblaze_axi_vip_0_in_context.xdc] for cell 'inst/microblaze_axi_vip'
+Finished Parsing XDC File [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/ip/ip_24/bd_43c9_microblaze_axi_vip_0/bd_43c9_microblaze_axi_vip_0_in_context.xdc] for cell 'inst/microblaze_axi_vip'
+Parsing XDC File [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/ip/ip_25/bd_43c9_reachout_axi_vip_0/bd_43c9_reachout_axi_vip_0_in_context.xdc] for cell 'inst/reachout_axi_vip'
+Finished Parsing XDC File [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/ip/ip_25/bd_43c9_reachout_axi_vip_0/bd_43c9_reachout_axi_vip_0_in_context.xdc] for cell 'inst/reachout_axi_vip'
+Parsing XDC File [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/ip/ip_26/bd_43c9_msp432_bsl_crc_gen_0/bd_43c9_msp432_bsl_crc_gen_0_in_context.xdc] for cell 'inst/msp432_bsl_crc_gen'
+Finished Parsing XDC File [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/ip/ip_26/bd_43c9_msp432_bsl_crc_gen_0/bd_43c9_msp432_bsl_crc_gen_0_in_context.xdc] for cell 'inst/msp432_bsl_crc_gen'
+Parsing XDC File [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/ip/ip_27/bd_43c9_psreset_cmc_0/bd_43c9_psreset_cmc_0_in_context.xdc] for cell 'inst/psreset_cmc'
+Finished Parsing XDC File [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/ip/ip_27/bd_43c9_psreset_cmc_0/bd_43c9_psreset_cmc_0_in_context.xdc] for cell 'inst/psreset_cmc'
+Parsing XDC File [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/ip/ip_28/bd_43c9_reg_map_bram_0/bd_43c9_reg_map_bram_0_in_context.xdc] for cell 'inst/reg_map_bram'
+Finished Parsing XDC File [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/ip/ip_28/bd_43c9_reg_map_bram_0/bd_43c9_reg_map_bram_0_in_context.xdc] for cell 'inst/reg_map_bram'
+Parsing XDC File [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/ip/ip_29/bd_43c9_axi_bram_ctrl_regmap_cmc_0/bd_43c9_axi_bram_ctrl_regmap_cmc_0_in_context.xdc] for cell 'inst/axi_bram_ctrl_regmap_cmc'
+Finished Parsing XDC File [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/ip/ip_29/bd_43c9_axi_bram_ctrl_regmap_cmc_0/bd_43c9_axi_bram_ctrl_regmap_cmc_0_in_context.xdc] for cell 'inst/axi_bram_ctrl_regmap_cmc'
+Parsing XDC File [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/ip/ip_30/bd_43c9_axi_bram_ctrl_regmap_host_0/bd_43c9_axi_bram_ctrl_regmap_cmc_0_in_context.xdc] for cell 'inst/axi_bram_ctrl_regmap_host'
+Finished Parsing XDC File [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/ip/ip_30/bd_43c9_axi_bram_ctrl_regmap_host_0/bd_43c9_axi_bram_ctrl_regmap_cmc_0_in_context.xdc] for cell 'inst/axi_bram_ctrl_regmap_host'
+Parsing XDC File [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/ip/ip_36/bd_43c9_freerun_counter_0/bd_43c9_freerun_counter_0_in_context.xdc] for cell 'inst/freerun_counter'
+Finished Parsing XDC File [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/ip/ip_36/bd_43c9_freerun_counter_0/bd_43c9_freerun_counter_0_in_context.xdc] for cell 'inst/freerun_counter'
+Parsing XDC File [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/ip/ip_37/bd_43c9_axi_gpio_qsfp_0/bd_43c9_axi_gpio_qsfp_0_in_context.xdc] for cell 'inst/qsfp_gpio_hierarchy/axi_gpio_qsfp'
+Finished Parsing XDC File [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/ip/ip_37/bd_43c9_axi_gpio_qsfp_0/bd_43c9_axi_gpio_qsfp_0_in_context.xdc] for cell 'inst/qsfp_gpio_hierarchy/axi_gpio_qsfp'
+Parsing XDC File [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/ip/ip_47/bd_43c9_and_gate_0/bd_43c9_and_gate_0_in_context.xdc] for cell 'inst/reset_gen/and_gate'
+Finished Parsing XDC File [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/ip/ip_47/bd_43c9_and_gate_0/bd_43c9_and_gate_0_in_context.xdc] for cell 'inst/reset_gen/and_gate'
+Parsing XDC File [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/ip/ip_48/bd_43c9_reset_inverter_0/bd_43c9_reset_inverter_0_in_context.xdc] for cell 'inst/reset_gen/reset_inverter'
+Finished Parsing XDC File [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_1/ip/ip_48/bd_43c9_reset_inverter_0/bd_43c9_reset_inverter_0_in_context.xdc] for cell 'inst/reset_gen/reset_inverter'
+Parsing XDC File [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_0/ip/ip_0/synth/bd_fb99_shell_cmc_subsystem_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_0/ip/ip_0/synth/bd_fb99_shell_cmc_subsystem_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.runs/bd_fb99_shell_cmc_subsystem_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.runs/bd_fb99_shell_cmc_subsystem_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3125.848 ; gain = 0.000 ; free physical = 44574 ; free virtual = 58261
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3125.848 ; gain = 0.000 ; free physical = 44573 ; free virtual = 58261
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 3125.848 ; gain = 392.094 ; free physical = 44670 ; free virtual = 58357
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcu200-fsgd2104-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 3125.848 ; gain = 392.094 ; free physical = 44670 ; free virtual = 58357
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/build_info_cmc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/build_info_host. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axi_gpio_timebase. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axi_gpio_cmc_mb_rst_n. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axi_gpio_hbm_temp. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axi_gpio_wdt. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axi_gpio_mb_intr. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axi_gpio_mutex_cmc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axi_gpio_mutex_host. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axi_intc_cmc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axi_intc_host. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axi_timebase_wdt. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axi_uartlite_satellite. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axi_uartlite_usb. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axi_ic_cmc_local/xbar. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axi_ic_cmc_local. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axi_ic_mgmt/xbar. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axi_ic_mgmt. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axi_bram_ctrl_firmware. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/microblaze_local_memory/dlmb. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/microblaze_local_memory/ilmb. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/microblaze_local_memory/lmb_bram. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/microblaze_local_memory/lmb_bram_if_cntlr. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/microblaze_cmc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/microblaze_axi_vip. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/reachout_axi_vip. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/msp432_bsl_crc_gen. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/psreset_cmc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/reg_map_bram. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axi_bram_ctrl_regmap_cmc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axi_bram_ctrl_regmap_host. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/concat_intr_cmc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/concat_hbm_temp. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/concat_host_interrupts. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/gnd_bus_1_hbm. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/gnd_bus_1_interrupts. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/freerun_counter. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/qsfp_gpio_hierarchy/axi_gpio_qsfp. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/qsfp_gpio_hierarchy/concat_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/qsfp_gpio_hierarchy/concat_2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/qsfp_gpio_hierarchy/gnd_bus_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/qsfp_gpio_hierarchy/slice_gpio1_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/qsfp_gpio_hierarchy/slice_gpio1_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/qsfp_gpio_hierarchy/slice_gpio1_2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/qsfp_gpio_hierarchy/slice_gpio2_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/qsfp_gpio_hierarchy/slice_gpio2_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/qsfp_gpio_hierarchy/slice_gpio2_2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/reset_gen/and_gate. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/reset_gen/reset_inverter. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 3125.848 ; gain = 392.094 ; free physical = 44670 ; free virtual = 58357
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 3125.848 ; gain = 392.094 ; free physical = 44671 ; free virtual = 58360
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 6840 (col length:120)
+BRAMs: 4320 (col length: RAMB18 360 RAMB36 180)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 3125.848 ; gain = 392.094 ; free physical = 44659 ; free virtual = 58352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:54 . Memory (MB): peak = 3427.145 ; gain = 693.391 ; free physical = 44212 ; free virtual = 57905
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:54 . Memory (MB): peak = 3428.145 ; gain = 694.391 ; free physical = 44211 ; free virtual = 57904
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:55 . Memory (MB): peak = 3448.184 ; gain = 714.430 ; free physical = 44208 ; free virtual = 57901
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:57 . Memory (MB): peak = 3454.121 ; gain = 720.367 ; free physical = 44207 ; free virtual = 57900
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:57 . Memory (MB): peak = 3454.121 ; gain = 720.367 ; free physical = 44207 ; free virtual = 57900
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:57 . Memory (MB): peak = 3454.121 ; gain = 720.367 ; free physical = 44207 ; free virtual = 57900
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:57 . Memory (MB): peak = 3454.121 ; gain = 720.367 ; free physical = 44207 ; free virtual = 57900
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:57 . Memory (MB): peak = 3454.121 ; gain = 720.367 ; free physical = 44207 ; free virtual = 57900
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:57 . Memory (MB): peak = 3454.121 ; gain = 720.367 ; free physical = 44207 ; free virtual = 57900
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+------------------------------------+----------+
+|      |BlackBox name                       |Instances |
++------+------------------------------------+----------+
+|1     |bd_43c9_xbar_0                      |         1|
+|2     |bd_43c9_xbar_1                      |         1|
+|3     |bd_43c9_axi_bram_ctrl_firmware_0    |         1|
+|4     |bd_43c9_axi_bram_ctrl_regmap_cmc_0  |         1|
+|5     |bd_43c9_axi_bram_ctrl_regmap_host_0 |         1|
+|6     |bd_43c9_axi_gpio_cmc_mb_rst_n_0     |         1|
+|7     |bd_43c9_axi_gpio_hbm_temp_0         |         1|
+|8     |bd_43c9_axi_gpio_mb_intr_0          |         1|
+|9     |bd_43c9_axi_gpio_mutex_cmc_0        |         1|
+|10    |bd_43c9_axi_gpio_mutex_host_0       |         1|
+|11    |bd_43c9_axi_gpio_timebase_0         |         1|
+|12    |bd_43c9_axi_gpio_wdt_0              |         1|
+|13    |bd_43c9_axi_intc_cmc_0              |         1|
+|14    |bd_43c9_axi_intc_host_0             |         1|
+|15    |bd_43c9_axi_timebase_wdt_0          |         1|
+|16    |bd_43c9_axi_uartlite_satellite_0    |         1|
+|17    |bd_43c9_axi_uartlite_usb_0          |         1|
+|18    |bd_43c9_build_info_cmc_0            |         1|
+|19    |bd_43c9_build_info_host_0           |         1|
+|20    |bd_43c9_freerun_counter_0           |         1|
+|21    |bd_43c9_microblaze_axi_vip_0        |         1|
+|22    |bd_43c9_microblaze_cmc_0            |         1|
+|23    |bd_43c9_msp432_bsl_crc_gen_0        |         1|
+|24    |bd_43c9_psreset_cmc_0               |         1|
+|25    |bd_43c9_reachout_axi_vip_0          |         1|
+|26    |bd_43c9_reg_map_bram_0              |         1|
+|27    |bd_43c9_dlmb_0                      |         1|
+|28    |bd_43c9_ilmb_0                      |         1|
+|29    |bd_43c9_lmb_bram_0                  |         1|
+|30    |bd_43c9_lmb_bram_if_cntlr_0         |         1|
+|31    |bd_43c9_axi_gpio_qsfp_0             |         1|
+|32    |bd_43c9_and_gate_0                  |         1|
+|33    |bd_43c9_reset_inverter_0            |         1|
++------+------------------------------------+----------+
+
+Report Cell Usage: 
++------+----------------------------------+------+
+|      |Cell                              |Count |
++------+----------------------------------+------+
+|1     |bd_43c9_and_gate                  |     1|
+|2     |bd_43c9_axi_bram_ctrl_firmware    |     1|
+|3     |bd_43c9_axi_bram_ctrl_regmap_cmc  |     1|
+|4     |bd_43c9_axi_bram_ctrl_regmap_host |     1|
+|5     |bd_43c9_axi_gpio_cmc_mb_rst_n     |     1|
+|6     |bd_43c9_axi_gpio_hbm_temp         |     1|
+|7     |bd_43c9_axi_gpio_mb_intr          |     1|
+|8     |bd_43c9_axi_gpio_mutex_cmc        |     1|
+|9     |bd_43c9_axi_gpio_mutex_host       |     1|
+|10    |bd_43c9_axi_gpio_qsfp             |     1|
+|11    |bd_43c9_axi_gpio_timebase         |     1|
+|12    |bd_43c9_axi_gpio_wdt              |     1|
+|13    |bd_43c9_axi_intc_cmc              |     1|
+|14    |bd_43c9_axi_intc_host             |     1|
+|15    |bd_43c9_axi_timebase_wdt          |     1|
+|16    |bd_43c9_axi_uartlite_satellite    |     1|
+|17    |bd_43c9_axi_uartlite_usb          |     1|
+|18    |bd_43c9_build_info_cmc            |     1|
+|19    |bd_43c9_build_info_host           |     1|
+|20    |bd_43c9_dlmb                      |     1|
+|21    |bd_43c9_freerun_counter           |     1|
+|22    |bd_43c9_ilmb                      |     1|
+|23    |bd_43c9_lmb_bram                  |     1|
+|24    |bd_43c9_lmb_bram_if_cntlr         |     1|
+|25    |bd_43c9_microblaze_axi_vip        |     1|
+|26    |bd_43c9_microblaze_cmc            |     1|
+|27    |bd_43c9_msp432_bsl_crc_gen        |     1|
+|28    |bd_43c9_psreset_cmc               |     1|
+|29    |bd_43c9_reachout_axi_vip          |     1|
+|30    |bd_43c9_reg_map_bram              |     1|
+|31    |bd_43c9_reset_inverter            |     1|
+|32    |bd_43c9_xbar                      |     2|
++------+----------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:57 . Memory (MB): peak = 3454.121 ; gain = 720.367 ; free physical = 44207 ; free virtual = 57900
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:00:50 . Memory (MB): peak = 3454.121 ; gain = 618.680 ; free physical = 44235 ; free virtual = 57928
+Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:57 . Memory (MB): peak = 3454.129 ; gain = 720.367 ; free physical = 44235 ; free virtual = 57928
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3454.129 ; gain = 0.000 ; free physical = 44320 ; free virtual = 58013
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Generating merged BMM file for the design top 'bd_fb99_shell_cmc_subsystem_0'...
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3528.473 ; gain = 0.000 ; free physical = 44226 ; free virtual = 57919
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+181 Infos, 77 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:44 ; elapsed = 00:01:19 . Memory (MB): peak = 3542.410 ; gain = 1170.555 ; free physical = 44357 ; free virtual = 58050
+INFO: [Common 17-1381] The checkpoint '/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.runs/bd_fb99_shell_cmc_subsystem_0_synth_1/bd_fb99_shell_cmc_subsystem_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP bd_fb99_shell_cmc_subsystem_0, cache-ID = 80c8b94c32ced3a6
+INFO: [Coretcl 2-1174] Renamed 50 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_AU200/corundum-trico.runs/bd_fb99_shell_cmc_subsystem_0_synth_1/bd_fb99_shell_cmc_subsystem_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file bd_fb99_shell_cmc_subsystem_0_utilization_synth.rpt -pb bd_fb99_shell_cmc_subsystem_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Jan 15 01:35:35 2025...

@@ -1,0 +1,2006 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Wed Mar 26 16:41:19 2025
+| Host         : playmaker-MZ32-AR0-00 running 64-bit Ubuntu 22.04.5 LTS
+| Command      : report_methodology -file Monkey_X_NIC_methodology_drc_routed.rpt -pb Monkey_X_NIC_methodology_drc_routed.pb -rpx Monkey_X_NIC_methodology_drc_routed.rpx
+| Design       : Monkey_X_NIC
+| Device       : xcu200-fsgd2104-2-e
+| Speed File   : -2
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 362
++-----------+------------------+-------------------------------------------------------------------+------------+
+| Rule      | Severity         | Description                                                       | Violations |
++-----------+------------------+-------------------------------------------------------------------+------------+
+| TIMING-54 | Critical Warning | Scoped false path or clock group constraint between clocks        | 2          |
+| AVAL-324  | Warning          | Hard_blocks_needs_LOCs                                            | 5          |
+| LUTAR-1   | Warning          | LUT drives async reset alert                                      | 14         |
+| SYNTH-6   | Warning          | Timing of a RAM block might be sub-optimal                        | 43         |
+| TIMING-9  | Warning          | Unknown CDC Logic                                                 | 1          |
+| TIMING-20 | Warning          | Non-clocked latch                                                 | 265        |
+| XDCH-2    | Warning          | Same min and max delay values on IO port                          | 26         |
+| CLKC-40   | Advisory         | Substitute PLLE4 for MMCME4 check                                 | 1          |
+| CLKC-56   | Advisory         | MMCME4 with global clock driver has no LOC                        | 1          |
+| XDCV-2    | Advisory         | Incomplete constraint coverage due to missing replicated objects. | 4          |
++-----------+------------------+-------------------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-54#1 Critical Warning
+Scoped false path or clock group constraint between clocks  
+A scoped Clock Group timing constraint is set between clocks pcie_mgt_refclk_1 and pcie4_uscale_plus_inst/inst/pcie4_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_clk_i/bufg_gt_intclk/O (see constraint position 391 in the Timing Constraint window in Vivado IDE). It is not recommended to define such scoped constraints between clocks as the constraint impacts timing paths outside of the scope. 
+Related violations: <none>
+
+TIMING-54#2 Critical Warning
+Scoped false path or clock group constraint between clocks  
+A scoped Clock Group timing constraint is set between clocks pcie_mgt_refclk_1 and pipe_clk (see constraint position 394 in the Timing Constraint window in Vivado IDE). It is not recommended to define such scoped constraints between clocks as the constraint impacts timing paths outside of the scope. 
+Related violations: <none>
+
+AVAL-324#1 Warning
+Hard_blocks_needs_LOCs  
+The hard block GTYE4_COMMON cell pcie4_uscale_plus_inst/inst/pcie4_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/pcie4_uscale_plus_0_gt_i/inst/gen_gtwizard_gtye4_top.pcie4_uscale_plus_0_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_common.gen_common_container[29].gen_enabled_common.gtye4_common_wrapper_inst/common_inst/gtye4_common_gen.GTYE4_COMMON_PRIM_INST is missing a valid LOC constraint for placement assignment, normally supplied by IP generation or manually assigned using the LOC property. Unguided placement of this block may cause problems in routing. Please set a valid LOC for this block to avoid these problem.
+Related violations: <none>
+
+AVAL-324#2 Warning
+Hard_blocks_needs_LOCs  
+The hard block GTYE4_COMMON cell pcie4_uscale_plus_inst/inst/pcie4_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/pcie4_uscale_plus_0_gt_i/inst/gen_gtwizard_gtye4_top.pcie4_uscale_plus_0_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_common.gen_common_container[30].gen_enabled_common.gtye4_common_wrapper_inst/common_inst/gtye4_common_gen.GTYE4_COMMON_PRIM_INST is missing a valid LOC constraint for placement assignment, normally supplied by IP generation or manually assigned using the LOC property. Unguided placement of this block may cause problems in routing. Please set a valid LOC for this block to avoid these problem.
+Related violations: <none>
+
+AVAL-324#3 Warning
+Hard_blocks_needs_LOCs  
+The hard block GTYE4_COMMON cell pcie4_uscale_plus_inst/inst/pcie4_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/pcie4_uscale_plus_0_gt_i/inst/gen_gtwizard_gtye4_top.pcie4_uscale_plus_0_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_common.gen_common_container[31].gen_enabled_common.gtye4_common_wrapper_inst/common_inst/gtye4_common_gen.GTYE4_COMMON_PRIM_INST is missing a valid LOC constraint for placement assignment, normally supplied by IP generation or manually assigned using the LOC property. Unguided placement of this block may cause problems in routing. Please set a valid LOC for this block to avoid these problem.
+Related violations: <none>
+
+AVAL-324#4 Warning
+Hard_blocks_needs_LOCs  
+The hard block GTYE4_COMMON cell pcie4_uscale_plus_inst/inst/pcie4_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/pcie4_uscale_plus_0_gt_i/inst/gen_gtwizard_gtye4_top.pcie4_uscale_plus_0_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_common.gen_common_container[32].gen_enabled_common.gtye4_common_wrapper_inst/common_inst/gtye4_common_gen.GTYE4_COMMON_PRIM_INST is missing a valid LOC constraint for placement assignment, normally supplied by IP generation or manually assigned using the LOC property. Unguided placement of this block may cause problems in routing. Please set a valid LOC for this block to avoid these problem.
+Related violations: <none>
+
+AVAL-324#5 Warning
+Hard_blocks_needs_LOCs  
+The hard block GTYE4_COMMON cell qsfp0_cmac_inst/gty_ch_1/xcvr_gty_com.cmac_gty_full_inst/inst/gen_gtwizard_gtye4_top.cmac_gty_full_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_common.gen_common_container[29].gen_enabled_common.gtye4_common_wrapper_inst/common_inst/gtye4_common_gen.GTYE4_COMMON_PRIM_INST is missing a valid LOC constraint for placement assignment, normally supplied by IP generation or manually assigned using the LOC property. Unguided placement of this block may cause problems in routing. Please set a valid LOC for this block to avoid these problem.
+Related violations: <none>
+
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell clk_mmcm_inst_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) clk_mmcm_inst/RST. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#2 Warning
+LUT drives async reset alert  
+LUT cell core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/i___548, with 2 or more inputs, drives asynchronous preset/clear pin(s) core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/o_pop_data_reg2_reg[0]/PRE,
+core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/o_pop_data_reg2_reg[10]/PRE,
+core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/o_pop_data_reg2_reg[11]/PRE,
+core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/o_pop_data_reg2_reg[12]/PRE,
+core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/o_pop_data_reg2_reg[13]/PRE,
+core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/o_pop_data_reg2_reg[14]/PRE,
+core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/o_pop_data_reg2_reg[15]/PRE,
+core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/o_pop_data_reg2_reg[17]/PRE,
+core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/o_pop_data_reg2_reg[1]/PRE,
+core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/o_pop_data_reg2_reg[2]/PRE,
+core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/o_pop_data_reg2_reg[3]/PRE,
+core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/o_pop_data_reg2_reg[4]/PRE,
+core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/o_pop_data_reg2_reg[5]/PRE,
+core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/o_pop_data_reg2_reg[6]/PRE,
+core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/o_pop_out_reg2_reg/CLR
+ (the first 15 of 18 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#3 Warning
+LUT drives async reset alert  
+LUT cell pcie4_uscale_plus_inst/inst/pcie4_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/intclk_rrst_n_r[4]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) pcie4_uscale_plus_inst/inst/pcie4_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_rst_i/intclk_rrst_n_r_reg[0]/CLR,
+pcie4_uscale_plus_inst/inst/pcie4_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_rst_i/intclk_rrst_n_r_reg[1]/CLR,
+pcie4_uscale_plus_inst/inst/pcie4_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_rst_i/intclk_rrst_n_r_reg[2]/CLR,
+pcie4_uscale_plus_inst/inst/pcie4_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_rst_i/intclk_rrst_n_r_reg[3]/CLR
+pcie4_uscale_plus_inst/inst/pcie4_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_rst_i/intclk_rrst_n_r_reg[4]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#4 Warning
+LUT drives async reset alert  
+LUT cell pcie4_uscale_plus_inst/inst/pcie4_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/pcie4_uscale_plus_0_gt_i/inst/gen_gtwizard_gtye4_top.pcie4_uscale_plus_0_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[0].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_9_gtye4_cpll_cal_inst/reset_synchronizer_resetin_tx_inst/rst_in_meta_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) pcie4_uscale_plus_inst/inst/pcie4_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/pcie4_uscale_plus_0_gt_i/inst/gen_gtwizard_gtye4_top.pcie4_uscale_plus_0_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[0].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_9_gtye4_cpll_cal_inst/reset_synchronizer_resetin_tx_inst/rst_in_meta_reg/PRE,
+pcie4_uscale_plus_inst/inst/pcie4_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/pcie4_uscale_plus_0_gt_i/inst/gen_gtwizard_gtye4_top.pcie4_uscale_plus_0_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[0].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_9_gtye4_cpll_cal_inst/reset_synchronizer_resetin_tx_inst/rst_in_out_reg/PRE,
+pcie4_uscale_plus_inst/inst/pcie4_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/pcie4_uscale_plus_0_gt_i/inst/gen_gtwizard_gtye4_top.pcie4_uscale_plus_0_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[0].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_9_gtye4_cpll_cal_inst/reset_synchronizer_resetin_tx_inst/rst_in_sync1_reg/PRE,
+pcie4_uscale_plus_inst/inst/pcie4_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/pcie4_uscale_plus_0_gt_i/inst/gen_gtwizard_gtye4_top.pcie4_uscale_plus_0_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[0].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_9_gtye4_cpll_cal_inst/reset_synchronizer_resetin_tx_inst/rst_in_sync2_reg/PRE,
+pcie4_uscale_plus_inst/inst/pcie4_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/pcie4_uscale_plus_0_gt_i/inst/gen_gtwizard_gtye4_top.pcie4_uscale_plus_0_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[0].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_9_gtye4_cpll_cal_inst/reset_synchronizer_resetin_tx_inst/rst_in_sync3_reg/PRE,
+pcie4_uscale_plus_inst/inst/pcie4_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/pcie4_uscale_plus_0_gt_i/inst/gen_gtwizard_gtye4_top.pcie4_uscale_plus_0_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[10].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_9_gtye4_cpll_cal_inst/reset_synchronizer_resetin_tx_inst/rst_in_meta_reg/PRE,
+pcie4_uscale_plus_inst/inst/pcie4_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/pcie4_uscale_plus_0_gt_i/inst/gen_gtwizard_gtye4_top.pcie4_uscale_plus_0_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[10].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_9_gtye4_cpll_cal_inst/reset_synchronizer_resetin_tx_inst/rst_in_out_reg/PRE,
+pcie4_uscale_plus_inst/inst/pcie4_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/pcie4_uscale_plus_0_gt_i/inst/gen_gtwizard_gtye4_top.pcie4_uscale_plus_0_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[10].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_9_gtye4_cpll_cal_inst/reset_synchronizer_resetin_tx_inst/rst_in_sync1_reg/PRE,
+pcie4_uscale_plus_inst/inst/pcie4_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/pcie4_uscale_plus_0_gt_i/inst/gen_gtwizard_gtye4_top.pcie4_uscale_plus_0_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[10].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_9_gtye4_cpll_cal_inst/reset_synchronizer_resetin_tx_inst/rst_in_sync2_reg/PRE,
+pcie4_uscale_plus_inst/inst/pcie4_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/pcie4_uscale_plus_0_gt_i/inst/gen_gtwizard_gtye4_top.pcie4_uscale_plus_0_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[10].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_9_gtye4_cpll_cal_inst/reset_synchronizer_resetin_tx_inst/rst_in_sync3_reg/PRE,
+pcie4_uscale_plus_inst/inst/pcie4_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/pcie4_uscale_plus_0_gt_i/inst/gen_gtwizard_gtye4_top.pcie4_uscale_plus_0_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[11].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_9_gtye4_cpll_cal_inst/reset_synchronizer_resetin_tx_inst/rst_in_meta_reg/PRE,
+pcie4_uscale_plus_inst/inst/pcie4_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/pcie4_uscale_plus_0_gt_i/inst/gen_gtwizard_gtye4_top.pcie4_uscale_plus_0_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[11].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_9_gtye4_cpll_cal_inst/reset_synchronizer_resetin_tx_inst/rst_in_out_reg/PRE,
+pcie4_uscale_plus_inst/inst/pcie4_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/pcie4_uscale_plus_0_gt_i/inst/gen_gtwizard_gtye4_top.pcie4_uscale_plus_0_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[11].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_9_gtye4_cpll_cal_inst/reset_synchronizer_resetin_tx_inst/rst_in_sync1_reg/PRE,
+pcie4_uscale_plus_inst/inst/pcie4_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/pcie4_uscale_plus_0_gt_i/inst/gen_gtwizard_gtye4_top.pcie4_uscale_plus_0_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[11].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_9_gtye4_cpll_cal_inst/reset_synchronizer_resetin_tx_inst/rst_in_sync2_reg/PRE,
+pcie4_uscale_plus_inst/inst/pcie4_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/pcie4_uscale_plus_0_gt_i/inst/gen_gtwizard_gtye4_top.pcie4_uscale_plus_0_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[11].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_9_gtye4_cpll_cal_inst/reset_synchronizer_resetin_tx_inst/rst_in_sync3_reg/PRE
+ (the first 15 of 80 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#5 Warning
+LUT drives async reset alert  
+LUT cell pcie4_uscale_plus_inst/inst/pcie4_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_rst_i/bufg_gt_userclk_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) pcie4_uscale_plus_inst/inst/pcie4_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/pcie4_uscale_plus_0_gt_i/inst/gen_gtwizard_gtye4_top.pcie4_uscale_plus_0_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[32].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/BUFG_GT_SYNC_3/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#6 Warning
+LUT drives async reset alert  
+LUT cell pcie4_uscale_plus_inst/inst/pcie4_uscale_plus_0_pcie_4_0_pipe_inst/pipe_tx_rate_ff[1]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) pcie4_uscale_plus_inst/inst/as_mac_in_detect_ff1_reg/PRE,
+pcie4_uscale_plus_inst/inst/as_mac_in_detect_ff_reg/PRE,
+pcie4_uscale_plus_inst/inst/as_mac_in_detect_user_reg/PRE,
+pcie4_uscale_plus_inst/inst/pipe_tx_rate_ff_reg[0]/CLR,
+pcie4_uscale_plus_inst/inst/pipe_tx_rate_ff_reg[1]/CLR
+pcie4_uscale_plus_inst/inst/speed_change_in_progress_reg/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#7 Warning
+LUT drives async reset alert  
+LUT cell pcie4_uscale_plus_inst/inst/pcie4_uscale_plus_0_pcie_4_0_pipe_inst/user_reset_cdc_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) pcie4_uscale_plus_inst/inst/user_reset_cdc/arststages_ff_reg[0]/PRE,
+pcie4_uscale_plus_inst/inst/user_reset_cdc/arststages_ff_reg[1]/PRE
+pcie4_uscale_plus_inst/inst/user_reset_reg/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#8 Warning
+LUT drives async reset alert  
+LUT cell qsfp0_cmac_inst/gty_ch_1/sync_reset_rx_reset_inst/sync_reg[0]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) qsfp0_cmac_inst/gty_ch_4/sync_reset_rx_reset_inst/sync_reg_reg[0]/PRE,
+qsfp0_cmac_inst/gty_ch_4/sync_reset_rx_reset_inst/sync_reg_reg[1]/PRE,
+qsfp0_cmac_inst/gty_ch_4/sync_reset_rx_reset_inst/sync_reg_reg[2]/PRE
+qsfp0_cmac_inst/gty_ch_4/sync_reset_rx_reset_inst/sync_reg_reg[3]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#9 Warning
+LUT drives async reset alert  
+LUT cell qsfp0_cmac_inst/gty_ch_1/sync_reset_rx_reset_inst/sync_reg[3]_i_1__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) qsfp0_cmac_inst/gty_ch_1/sync_reset_rx_reset_inst/sync_reg_reg[0]/PRE,
+qsfp0_cmac_inst/gty_ch_1/sync_reset_rx_reset_inst/sync_reg_reg[1]/PRE,
+qsfp0_cmac_inst/gty_ch_1/sync_reset_rx_reset_inst/sync_reg_reg[2]/PRE
+qsfp0_cmac_inst/gty_ch_1/sync_reset_rx_reset_inst/sync_reg_reg[3]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#10 Warning
+LUT drives async reset alert  
+LUT cell qsfp0_cmac_inst/gty_ch_1/sync_reset_tx_reset_inst/sync_reg[0]_i_1__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) qsfp0_cmac_inst/gty_ch_4/sync_reset_tx_reset_inst/sync_reg_reg[0]/PRE,
+qsfp0_cmac_inst/gty_ch_4/sync_reset_tx_reset_inst/sync_reg_reg[1]/PRE,
+qsfp0_cmac_inst/gty_ch_4/sync_reset_tx_reset_inst/sync_reg_reg[2]/PRE
+qsfp0_cmac_inst/gty_ch_4/sync_reset_tx_reset_inst/sync_reg_reg[3]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#11 Warning
+LUT drives async reset alert  
+LUT cell qsfp0_cmac_inst/gty_ch_2/sync_reg[3]_i_1__2, with 2 or more inputs, drives asynchronous preset/clear pin(s) qsfp0_cmac_inst/sync_reset_rx_rst_inst/sync_reg_reg[0]/PRE,
+qsfp0_cmac_inst/sync_reset_rx_rst_inst/sync_reg_reg[1]/PRE,
+qsfp0_cmac_inst/sync_reset_rx_rst_inst/sync_reg_reg[2]/PRE
+qsfp0_cmac_inst/sync_reset_rx_rst_inst/sync_reg_reg[3]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#12 Warning
+LUT drives async reset alert  
+LUT cell qsfp0_cmac_inst/gty_ch_2/sync_reg[3]_i_1__3, with 2 or more inputs, drives asynchronous preset/clear pin(s) qsfp0_cmac_inst/sync_reset_tx_rst_inst/sync_reg_reg[0]/PRE,
+qsfp0_cmac_inst/sync_reset_tx_rst_inst/sync_reg_reg[1]/PRE,
+qsfp0_cmac_inst/sync_reset_tx_rst_inst/sync_reg_reg[2]/PRE
+qsfp0_cmac_inst/sync_reset_tx_rst_inst/sync_reg_reg[3]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#13 Warning
+LUT drives async reset alert  
+LUT cell qsfp0_sync_reset_inst/sync_reg[3]_i_1__1, with 2 or more inputs, drives asynchronous preset/clear pin(s) qsfp0_cmac_inst/gty_ch_1/sync_reset_common_reset_inst/sync_reg_reg[0]/PRE,
+qsfp0_cmac_inst/gty_ch_1/sync_reset_common_reset_inst/sync_reg_reg[1]/PRE,
+qsfp0_cmac_inst/gty_ch_1/sync_reset_common_reset_inst/sync_reg_reg[2]/PRE
+qsfp0_cmac_inst/gty_ch_1/sync_reset_common_reset_inst/sync_reg_reg[3]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#14 Warning
+LUT drives async reset alert  
+LUT cell sync_reset_125mhz_inst/sync_reg[3]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) qsfp0_cmac_inst/gty_ch_1/sync_reset_tx_reset_inst/sync_reg_reg[0]/PRE,
+qsfp0_cmac_inst/gty_ch_1/sync_reset_tx_reset_inst/sync_reg_reg[1]/PRE,
+qsfp0_cmac_inst/gty_ch_1/sync_reset_tx_reset_inst/sync_reg_reg[2]/PRE
+qsfp0_cmac_inst/gty_ch_1/sync_reset_tx_reset_inst/sync_reg_reg[3]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+SYNTH-6#1 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/desc_fetch_inst/dma_psdpram_inst/genblk1[1].mem_reg_reg_0, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#2 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/desc_fetch_inst/dma_psdpram_inst/genblk1[1].mem_reg_reg_1, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#3 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/desc_fetch_inst/dma_psdpram_inst/genblk1[1].mem_reg_reg_2, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#4 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/desc_fetch_inst/dma_psdpram_inst/genblk1[1].mem_reg_reg_3, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#5 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/desc_fetch_inst/dma_psdpram_inst/genblk1[1].mem_reg_reg_4, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#6 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/desc_fetch_inst/dma_psdpram_inst/genblk1[1].mem_reg_reg_5, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#7 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/desc_fetch_inst/dma_psdpram_inst/genblk1[1].mem_reg_reg_6, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#8 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/desc_fetch_inst/dma_psdpram_inst/genblk1[1].mem_reg_reg_7, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#9 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/interface_rx_inst/dma_psdpram_rx_inst/genblk1[1].mem_reg_reg_0, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#10 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/interface_rx_inst/dma_psdpram_rx_inst/genblk1[1].mem_reg_reg_1, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#11 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/interface_rx_inst/dma_psdpram_rx_inst/genblk1[1].mem_reg_reg_10, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#12 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/interface_rx_inst/dma_psdpram_rx_inst/genblk1[1].mem_reg_reg_11, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#13 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/interface_rx_inst/dma_psdpram_rx_inst/genblk1[1].mem_reg_reg_12, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#14 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/interface_rx_inst/dma_psdpram_rx_inst/genblk1[1].mem_reg_reg_13, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#15 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/interface_rx_inst/dma_psdpram_rx_inst/genblk1[1].mem_reg_reg_14, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#16 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/interface_rx_inst/dma_psdpram_rx_inst/genblk1[1].mem_reg_reg_15, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#17 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/interface_rx_inst/dma_psdpram_rx_inst/genblk1[1].mem_reg_reg_2, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#18 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/interface_rx_inst/dma_psdpram_rx_inst/genblk1[1].mem_reg_reg_3, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#19 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/interface_rx_inst/dma_psdpram_rx_inst/genblk1[1].mem_reg_reg_4, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#20 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/interface_rx_inst/dma_psdpram_rx_inst/genblk1[1].mem_reg_reg_5, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#21 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/interface_rx_inst/dma_psdpram_rx_inst/genblk1[1].mem_reg_reg_6, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#22 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/interface_rx_inst/dma_psdpram_rx_inst/genblk1[1].mem_reg_reg_7, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#23 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/interface_rx_inst/dma_psdpram_rx_inst/genblk1[1].mem_reg_reg_8, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#24 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/interface_rx_inst/dma_psdpram_rx_inst/genblk1[1].mem_reg_reg_9, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#25 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/interface_rx_inst/rx_engine_inst/mqnic_rx_queue_map_inst/indir_tbl_mem_reg_2, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#26 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/interface_tx_inst/dma_psdpram_tx_inst/genblk1[1].mem_reg_reg_0, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#27 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/interface_tx_inst/dma_psdpram_tx_inst/genblk1[1].mem_reg_reg_1, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#28 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/interface_tx_inst/dma_psdpram_tx_inst/genblk1[1].mem_reg_reg_10, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#29 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/interface_tx_inst/dma_psdpram_tx_inst/genblk1[1].mem_reg_reg_11, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#30 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/interface_tx_inst/dma_psdpram_tx_inst/genblk1[1].mem_reg_reg_12, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#31 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/interface_tx_inst/dma_psdpram_tx_inst/genblk1[1].mem_reg_reg_13, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#32 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/interface_tx_inst/dma_psdpram_tx_inst/genblk1[1].mem_reg_reg_14, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#33 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/interface_tx_inst/dma_psdpram_tx_inst/genblk1[1].mem_reg_reg_15, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#34 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/interface_tx_inst/dma_psdpram_tx_inst/genblk1[1].mem_reg_reg_2, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#35 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/interface_tx_inst/dma_psdpram_tx_inst/genblk1[1].mem_reg_reg_3, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#36 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/interface_tx_inst/dma_psdpram_tx_inst/genblk1[1].mem_reg_reg_4, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#37 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/interface_tx_inst/dma_psdpram_tx_inst/genblk1[1].mem_reg_reg_5, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#38 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/interface_tx_inst/dma_psdpram_tx_inst/genblk1[1].mem_reg_reg_6, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#39 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/interface_tx_inst/dma_psdpram_tx_inst/genblk1[1].mem_reg_reg_7, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#40 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/interface_tx_inst/dma_psdpram_tx_inst/genblk1[1].mem_reg_reg_8, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#41 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/interface_tx_inst/dma_psdpram_tx_inst/genblk1[1].mem_reg_reg_9, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#42 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance core_inst/core_inst/core_pcie_inst/pcie_msix_inst/tbl_mem_reg_1, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#43 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance core_inst/core_inst/core_pcie_inst/pcie_msix_inst/tbl_mem_reg_2, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+TIMING-9#1 Warning
+Unknown CDC Logic  
+One or more asynchronous Clock Domain Crossing has been detected between 2 clock domains through a set_false_path or a set_clock_groups or set_max_delay -datapath_only constraint but no double-registers logic synchronizer has been found on the side of the capture clock. It is recommended to run report_cdc for a complete and detailed CDC coverage. Please consider using XPM_CDC to avoid Critical severities
+Related violations: <none>
+
+TIMING-20#1 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[0] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#2 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[10] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[10]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#3 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[11] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[11]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#4 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[12] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[12]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#5 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[13] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[13]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#6 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[14] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[14]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#7 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[15] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[15]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#8 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[16] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[16]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#9 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[17] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[17]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#10 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[18] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[18]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#11 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[19] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[19]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#12 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[1] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#13 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[20] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[20]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#14 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[21] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[21]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#15 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[22] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[22]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#16 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[23] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[23]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#17 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[24] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[24]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#18 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[25] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[25]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#19 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[26] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[26]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#20 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[27] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[27]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#21 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[28] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[28]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#22 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[29] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[29]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#23 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[2] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#24 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[30] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[30]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#25 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[31] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[31]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#26 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[32] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[32]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#27 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[33] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[33]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#28 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[34] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[34]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#29 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[35] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[35]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#30 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[36] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[36]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#31 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[37] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[37]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#32 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[38] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[38]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#33 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[39] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[39]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#34 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[3] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#35 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[40] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[40]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#36 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[41] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[41]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#37 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[42] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[42]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#38 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[43] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[43]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#39 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[44] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[44]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#40 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[45] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[45]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#41 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[46] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[46]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#42 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[47] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[47]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#43 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[48] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[48]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#44 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[49] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[49]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#45 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[4] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#46 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[50] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[50]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#47 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[51] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[51]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#48 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[52] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[52]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#49 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[53] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[53]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#50 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[54] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[54]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#51 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[55] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[55]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#52 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[56] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[56]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#53 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[57] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[57]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#54 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[58] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[58]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#55 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[59] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[59]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#56 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[5] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#57 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[60] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[60]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#58 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[61] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[61]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#59 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[62] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[62]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#60 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[63] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[63]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#61 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[6] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#62 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[7] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#63 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[8] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[8]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#64 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[9] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/pifo_pop_signal_reg[9]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#65 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/o_pop_data_reg2_reg[0] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/o_pop_data_reg2_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#66 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/o_pop_data_reg2_reg[10] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/o_pop_data_reg2_reg[10]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#67 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/o_pop_data_reg2_reg[11] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/o_pop_data_reg2_reg[11]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#68 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/o_pop_data_reg2_reg[12] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/o_pop_data_reg2_reg[12]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#69 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/o_pop_data_reg2_reg[13] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/o_pop_data_reg2_reg[13]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#70 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/o_pop_data_reg2_reg[14] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/o_pop_data_reg2_reg[14]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#71 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/o_pop_data_reg2_reg[15] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/o_pop_data_reg2_reg[15]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#72 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/o_pop_data_reg2_reg[17] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/o_pop_data_reg2_reg[17]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#73 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/o_pop_data_reg2_reg[1] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/o_pop_data_reg2_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#74 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/o_pop_data_reg2_reg[2] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/o_pop_data_reg2_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#75 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/o_pop_data_reg2_reg[3] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/o_pop_data_reg2_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#76 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/o_pop_data_reg2_reg[4] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/o_pop_data_reg2_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#77 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/o_pop_data_reg2_reg[5] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/o_pop_data_reg2_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#78 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/o_pop_data_reg2_reg[6] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/o_pop_data_reg2_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#79 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/o_pop_data_reg2_reg[7] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/o_pop_data_reg2_reg[7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#80 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/o_pop_data_reg2_reg[8] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/o_pop_data_reg2_reg[8]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#81 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/o_pop_data_reg2_reg[9] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/o_pop_data_reg2_reg[9]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#82 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/o_pop_out_reg2_reg cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/o_pop_out_reg2_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#83 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/child_addr_reg[0] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/child_addr_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#84 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/child_addr_reg[1] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/child_addr_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#85 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[0] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#86 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[10] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[10]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#87 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[11] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[11]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#88 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[12] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[12]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#89 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[13] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[13]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#90 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[14] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[14]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#91 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[15] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[15]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#92 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[16] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[16]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#93 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[17] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[17]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#94 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[18] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[18]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#95 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[19] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[19]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#96 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[1] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#97 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[20] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[20]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#98 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[21] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[21]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#99 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[22] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[22]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#100 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[23] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[23]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#101 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[24] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[24]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#102 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[25] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[25]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#103 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[26] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[26]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#104 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[27] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[27]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#105 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[28] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[28]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#106 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[29] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[29]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#107 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[2] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#108 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[30] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[30]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#109 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[31] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[31]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#110 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[32] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[32]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#111 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[33] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[33]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#112 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[34] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[34]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#113 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[35] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[35]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#114 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[36] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[36]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#115 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[37] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[37]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#116 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[38] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[38]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#117 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[39] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[39]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#118 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[3] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#119 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[40] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[40]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#120 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[41] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[41]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#121 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[42] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[42]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#122 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[43] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[43]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#123 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[44] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[44]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#124 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[45] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[45]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#125 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[46] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[46]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#126 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[47] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[47]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#127 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[48] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[48]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#128 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[49] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[49]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#129 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[4] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#130 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[50] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[50]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#131 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[51] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[51]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#132 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[52] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[52]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#133 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[53] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[53]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#134 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[54] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[54]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#135 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[55] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[55]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#136 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[5] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#137 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[6] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#138 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[7] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#139 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[8] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[8]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#140 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[9] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[0].u_PIFO/wdata_reg[9]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#141 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/child_addr_reg[0] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/child_addr_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#142 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/child_addr_reg[1] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/child_addr_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#143 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[0] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#144 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[10] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[10]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#145 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[11] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[11]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#146 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[12] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[12]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#147 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[13] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[13]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#148 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[14] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[14]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#149 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[15] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[15]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#150 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[16] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[16]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#151 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[17] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[17]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#152 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[18] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[18]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#153 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[19] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[19]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#154 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[1] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#155 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[20] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[20]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#156 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[21] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[21]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#157 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[22] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[22]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#158 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[23] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[23]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#159 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[24] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[24]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#160 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[25] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[25]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#161 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[26] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[26]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#162 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[27] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[27]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#163 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[28] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[28]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#164 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[29] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[29]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#165 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[2] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#166 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[30] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[30]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#167 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[31] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[31]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#168 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[32] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[32]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#169 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[33] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[33]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#170 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[34] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[34]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#171 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[35] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[35]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#172 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[36] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[36]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#173 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[37] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[37]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#174 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[38] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[38]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#175 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[39] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[39]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#176 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[3] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#177 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[40] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[40]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#178 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[41] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[41]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#179 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[42] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[42]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#180 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[43] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[43]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#181 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[44] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[44]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#182 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[45] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[45]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#183 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[46] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[46]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#184 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[47] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[47]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#185 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[48] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[48]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#186 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[49] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[49]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#187 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[4] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#188 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[50] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[50]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#189 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[51] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[51]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#190 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[52] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[52]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#191 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[53] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[53]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#192 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[54] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[54]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#193 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[55] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[55]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#194 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[5] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#195 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[6] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#196 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[7] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#197 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[8] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[8]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#198 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[9] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[1].u_PIFO/wdata_reg[9]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#199 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/child_addr_reg[0] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/child_addr_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#200 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/child_addr_reg[1] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/child_addr_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#201 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[0] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#202 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[10] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[10]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#203 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[11] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[11]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#204 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[12] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[12]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#205 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[13] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[13]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#206 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[14] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[14]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#207 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[15] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[15]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#208 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[16] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[16]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#209 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[17] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[17]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#210 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[18] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[18]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#211 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[19] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[19]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#212 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[1] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#213 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[20] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[20]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#214 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[21] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[21]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#215 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[22] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[22]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#216 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[23] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[23]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#217 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[24] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[24]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#218 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[25] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[25]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#219 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[26] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[26]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#220 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[27] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[27]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#221 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[28] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[28]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#222 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[29] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[29]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#223 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[2] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#224 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[30] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[30]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#225 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[31] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[31]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#226 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[32] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[32]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#227 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[33] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[33]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#228 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[34] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[34]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#229 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[35] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[35]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#230 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[36] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[36]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#231 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[37] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[37]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#232 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[38] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[38]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#233 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[39] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[39]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#234 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[3] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#235 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[40] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[40]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#236 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[41] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[41]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#237 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[42] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[42]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#238 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[43] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[43]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#239 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[44] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[44]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#240 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[45] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[45]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#241 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[46] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[46]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#242 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[47] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[47]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#243 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[48] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[48]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#244 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[49] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[49]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#245 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[4] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#246 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[50] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[50]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#247 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[51] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[51]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#248 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[52] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[52]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#249 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[53] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[53]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#250 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[54] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[54]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#251 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[55] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[55]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#252 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[5] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#253 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[6] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#254 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[7] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#255 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[8] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[8]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#256 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[9] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/pifo_loop[2].u_PIFO/wdata_reg[9]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#257 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/td/rpu_state_mid_reg[0][0] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/td/rpu_state_mid_reg[0][0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#258 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/td/rpu_state_mid_reg[0][1] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/td/rpu_state_mid_reg[0][1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#259 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/td/rpu_state_mid_reg[0][2] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/td/rpu_state_mid_reg[0][2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#260 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/td/rpu_state_mid_reg[1][0] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/td/rpu_state_mid_reg[1][0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#261 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/td/rpu_state_mid_reg[1][1] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/td/rpu_state_mid_reg[1][1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#262 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/td/rpu_state_mid_reg[1][2] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/td/rpu_state_mid_reg[1][2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#263 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/td/rpu_state_mid_reg[2][0] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/td/rpu_state_mid_reg[2][0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#264 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/td/rpu_state_mid_reg[2][1] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/td/rpu_state_mid_reg[2][1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#265 Warning
+Non-clocked latch  
+The latch core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/td/rpu_state_mid_reg[2][2] cannot be properly analyzed as its control pin core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/sched[0].scheduler_block/tx_scheduler_inst/trico_tree/u_PIFO_TOP/td/rpu_state_mid_reg[2][2]/G is not reached by a timing clock
+Related violations: <none>
+
+XDCH-2#1 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.000 ns has been defined on port 'i2c_scl' for both max and min. Make sure this reflects the design intent.
+set_input_delay 0.000 [get_ports {i2c_sda i2c_scl}]
+/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_au200.xdc (Line: 204)
+Related violations: <none>
+
+XDCH-2#2 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.000 ns has been defined on port 'i2c_sda' for both max and min. Make sure this reflects the design intent.
+set_input_delay 0.000 [get_ports {i2c_sda i2c_scl}]
+/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_au200.xdc (Line: 204)
+Related violations: <none>
+
+XDCH-2#3 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.000 ns has been defined on port 'msp_gpio[0]' for both max and min. Make sure this reflects the design intent.
+set_input_delay 0.000 [get_ports {{msp_gpio[*]} msp_uart_rxd}]
+/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_au200.xdc (Line: 99)
+Related violations: <none>
+
+XDCH-2#4 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.000 ns has been defined on port 'msp_gpio[1]' for both max and min. Make sure this reflects the design intent.
+set_input_delay 0.000 [get_ports {{msp_gpio[*]} msp_uart_rxd}]
+/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_au200.xdc (Line: 99)
+Related violations: <none>
+
+XDCH-2#5 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.000 ns has been defined on port 'msp_gpio[2]' for both max and min. Make sure this reflects the design intent.
+set_input_delay 0.000 [get_ports {{msp_gpio[*]} msp_uart_rxd}]
+/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_au200.xdc (Line: 99)
+Related violations: <none>
+
+XDCH-2#6 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.000 ns has been defined on port 'msp_gpio[3]' for both max and min. Make sure this reflects the design intent.
+set_input_delay 0.000 [get_ports {{msp_gpio[*]} msp_uart_rxd}]
+/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_au200.xdc (Line: 99)
+Related violations: <none>
+
+XDCH-2#7 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.000 ns has been defined on port 'msp_uart_rxd' for both max and min. Make sure this reflects the design intent.
+set_input_delay 0.000 [get_ports {{msp_gpio[*]} msp_uart_rxd}]
+/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_au200.xdc (Line: 99)
+Related violations: <none>
+
+XDCH-2#8 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.000 ns has been defined on port 'pcie_reset_n' for both max and min. Make sure this reflects the design intent.
+set_input_delay 0.000 [get_ports pcie_reset_n]
+/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_au200.xdc (Line: 281)
+Related violations: <none>
+
+XDCH-2#9 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.000 ns has been defined on port 'qsfp0_intl' for both max and min. Make sure this reflects the design intent.
+set_input_delay 0.000 [get_ports {qsfp0_modprsl qsfp0_intl}]
+/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_au200.xdc (Line: 147)
+Related violations: <none>
+
+XDCH-2#10 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.000 ns has been defined on port 'qsfp0_modprsl' for both max and min. Make sure this reflects the design intent.
+set_input_delay 0.000 [get_ports {qsfp0_modprsl qsfp0_intl}]
+/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_au200.xdc (Line: 147)
+Related violations: <none>
+
+XDCH-2#11 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.000 ns has been defined on port 'sw[0]' for both max and min. Make sure this reflects the design intent.
+set_input_delay 0.000 [get_ports {sw[*]}]
+/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_au200.xdc (Line: 73)
+Related violations: <none>
+
+XDCH-2#12 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.000 ns has been defined on port 'sw[1]' for both max and min. Make sure this reflects the design intent.
+set_input_delay 0.000 [get_ports {sw[*]}]
+/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_au200.xdc (Line: 73)
+Related violations: <none>
+
+XDCH-2#13 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.000 ns has been defined on port 'sw[2]' for both max and min. Make sure this reflects the design intent.
+set_input_delay 0.000 [get_ports {sw[*]}]
+/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_au200.xdc (Line: 73)
+Related violations: <none>
+
+XDCH-2#14 Warning
+Same min and max delay values on IO port  
+The same input delay of 0.000 ns has been defined on port 'sw[3]' for both max and min. Make sure this reflects the design intent.
+set_input_delay 0.000 [get_ports {sw[*]}]
+/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_au200.xdc (Line: 73)
+Related violations: <none>
+
+XDCH-2#15 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'i2c_scl' for both max and min. Make sure this reflects the design intent.
+set_output_delay 0.000 [get_ports {i2c_sda i2c_scl}]
+/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_au200.xdc (Line: 202)
+Related violations: <none>
+
+XDCH-2#16 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'i2c_sda' for both max and min. Make sure this reflects the design intent.
+set_output_delay 0.000 [get_ports {i2c_sda i2c_scl}]
+/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_au200.xdc (Line: 202)
+Related violations: <none>
+
+XDCH-2#17 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'led[0]' for both max and min. Make sure this reflects the design intent.
+set_output_delay 0.000 [get_ports {led[*]}]
+/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_au200.xdc (Line: 58)
+Related violations: <none>
+
+XDCH-2#18 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'led[1]' for both max and min. Make sure this reflects the design intent.
+set_output_delay 0.000 [get_ports {led[*]}]
+/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_au200.xdc (Line: 58)
+Related violations: <none>
+
+XDCH-2#19 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'led[2]' for both max and min. Make sure this reflects the design intent.
+set_output_delay 0.000 [get_ports {led[*]}]
+/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_au200.xdc (Line: 58)
+Related violations: <none>
+
+XDCH-2#20 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'msp_uart_txd' for both max and min. Make sure this reflects the design intent.
+set_output_delay 0.000 [get_ports msp_uart_txd]
+/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_au200.xdc (Line: 97)
+Related violations: <none>
+
+XDCH-2#21 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'qsfp0_fs[0]' for both max and min. Make sure this reflects the design intent.
+set_output_delay 0.000 [get_ports {qsfp0_modsell qsfp0_resetl qsfp0_lpmode qsfp0_refclk_reset {qsfp0_fs[*]}}]
+/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_au200.xdc (Line: 145)
+Related violations: <none>
+
+XDCH-2#22 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'qsfp0_fs[1]' for both max and min. Make sure this reflects the design intent.
+set_output_delay 0.000 [get_ports {qsfp0_modsell qsfp0_resetl qsfp0_lpmode qsfp0_refclk_reset {qsfp0_fs[*]}}]
+/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_au200.xdc (Line: 145)
+Related violations: <none>
+
+XDCH-2#23 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'qsfp0_lpmode' for both max and min. Make sure this reflects the design intent.
+set_output_delay 0.000 [get_ports {qsfp0_modsell qsfp0_resetl qsfp0_lpmode qsfp0_refclk_reset {qsfp0_fs[*]}}]
+/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_au200.xdc (Line: 145)
+Related violations: <none>
+
+XDCH-2#24 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'qsfp0_modsell' for both max and min. Make sure this reflects the design intent.
+set_output_delay 0.000 [get_ports {qsfp0_modsell qsfp0_resetl qsfp0_lpmode qsfp0_refclk_reset {qsfp0_fs[*]}}]
+/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_au200.xdc (Line: 145)
+Related violations: <none>
+
+XDCH-2#25 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'qsfp0_refclk_reset' for both max and min. Make sure this reflects the design intent.
+set_output_delay 0.000 [get_ports {qsfp0_modsell qsfp0_resetl qsfp0_lpmode qsfp0_refclk_reset {qsfp0_fs[*]}}]
+/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_au200.xdc (Line: 145)
+Related violations: <none>
+
+XDCH-2#26 Warning
+Same min and max delay values on IO port  
+The same output delay of 0.000 ns has been defined on port 'qsfp0_resetl' for both max and min. Make sure this reflects the design intent.
+set_output_delay 0.000 [get_ports {qsfp0_modsell qsfp0_resetl qsfp0_lpmode qsfp0_refclk_reset {qsfp0_fs[*]}}]
+/home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/fpga_au200.xdc (Line: 145)
+Related violations: <none>
+
+CLKC-40#1 Advisory
+Substitute PLLE4 for MMCME4 check  
+The MMCME4 cell clk_mmcm_inst has a single input clock whose source driver, IBUFCTRL clk_300mhz_0_ibufg_inst/IBUFCTRL_INST (in clk_300mhz_0_ibufg_inst macro), is not optimally located and the MMCM has a configuration which could be accommodated by a PLL.  Consider changing the MMCM to a PLL which could align better with the input clock driver.
+Related violations: <none>
+
+CLKC-56#1 Advisory
+MMCME4 with global clock driver has no LOC  
+The MMCME4_ADV cell clk_mmcm_inst CLKIN1 or CLKIN2 pin is driven by global Clock buffer(s) clk_300mhz_0_bufg_inst and does not have a LOC constraint. It is recommended to LOC the MMCM and use the CLOCK_DEDICATED_ROUTE constraint on the net(s) driven by the global Clock buffer(s).
+Related violations: <none>
+
+XDCV-2#1 Advisory
+Incomplete constraint coverage due to missing replicated objects.  
+The option '-from : [get_cells {{core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/port[0].port_inst/port_rx_inst/rx_async_fifo_inst/fifo_inst/rd_ptr_reg_reg[*]} {core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/port[0].port_inst/port_rx_inst/rx_async_fifo_inst/fifo_inst/rd_ptr_gray_reg_reg[*]}}]' of the following constraint is attached to some original objects but not to all their replicated objects. Please review the missing replicated objects and assess if they need to be included in the constraint. Use 'get_cells or get_pins -include_replicated_objects <origObjectName>' to query all replicated objects associated with an original object.
+Current Constraint: set_bus_skew -from [get_cells {{core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/port[0].port_inst/port_rx_inst/rx_async_fifo_inst...
+Current XDC: /home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/lib/axis/syn/vivado/axis_async_fifo.tcl (Line: 23)
+Original cells:
+core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/port[0].port_inst/port_rx_inst/rx_async_fifo_inst/fifo_inst/rd_ptr_reg_reg[0]
+core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/port[0].port_inst/port_rx_inst/rx_async_fifo_inst/fifo_inst/rd_ptr_reg_reg[1]
+core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/port[0].port_inst/port_rx_inst/rx_async_fifo_inst/fifo_inst/rd_ptr_reg_reg[2]
+core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/port[0].port_inst/port_rx_inst/rx_async_fifo_inst/fifo_inst/rd_ptr_reg_reg[3]
+core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/port[0].port_inst/port_rx_inst/rx_async_fifo_inst/fifo_inst/rd_ptr_reg_reg[4]
+Original pins:
+<none>
+Related violations: <none>
+
+XDCV-2#2 Advisory
+Incomplete constraint coverage due to missing replicated objects.  
+The option '-from : [get_cells {{core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/port[0].port_inst/port_rx_inst/rx_async_fifo_inst/fifo_inst/rd_ptr_reg_reg[*]} {core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/port[0].port_inst/port_rx_inst/rx_async_fifo_inst/fifo_inst/rd_ptr_gray_reg_reg[*]}}]' of the following constraint is attached to some original objects but not to all their replicated objects. Please review the missing replicated objects and assess if they need to be included in the constraint. Use 'get_cells or get_pins -include_replicated_objects <origObjectName>' to query all replicated objects associated with an original object.
+Current Constraint: set_max_delay -datapath_only -from [get_cells {{core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/port[0].port_inst/port_rx_inst/rx...
+Current XDC: /home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/lib/axis/syn/vivado/axis_async_fifo.tcl (Line: 23)
+Original cells:
+core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/port[0].port_inst/port_rx_inst/rx_async_fifo_inst/fifo_inst/rd_ptr_reg_reg[0]
+core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/port[0].port_inst/port_rx_inst/rx_async_fifo_inst/fifo_inst/rd_ptr_reg_reg[1]
+core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/port[0].port_inst/port_rx_inst/rx_async_fifo_inst/fifo_inst/rd_ptr_reg_reg[2]
+core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/port[0].port_inst/port_rx_inst/rx_async_fifo_inst/fifo_inst/rd_ptr_reg_reg[3]
+core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/port[0].port_inst/port_rx_inst/rx_async_fifo_inst/fifo_inst/rd_ptr_reg_reg[4]
+Original pins:
+<none>
+Related violations: <none>
+
+XDCV-2#3 Advisory
+Incomplete constraint coverage due to missing replicated objects.  
+The option '-from : [get_cells {{core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/port[0].port_inst/port_tx_inst/tx_async_fifo_inst/fifo_inst/rd_ptr_reg_reg[*]} {core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/port[0].port_inst/port_tx_inst/tx_async_fifo_inst/fifo_inst/rd_ptr_gray_reg_reg[*]}}]' of the following constraint is attached to some original objects but not to all their replicated objects. Please review the missing replicated objects and assess if they need to be included in the constraint. Use 'get_cells or get_pins -include_replicated_objects <origObjectName>' to query all replicated objects associated with an original object.
+Current Constraint: set_bus_skew -from [get_cells {{core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/port[0].port_inst/port_tx_inst/tx_async_fifo_inst...
+Current XDC: /home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/lib/axis/syn/vivado/axis_async_fifo.tcl (Line: 23)
+Original cells:
+core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/port[0].port_inst/port_tx_inst/tx_async_fifo_inst/fifo_inst/rd_ptr_reg_reg[0]
+core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/port[0].port_inst/port_tx_inst/tx_async_fifo_inst/fifo_inst/rd_ptr_reg_reg[1]
+core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/port[0].port_inst/port_tx_inst/tx_async_fifo_inst/fifo_inst/rd_ptr_reg_reg[2]
+core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/port[0].port_inst/port_tx_inst/tx_async_fifo_inst/fifo_inst/rd_ptr_reg_reg[3]
+Original pins:
+<none>
+Related violations: <none>
+
+XDCV-2#4 Advisory
+Incomplete constraint coverage due to missing replicated objects.  
+The option '-from : [get_cells {{core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/port[0].port_inst/port_tx_inst/tx_async_fifo_inst/fifo_inst/rd_ptr_reg_reg[*]} {core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/port[0].port_inst/port_tx_inst/tx_async_fifo_inst/fifo_inst/rd_ptr_gray_reg_reg[*]}}]' of the following constraint is attached to some original objects but not to all their replicated objects. Please review the missing replicated objects and assess if they need to be included in the constraint. Use 'get_cells or get_pins -include_replicated_objects <origObjectName>' to query all replicated objects associated with an original object.
+Current Constraint: set_max_delay -datapath_only -from [get_cells {{core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/port[0].port_inst/port_tx_inst/tx...
+Current XDC: /home/playmaker/Desktop/mkxue/corundum/fpga/mqnic/Alveo/fpga_100g/lib/axis/syn/vivado/axis_async_fifo.tcl (Line: 23)
+Original cells:
+core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/port[0].port_inst/port_tx_inst/tx_async_fifo_inst/fifo_inst/rd_ptr_reg_reg[0]
+core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/port[0].port_inst/port_tx_inst/tx_async_fifo_inst/fifo_inst/rd_ptr_reg_reg[1]
+core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/port[0].port_inst/port_tx_inst/tx_async_fifo_inst/fifo_inst/rd_ptr_reg_reg[2]
+core_inst/core_inst/core_pcie_inst/core_inst/iface[0].interface_inst/port[0].port_inst/port_tx_inst/tx_async_fifo_inst/fifo_inst/rd_ptr_reg_reg[3]
+Original pins:
+<none>
+Related violations: <none>
+
+

@@ -1,0 +1,23 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../corundum-trico.gen/sources_1/bd/cms/ipshared/ec67/hdl" --include "../../../../corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_0/ip/ip_0/hdl" --include "../../../../corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/hdl" --include "/tools/Xilinx/Vivado/2020.2/data/xilinx_vip/include" \
+"../../../../../../../../common/rtl/INFER_SDPRAM.v" \
+"../../../../../../../../common/rtl/metadata_fifo.v" \
+"../../../../../../../../common/rtl/metadata_store.v" \
+"../../../../../../../../lib/axi/rtl/priority_encoder.v" \
+"../../../../corundum-trico.srcs/sources_1/new/test_trico_top.v" \
+
+sv xil_defaultlib  --include "../../../../corundum-trico.gen/sources_1/bd/cms/ipshared/ec67/hdl" --include "../../../../corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_0/ip/ip_0/hdl" --include "../../../../corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/hdl" --include "/tools/Xilinx/Vivado/2020.2/data/xilinx_vip/include" \
+"../../../../../../../../common/rtl/PIFO_TOP.sv" \
+"../../../../../../../../common/rtl/pifo.sv" \
+"../../../../../../../../common/rtl/task_distribute.sv" \
+"../../../../../../../../common/rtl/task_fifo.sv" \
+"../../../../../../../../common/rtl/trico_tree_top.sv" \
+
+verilog xil_defaultlib  --include "../../../../corundum-trico.gen/sources_1/bd/cms/ipshared/ec67/hdl" --include "../../../../corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/bd_0/ip/ip_0/hdl" --include "../../../../corundum-trico.gen/sources_1/bd/cms/ip/cms_cms_subsystem_0_0/hdl" --include "/tools/Xilinx/Vivado/2020.2/data/xilinx_vip/include" \
+"../../../../corundum-trico.srcs/sim_1/new/tb_trico_top.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

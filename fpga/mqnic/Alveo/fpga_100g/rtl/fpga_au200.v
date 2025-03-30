@@ -12,7 +12,7 @@
 /*
  * FPGA top-level module
  */
-module fpga #
+module Monkey_X_NIC #
 (
     // FW and board IDs
     parameter FPGA_ID = 32'h4B37093,
@@ -28,7 +28,7 @@ module fpga #
     parameter CMS_ENABLE = 1,
 
     // Structural configuration
-    parameter IF_COUNT = 2,
+    parameter IF_COUNT = 1,
     parameter PORTS_PER_IF = 1,
     parameter SCHED_PER_IF = PORTS_PER_IF,
     parameter PORT_MASK = 0,
@@ -50,7 +50,7 @@ module fpga #
     parameter RX_QUEUE_OP_TABLE_SIZE = 32,
     parameter CQ_OP_TABLE_SIZE = 32,
     parameter EQN_WIDTH = 5,
-    parameter TX_QUEUE_INDEX_WIDTH = 13,
+    parameter TX_QUEUE_INDEX_WIDTH = 6,
     parameter RX_QUEUE_INDEX_WIDTH = 8,
     parameter CQN_WIDTH = (TX_QUEUE_INDEX_WIDTH > RX_QUEUE_INDEX_WIDTH ? TX_QUEUE_INDEX_WIDTH : RX_QUEUE_INDEX_WIDTH) + 1,
     parameter EQ_PIPELINE = 3,
@@ -198,21 +198,21 @@ module fpga #
     output wire         qsfp0_refclk_reset,
     output wire [1:0]   qsfp0_fs,
 
-    output wire [3:0]   qsfp1_tx_p,
-    output wire [3:0]   qsfp1_tx_n,
-    input  wire [3:0]   qsfp1_rx_p,
-    input  wire [3:0]   qsfp1_rx_n,
-    // input  wire         qsfp1_mgt_refclk_0_p,
-    // input  wire         qsfp1_mgt_refclk_0_n,
-    input  wire         qsfp1_mgt_refclk_1_p,
-    input  wire         qsfp1_mgt_refclk_1_n,
-    output wire         qsfp1_modsell,
-    output wire         qsfp1_resetl,
-    input  wire         qsfp1_modprsl,
-    input  wire         qsfp1_intl,
-    output wire         qsfp1_lpmode,
-    output wire         qsfp1_refclk_reset,
-    output wire [1:0]   qsfp1_fs,
+//    output wire [3:0]   qsfp1_tx_p,
+//    output wire [3:0]   qsfp1_tx_n,
+//    input  wire [3:0]   qsfp1_rx_p,
+//    input  wire [3:0]   qsfp1_rx_n,
+//    // input  wire         qsfp1_mgt_refclk_0_p,
+//    // input  wire         qsfp1_mgt_refclk_0_n,
+//    input  wire         qsfp1_mgt_refclk_1_p,
+//    input  wire         qsfp1_mgt_refclk_1_n,
+//    output wire         qsfp1_modsell,
+//    output wire         qsfp1_resetl,
+//    input  wire         qsfp1_modprsl,
+//    input  wire         qsfp1_intl,
+//    output wire         qsfp1_lpmode,
+//    output wire         qsfp1_refclk_reset,
+//    output wire [1:0]   qsfp1_fs,
 
     /*
      * DDR4
@@ -484,9 +484,9 @@ sync_signal #(
 )
 sync_signal_inst (
     .clk(pcie_user_clk),
-    .in({qsfp0_modprsl, qsfp1_modprsl, qsfp0_intl, qsfp1_intl,
+    .in({qsfp0_modprsl, qsfp0_intl, 
         i2c_scl, i2c_sda}),
-    .out({qsfp_modprsl_int, qsfp_intl_int,
+    .out({qsfp_modprsl_int,
         i2c_scl_i, i2c_sda_i})
 );
 
@@ -774,9 +774,9 @@ if (CMS_ENABLE) begin : cms
         .qsfp0_modprs_l_0(qsfp0_modprsl),
         .qsfp0_modsel_l_0(),
         .qsfp0_reset_l_0(),
-        .qsfp1_int_l_0(qsfp1_intl),
+        .qsfp1_int_l_0(),
         .qsfp1_lpmode_0(),
-        .qsfp1_modprs_l_0(qsfp1_modprsl),
+        .qsfp1_modprs_l_0(),
         .qsfp1_modsel_l_0(),
         .qsfp1_reset_l_0(),
         .s_axi_ctrl_0_araddr(axil_cms_araddr_int),
@@ -1110,7 +1110,7 @@ pcie4_uscale_plus_inst (
 );
 
 // Ethernet
-localparam QSFP_CNT = 2;
+localparam QSFP_CNT = 1;
 
 wire [QSFP_CNT-1:0]                      qsfp_tx_clk;
 wire [QSFP_CNT-1:0]                      qsfp_tx_rst;
@@ -1296,133 +1296,133 @@ qsfp0_cmac_inst (
 );
 
 // QSFP1 CMAC
-assign qsfp1_refclk_reset = qsfp_refclk_reset_reg;
-assign qsfp1_fs = 2'b10;
+//assign qsfp1_refclk_reset = qsfp_refclk_reset_reg;
+//assign qsfp1_fs = 2'b10;
 
-assign qsfp_drp_clk[1 +: 1] = clk_125mhz_int;
-assign qsfp_drp_rst[1 +: 1] = rst_125mhz_int;
+//assign qsfp_drp_clk[1 +: 1] = clk_125mhz_int;
+//assign qsfp_drp_rst[1 +: 1] = rst_125mhz_int;
 
-assign qsfp1_modsell = qsfp_modsell[1 +: 1];
-assign qsfp1_resetl = qsfp_resetl[1 +: 1];
-assign qsfp1_lpmode = qsfp_lpmode[1 +: 1];
+//assign qsfp1_modsell = qsfp_modsell[1 +: 1];
+//assign qsfp1_resetl = qsfp_resetl[1 +: 1];
+//assign qsfp1_lpmode = qsfp_lpmode[1 +: 1];
 
-wire qsfp1_gtpowergood;
+//wire qsfp1_gtpowergood;
 
-wire qsfp1_mgt_refclk_1;
-wire qsfp1_mgt_refclk_1_int;
-wire qsfp1_mgt_refclk_1_bufg;
+//wire qsfp1_mgt_refclk_1;
+//wire qsfp1_mgt_refclk_1_int;
+//wire qsfp1_mgt_refclk_1_bufg;
 
-IBUFDS_GTE4 ibufds_gte4_qsfp1_mgt_refclk_1_inst (
-    .I     (qsfp1_mgt_refclk_1_p),
-    .IB    (qsfp1_mgt_refclk_1_n),
-    .CEB   (1'b0),
-    .O     (qsfp1_mgt_refclk_1),
-    .ODIV2 (qsfp1_mgt_refclk_1_int)
-);
+//IBUFDS_GTE4 ibufds_gte4_qsfp1_mgt_refclk_1_inst (
+//    .I     (qsfp1_mgt_refclk_1_p),
+//    .IB    (qsfp1_mgt_refclk_1_n),
+//    .CEB   (1'b0),
+//    .O     (qsfp1_mgt_refclk_1),
+//    .ODIV2 (qsfp1_mgt_refclk_1_int)
+//);
 
-BUFG_GT bufg_gt_qsfp1_mgt_refclk_1_inst (
-    .CE      (qsfp1_gtpowergood),
-    .CEMASK  (1'b1),
-    .CLR     (1'b0),
-    .CLRMASK (1'b1),
-    .DIV     (3'd0),
-    .I       (qsfp1_mgt_refclk_1_int),
-    .O       (qsfp1_mgt_refclk_1_bufg)
-);
+//BUFG_GT bufg_gt_qsfp1_mgt_refclk_1_inst (
+//    .CE      (qsfp1_gtpowergood),
+//    .CEMASK  (1'b1),
+//    .CLR     (1'b0),
+//    .CLRMASK (1'b1),
+//    .DIV     (3'd0),
+//    .I       (qsfp1_mgt_refclk_1_int),
+//    .O       (qsfp1_mgt_refclk_1_bufg)
+//);
 
-wire qsfp1_rst;
+//wire qsfp1_rst;
 
-sync_reset #(
-    .N(4)
-)
-qsfp1_sync_reset_inst (
-    .clk(qsfp1_mgt_refclk_1_bufg),
-    .rst(rst_125mhz_int),
-    .out(qsfp1_rst)
-);
+//sync_reset #(
+//    .N(4)
+//)
+//qsfp1_sync_reset_inst (
+//    .clk(qsfp1_mgt_refclk_1_bufg),
+//    .rst(rst_125mhz_int),
+//    .out(qsfp1_rst)
+//);
 
-cmac_gty_wrapper #(
-    .DRP_CLK_FREQ_HZ(125000000),
-    .AXIS_DATA_WIDTH(AXIS_ETH_DATA_WIDTH),
-    .AXIS_KEEP_WIDTH(AXIS_ETH_KEEP_WIDTH),
-    .TX_SERDES_PIPELINE(0),
-    .RX_SERDES_PIPELINE(0),
-    .RS_FEC_ENABLE(1)
-)
-qsfp1_cmac_inst (
-    .xcvr_ctrl_clk(clk_125mhz_int),
-    .xcvr_ctrl_rst(qsfp1_rst),
+//cmac_gty_wrapper #(
+//    .DRP_CLK_FREQ_HZ(125000000),
+//    .AXIS_DATA_WIDTH(AXIS_ETH_DATA_WIDTH),
+//    .AXIS_KEEP_WIDTH(AXIS_ETH_KEEP_WIDTH),
+//    .TX_SERDES_PIPELINE(0),
+//    .RX_SERDES_PIPELINE(0),
+//    .RS_FEC_ENABLE(1)
+//)
+//qsfp1_cmac_inst (
+//    .xcvr_ctrl_clk(clk_125mhz_int),
+//    .xcvr_ctrl_rst(qsfp1_rst),
 
-    /*
-     * Common
-     */
-    .xcvr_gtpowergood_out(qsfp1_gtpowergood),
-    .xcvr_ref_clk(qsfp1_mgt_refclk_1),
+//    /*
+//     * Common
+//     */
+//    .xcvr_gtpowergood_out(qsfp1_gtpowergood),
+//    .xcvr_ref_clk(qsfp1_mgt_refclk_1),
 
-    /*
-     * DRP
-     */
-    .drp_clk(qsfp_drp_clk[1 +: 1]),
-    .drp_rst(qsfp_drp_rst[1 +: 1]),
-    .drp_addr(qsfp_drp_addr[1*24 +: 24]),
-    .drp_di(qsfp_drp_di[1*16 +: 16]),
-    .drp_en(qsfp_drp_en[1 +: 1]),
-    .drp_we(qsfp_drp_we[1 +: 1]),
-    .drp_do(qsfp_drp_do[1*16 +: 16]),
-    .drp_rdy(qsfp_drp_rdy[1 +: 1]),
+//    /*
+//     * DRP
+//     */
+//    .drp_clk(qsfp_drp_clk[1 +: 1]),
+//    .drp_rst(qsfp_drp_rst[1 +: 1]),
+//    .drp_addr(qsfp_drp_addr[1*24 +: 24]),
+//    .drp_di(qsfp_drp_di[1*16 +: 16]),
+//    .drp_en(qsfp_drp_en[1 +: 1]),
+//    .drp_we(qsfp_drp_we[1 +: 1]),
+//    .drp_do(qsfp_drp_do[1*16 +: 16]),
+//    .drp_rdy(qsfp_drp_rdy[1 +: 1]),
 
-    /*
-     * Serial data
-     */
-    .xcvr_txp(qsfp1_tx_p),
-    .xcvr_txn(qsfp1_tx_n),
-    .xcvr_rxp(qsfp1_rx_p),
-    .xcvr_rxn(qsfp1_rx_n),
+//    /*
+//     * Serial data
+//     */
+//    .xcvr_txp(qsfp1_tx_p),
+//    .xcvr_txn(qsfp1_tx_n),
+//    .xcvr_rxp(qsfp1_rx_p),
+//    .xcvr_rxn(qsfp1_rx_n),
 
-    /*
-     * CMAC connections
-     */
-    .tx_clk(qsfp_tx_clk[1 +: 1]),
-    .tx_rst(qsfp_tx_rst[1 +: 1]),
+//    /*
+//     * CMAC connections
+//     */
+//    .tx_clk(qsfp_tx_clk[1 +: 1]),
+//    .tx_rst(qsfp_tx_rst[1 +: 1]),
 
-    .tx_axis_tdata(qsfp_tx_axis_tdata[1*AXIS_ETH_DATA_WIDTH +: AXIS_ETH_DATA_WIDTH]),
-    .tx_axis_tkeep(qsfp_tx_axis_tkeep[1*AXIS_ETH_KEEP_WIDTH +: AXIS_ETH_KEEP_WIDTH]),
-    .tx_axis_tvalid(qsfp_tx_axis_tvalid[1 +: 1]),
-    .tx_axis_tready(qsfp_tx_axis_tready[1 +: 1]),
-    .tx_axis_tlast(qsfp_tx_axis_tlast[1 +: 1]),
-    .tx_axis_tuser(qsfp_tx_axis_tuser[1*(16+1) +: (16+1)]),
+//    .tx_axis_tdata(qsfp_tx_axis_tdata[1*AXIS_ETH_DATA_WIDTH +: AXIS_ETH_DATA_WIDTH]),
+//    .tx_axis_tkeep(qsfp_tx_axis_tkeep[1*AXIS_ETH_KEEP_WIDTH +: AXIS_ETH_KEEP_WIDTH]),
+//    .tx_axis_tvalid(qsfp_tx_axis_tvalid[1 +: 1]),
+//    .tx_axis_tready(qsfp_tx_axis_tready[1 +: 1]),
+//    .tx_axis_tlast(qsfp_tx_axis_tlast[1 +: 1]),
+//    .tx_axis_tuser(qsfp_tx_axis_tuser[1*(16+1) +: (16+1)]),
 
-    .tx_ptp_time(qsfp_tx_ptp_time[1*80 +: 80]),
-    .tx_ptp_ts(qsfp_tx_ptp_ts[1*80 +: 80]),
-    .tx_ptp_ts_tag(qsfp_tx_ptp_ts_tag[1*16 +: 16]),
-    .tx_ptp_ts_valid(qsfp_tx_ptp_ts_valid[1 +: 1]),
+//    .tx_ptp_time(qsfp_tx_ptp_time[1*80 +: 80]),
+//    .tx_ptp_ts(qsfp_tx_ptp_ts[1*80 +: 80]),
+//    .tx_ptp_ts_tag(qsfp_tx_ptp_ts_tag[1*16 +: 16]),
+//    .tx_ptp_ts_valid(qsfp_tx_ptp_ts_valid[1 +: 1]),
 
-    .tx_enable(qsfp_tx_enable[1 +: 1]),
-    .tx_lfc_en(qsfp_tx_lfc_en[1 +: 1]),
-    .tx_lfc_req(qsfp_tx_lfc_req[1 +: 1]),
-    .tx_pfc_en(qsfp_tx_pfc_en[1*8 +: 8]),
-    .tx_pfc_req(qsfp_tx_pfc_req[1*8 +: 8]),
+//    .tx_enable(qsfp_tx_enable[1 +: 1]),
+//    .tx_lfc_en(qsfp_tx_lfc_en[1 +: 1]),
+//    .tx_lfc_req(qsfp_tx_lfc_req[1 +: 1]),
+//    .tx_pfc_en(qsfp_tx_pfc_en[1*8 +: 8]),
+//    .tx_pfc_req(qsfp_tx_pfc_req[1*8 +: 8]),
 
-    .rx_clk(qsfp_rx_clk[1 +: 1]),
-    .rx_rst(qsfp_rx_rst[1 +: 1]),
+//    .rx_clk(qsfp_rx_clk[1 +: 1]),
+//    .rx_rst(qsfp_rx_rst[1 +: 1]),
 
-    .rx_axis_tdata(qsfp_rx_axis_tdata[1*AXIS_ETH_DATA_WIDTH +: AXIS_ETH_DATA_WIDTH]),
-    .rx_axis_tkeep(qsfp_rx_axis_tkeep[1*AXIS_ETH_KEEP_WIDTH +: AXIS_ETH_KEEP_WIDTH]),
-    .rx_axis_tvalid(qsfp_rx_axis_tvalid[1 +: 1]),
-    .rx_axis_tlast(qsfp_rx_axis_tlast[1 +: 1]),
-    .rx_axis_tuser(qsfp_rx_axis_tuser[1*(80+1) +: (80+1)]),
+//    .rx_axis_tdata(qsfp_rx_axis_tdata[1*AXIS_ETH_DATA_WIDTH +: AXIS_ETH_DATA_WIDTH]),
+//    .rx_axis_tkeep(qsfp_rx_axis_tkeep[1*AXIS_ETH_KEEP_WIDTH +: AXIS_ETH_KEEP_WIDTH]),
+//    .rx_axis_tvalid(qsfp_rx_axis_tvalid[1 +: 1]),
+//    .rx_axis_tlast(qsfp_rx_axis_tlast[1 +: 1]),
+//    .rx_axis_tuser(qsfp_rx_axis_tuser[1*(80+1) +: (80+1)]),
 
-    .rx_ptp_time(qsfp_rx_ptp_time[1*80 +: 80]),
+//    .rx_ptp_time(qsfp_rx_ptp_time[1*80 +: 80]),
 
-    .rx_enable(qsfp_rx_enable[1 +: 1]),
-    .rx_status(qsfp_rx_status[1 +: 1]),
-    .rx_lfc_en(qsfp_rx_lfc_en[1 +: 1]),
-    .rx_lfc_req(qsfp_rx_lfc_req[1 +: 1]),
-    .rx_lfc_ack(qsfp_rx_lfc_ack[1 +: 1]),
-    .rx_pfc_en(qsfp_rx_pfc_en[1*8 +: 8]),
-    .rx_pfc_req(qsfp_rx_pfc_req[1*8 +: 8]),
-    .rx_pfc_ack(qsfp_rx_pfc_ack[1*8 +: 8])
-);
+//    .rx_enable(qsfp_rx_enable[1 +: 1]),
+//    .rx_status(qsfp_rx_status[1 +: 1]),
+//    .rx_lfc_en(qsfp_rx_lfc_en[1 +: 1]),
+//    .rx_lfc_req(qsfp_rx_lfc_req[1 +: 1]),
+//    .rx_lfc_ack(qsfp_rx_lfc_ack[1 +: 1]),
+//    .rx_pfc_en(qsfp_rx_pfc_en[1*8 +: 8]),
+//    .rx_pfc_req(qsfp_rx_pfc_req[1*8 +: 8]),
+//    .rx_pfc_ack(qsfp_rx_pfc_ack[1*8 +: 8])
+//);
 
 wire ptp_clk;
 wire ptp_rst;

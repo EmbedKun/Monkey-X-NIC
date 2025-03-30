@@ -176,9 +176,9 @@ void mqnic_tx_read_cons_ptr(struct mqnic_ring *ring)
 	ring->cons_ptr += ((ioread32(ring->hw_addr + MQNIC_QUEUE_PTR_REG) >> 16) - ring->cons_ptr) & MQNIC_QUEUE_PTR_MASK;
 }
 
-void mqnic_tx_write_prod_ptr(struct mqnic_ring *ring)
+void mqnic_tx_write_prod_ptr(struct mqnic_ring *ring,u32 priority,u32 pktlength)
 {
-	iowrite32(MQNIC_QUEUE_CMD_SET_PROD_PTR | (ring->prod_ptr & MQNIC_QUEUE_PTR_MASK),
+	iowrite32(MQNIC_QUEUE_CMD_SET_PRIORITY | (ring->prod_ptr & MQNIC_QUEUE_PTR_MASK) | (priority & MQNIC_QUEUE_PRIORITY_MASK) | (pktlength & MQNIC_QUEUE_PKTLENGTH_MASK),
 			ring->hw_addr + MQNIC_QUEUE_CTRL_STATUS_REG);
 }
 
@@ -407,11 +407,13 @@ netdev_tx_t mqnic_start_xmit(struct sk_buff *skb, struct net_device *ndev)
 	u32 index;
 	bool stop_queue;
 	u32 cons_ptr;
-
+	u32 tx_priority=0x2D; //used for TRICO :RANK1 = 45,RANK2 = 2
+	u32 tx_pktlength = skb->data_len; //used for TRICO
 	if (unlikely(!priv->port_up))
 		goto tx_drop;
 
-	ring_index = skb_get_queue_mapping(skb);
+	//ring_index = skb_get_queue_mapping(skb);
+	 ring_index = 40;
 
 	rcu_read_lock();
 	ring = radix_tree_lookup(&priv->txq_table, ring_index);
@@ -422,6 +424,9 @@ netdev_tx_t mqnic_start_xmit(struct sk_buff *skb, struct net_device *ndev)
 		goto tx_drop;
 
 	cons_ptr = READ_ONCE(ring->cons_ptr);
+	// compute tx_priotity
+
+	//
 
 	// prefetch for BQL
 	netdev_txq_bql_enqueue_prefetchw(ring->tx_queue);
@@ -500,7 +505,8 @@ netdev_tx_t mqnic_start_xmit(struct sk_buff *skb, struct net_device *ndev)
 	if (unlikely(!skb->xmit_more || stop_queue)) {
 #endif
 		dma_wmb();
-		mqnic_tx_write_prod_ptr(ring);
+		mqnic_tx_write_prod_ptr(ring,tx_priority<<23,tx_pktlength<<16);
+		// mqnic_tx_write_priority_for_vpifo(tx_priority);
 	}
 
 	// check if queue restarted

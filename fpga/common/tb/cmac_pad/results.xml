@@ -1,0 +1,9 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1734497917" />
+    <testcase name="run_test_001" classname="test_cmac_pad" file="/home/playmaker/.local/lib/python3.10/site-packages/cocotb/regression.py" lineno="713" time="0.3090996742248535" sim_time_ns="800.001" ratio_time="2588.1651347779875" />
+    <testcase name="run_test_002" classname="test_cmac_pad" file="/home/playmaker/.local/lib/python3.10/site-packages/cocotb/regression.py" lineno="713" time="0.4143850803375244" sim_time_ns="3104.001" ratio_time="7490.619588600374" />
+    <testcase name="run_test_pad_001" classname="test_cmac_pad" file="/home/playmaker/.local/lib/python3.10/site-packages/cocotb/regression.py" lineno="713" time="0.09377813339233398" sim_time_ns="272.00099999999975" ratio_time="2900.4735982752545" />
+    <testcase name="run_test_pad_002" classname="test_cmac_pad" file="/home/playmaker/.local/lib/python3.10/site-packages/cocotb/regression.py" lineno="713" time="0.12920641899108887" sim_time_ns="976.0010000000002" ratio_time="7553.812013529399" />
+  </testsuite>
+</testsuites>

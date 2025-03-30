@@ -1,0 +1,1 @@
+n, rep, sec, if_rx_b, if_rx_pkt, if_rx_err, if_rx_drop, if_rx_fifo, if_rx_frame, if_tx_b, if_tx_pkt, if_tx_err, if_tx_drop, if_tx_fifo, lcl_txkbps, lcl_txretr, lcl_rxkbps, rmt_txkbps, rmt_txretr, rmt_rxkbps, intr, cpu

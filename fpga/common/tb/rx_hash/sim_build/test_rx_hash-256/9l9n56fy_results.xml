@@ -1,0 +1,13 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1732787378" />
+    <testcase name="run_test_001" classname="test_rx_hash" file="/home/playmaker/.local/lib/python3.10/site-packages/cocotb/regression.py" lineno="713" time="0.24012136459350586" sim_time_ns="3016.001" ratio_time="12560.319258162206" />
+    <testcase name="run_test_002" classname="test_rx_hash" file="/home/playmaker/.local/lib/python3.10/site-packages/cocotb/regression.py" lineno="713" time="0.6278624534606934" sim_time_ns="11932.001" ratio_time="19004.16394424036" />
+    <testcase name="run_test_003" classname="test_rx_hash" file="/home/playmaker/.local/lib/python3.10/site-packages/cocotb/regression.py" lineno="713" time="0.32889413833618164" sim_time_ns="3384.001" ratio_time="10289.028004935186" />
+    <testcase name="run_test_004" classname="test_rx_hash" file="/home/playmaker/.local/lib/python3.10/site-packages/cocotb/regression.py" lineno="713" time="0.770958662033081" sim_time_ns="13388.001" ratio_time="17365.394098685843" />
+    <testcase name="run_test_005" classname="test_rx_hash" file="/home/playmaker/.local/lib/python3.10/site-packages/cocotb/regression.py" lineno="713" time="0.40534138679504395" sim_time_ns="3516.0009999999966" ratio_time="8674.172227515028" />
+    <testcase name="run_test_006" classname="test_rx_hash" file="/home/playmaker/.local/lib/python3.10/site-packages/cocotb/regression.py" lineno="713" time="0.8424546718597412" sim_time_ns="13916.001000000004" ratio_time="16518.397327277038" />
+    <testcase name="run_test_007" classname="test_rx_hash" file="/home/playmaker/.local/lib/python3.10/site-packages/cocotb/regression.py" lineno="713" time="0.4103884696960449" sim_time_ns="3748.0009999999966" ratio_time="9132.812631836274" />
+    <testcase name="run_test_008" classname="test_rx_hash" file="/home/playmaker/.local/lib/python3.10/site-packages/cocotb/regression.py" lineno="713" time="0.89599609375" sim_time_ns="14844.001000000004" ratio_time="16567.03762833788" />
+  </testsuite>
+</testsuites>

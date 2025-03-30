@@ -1,0 +1,13 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1732782917" />
+    <testcase name="run_test_001" classname="test_tx_checksum" file="/home/playmaker/Desktop/mkxue/corundum/.tox/py3/lib/python3.10/site-packages/cocotb/regression.py" lineno="713" time="19.64577865600586" sim_time_ns="45108.001" ratio_time="2296.065826141747" />
+    <testcase name="run_test_002" classname="test_tx_checksum" file="/home/playmaker/Desktop/mkxue/corundum/.tox/py3/lib/python3.10/site-packages/cocotb/regression.py" lineno="713" time="36.08699440956116" sim_time_ns="155124.00100000002" ratio_time="4298.61238205253" />
+    <testcase name="run_test_003" classname="test_tx_checksum" file="/home/playmaker/Desktop/mkxue/corundum/.tox/py3/lib/python3.10/site-packages/cocotb/regression.py" lineno="713" time="37.216519832611084" sim_time_ns="158988.00100000002" ratio_time="4271.9738899575" />
+    <testcase name="run_test_004" classname="test_tx_checksum" file="/home/playmaker/Desktop/mkxue/corundum/.tox/py3/lib/python3.10/site-packages/cocotb/regression.py" lineno="713" time="40.588056802749634" sim_time_ns="173524.00099999993" ratio_time="4275.247811032052" />
+    <testcase name="run_test_offsets_001" classname="test_tx_checksum" file="/home/playmaker/Desktop/mkxue/corundum/.tox/py3/lib/python3.10/site-packages/cocotb/regression.py" lineno="713" time="46.812180519104004" sim_time_ns="109404.00100000005" ratio_time="2337.0840620285226" />
+    <testcase name="run_test_offsets_002" classname="test_tx_checksum" file="/home/playmaker/Desktop/mkxue/corundum/.tox/py3/lib/python3.10/site-packages/cocotb/regression.py" lineno="713" time="88.31870675086975" sim_time_ns="378660.00100000005" ratio_time="4287.426921548204" />
+    <testcase name="run_test_offsets_003" classname="test_tx_checksum" file="/home/playmaker/Desktop/mkxue/corundum/.tox/py3/lib/python3.10/site-packages/cocotb/regression.py" lineno="713" time="89.04464673995972" sim_time_ns="378692.00099999993" ratio_time="4252.832875017269" />
+    <testcase name="run_test_offsets_004" classname="test_tx_checksum" file="/home/playmaker/Desktop/mkxue/corundum/.tox/py3/lib/python3.10/site-packages/cocotb/regression.py" lineno="713" time="97.6027159690857" sim_time_ns="378804.00099999993" ratio_time="3881.0805338652754" />
+  </testsuite>
+</testsuites>

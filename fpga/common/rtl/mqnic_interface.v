@@ -17,7 +17,8 @@ module mqnic_interface #
     // Structural configuration
     parameter PORTS = 1,
     parameter SCHEDULERS = 1,
-
+    parameter PACKET_WIDTH=7,
+    
     // Clock configuration
     parameter CLK_PERIOD_NS_NUM = 4,
     parameter CLK_PERIOD_NS_DENOM = 1,
@@ -36,7 +37,7 @@ module mqnic_interface #
     parameter RX_QUEUE_OP_TABLE_SIZE = 32,
     parameter CQ_OP_TABLE_SIZE = 32,
     parameter EQN_WIDTH = 5,
-    parameter TX_QUEUE_INDEX_WIDTH = 13,
+    parameter TX_QUEUE_INDEX_WIDTH = 8,
     parameter RX_QUEUE_INDEX_WIDTH = 8,
     parameter CQN_WIDTH = (TX_QUEUE_INDEX_WIDTH > RX_QUEUE_INDEX_WIDTH ? TX_QUEUE_INDEX_WIDTH : RX_QUEUE_INDEX_WIDTH) + 1,
     parameter EQ_PIPELINE = 3,
@@ -553,6 +554,8 @@ parameter AXIL_TX_QM_BASE_ADDR = AXIL_CQM_BASE_ADDR + 2**AXIL_CQM_ADDR_WIDTH;
 parameter AXIL_RX_QM_BASE_ADDR = AXIL_TX_QM_BASE_ADDR + 2**AXIL_TX_QM_ADDR_WIDTH;
 parameter AXIL_SCHED_BASE_ADDR = AXIL_RX_QM_BASE_ADDR + 2**AXIL_RX_QM_ADDR_WIDTH;
 
+localparam PRIORITY_WIDTH = 6;
+
 localparam REG_ADDR_WIDTH = AXIL_CTRL_ADDR_WIDTH;
 localparam REG_DATA_WIDTH = AXIL_DATA_WIDTH;
 localparam REG_STRB_WIDTH = AXIL_STRB_WIDTH;
@@ -759,6 +762,8 @@ wire                                tx_desc_dequeue_commit_ready;
 
 wire [TX_QUEUE_INDEX_WIDTH-1:0]     tx_doorbell_queue;
 wire                                tx_doorbell_valid;
+wire [PRIORITY_WIDTH-1:0]           tx_doorbell_priority;
+wire [PACKET_WIDTH-1:0]             tx_doorbell_pktlength;
 
 wire [CQN_WIDTH-1:0]                cpl_enqueue_req_queue;
 wire [CPL_QUEUE_REQ_TAG_WIDTH-1:0]  cpl_enqueue_req_tag;
@@ -1842,7 +1847,7 @@ cpl_write_inst (
 );
 
 // TX/RX queues
-queue_manager #(
+tx_queue_manager #(
     .ADDR_WIDTH(DMA_ADDR_WIDTH),
     .REQ_TAG_WIDTH(QUEUE_REQ_TAG_WIDTH),
     .OP_TABLE_SIZE(TX_QUEUE_OP_TABLE_SIZE),
@@ -1856,7 +1861,9 @@ queue_manager #(
     .PIPELINE(TX_QUEUE_PIPELINE),
     .AXIL_DATA_WIDTH(AXIL_DATA_WIDTH),
     .AXIL_ADDR_WIDTH(AXIL_TX_QM_ADDR_WIDTH),
-    .AXIL_STRB_WIDTH(AXIL_STRB_WIDTH)
+    .AXIL_STRB_WIDTH(AXIL_STRB_WIDTH),
+    .PRIORITY_WIDTH(PRIORITY_WIDTH),
+    .PACKET_WIDTH(PACKET_WIDTH)
 )
 tx_qm_inst (
     .clk(clk),
@@ -1897,7 +1904,8 @@ tx_qm_inst (
      */
     .m_axis_doorbell_queue(tx_doorbell_queue),
     .m_axis_doorbell_valid(tx_doorbell_valid),
-
+    .m_axis_doorbell_priority(tx_doorbell_priority),
+    .m_axis_doorbell_pkt_length(tx_doorbell_pktlength),
     /*
      * AXI-Lite slave interface
      */
@@ -2244,7 +2252,7 @@ genvar n;
 
 for (n = 0; n < SCHEDULERS; n = n + 1) begin : sched
 
-    mqnic_tx_scheduler_block #(
+    mqnic_tx_scheduler_trico #(
         // Structural configuration
         .PORTS(PORTS),
         .INDEX(n),
@@ -2262,8 +2270,9 @@ for (n = 0; n < SCHEDULERS; n = n + 1) begin : sched
 
         // Queue manager configuration
         .QUEUE_INDEX_WIDTH(TX_QUEUE_INDEX_WIDTH),
-
-        // Scheduler configuration
+	    .PACKET_WIDTH(PACKET_WIDTH),
+        
+	// Scheduler configuration
         .TX_SCHEDULER_OP_TABLE_SIZE(TX_SCHEDULER_OP_TABLE_SIZE),
         .TX_SCHEDULER_PIPELINE(TX_SCHEDULER_PIPELINE),
         .TDMA_INDEX_WIDTH(TDMA_INDEX_WIDTH),
@@ -2352,6 +2361,8 @@ for (n = 0; n < SCHEDULERS; n = n + 1) begin : sched
          */
         .s_axis_doorbell_queue(tx_doorbell_queue),
         .s_axis_doorbell_valid(tx_doorbell_valid),
+        .s_axis_doorbell_priority(tx_doorbell_priority),
+        .s_axis_doorbell_pkt_length(tx_doorbell_pktlength),
 
         /*
          * PTP clock
@@ -2371,12 +2382,8 @@ for (n = 0; n < SCHEDULERS; n = n + 1) begin : sched
         .ptp_sync_pps_str(ptp_sync_pps_str),
         .ptp_perout_locked(ptp_perout_locked),
         .ptp_perout_error(ptp_perout_error),
-        .ptp_perout_pulse(ptp_perout_pulse),
+        .ptp_perout_pulse(ptp_perout_pulse)
 
-        /*
-         * Configuration
-         */
-        .mtu(tx_mtu_reg)
     );
 
 end

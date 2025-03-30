@@ -1,0 +1,2 @@
+file,project_dir,tool,date,device,lut_used,lut_total,ff_used,ff_total,bram_used,bram_total,uram_used,uram_total,wns,tns
+"./mqnic/Alveo/fpga_100g/fpga_AU200/fpga.runs/impl_1/fpga_utilization_placed.rpt","./mqnic/Alveo/fpga_100g/fpga_AU200","Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020","Fri Nov 29 17:56:55 2024","xcu200fsgd2104-2",83295,1182240,132258,2364480,288.0,2160,45,960,0.054,0.000

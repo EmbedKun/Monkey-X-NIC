@@ -1,0 +1,9 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1732782917" />
+    <testcase name="run_test_001" classname="test_cmac_pad" file="/home/playmaker/Desktop/mkxue/corundum/.tox/py3/lib/python3.10/site-packages/cocotb/regression.py" lineno="713" time="0.759474515914917" sim_time_ns="800.001" ratio_time="1053.361216519901" />
+    <testcase name="run_test_002" classname="test_cmac_pad" file="/home/playmaker/Desktop/mkxue/corundum/.tox/py3/lib/python3.10/site-packages/cocotb/regression.py" lineno="713" time="1.0954320430755615" sim_time_ns="3104.001" ratio_time="2833.5860901833144" />
+    <testcase name="run_test_pad_001" classname="test_cmac_pad" file="/home/playmaker/Desktop/mkxue/corundum/.tox/py3/lib/python3.10/site-packages/cocotb/regression.py" lineno="713" time="0.3441588878631592" sim_time_ns="272.00099999999975" ratio_time="790.3355385903906" />
+    <testcase name="run_test_pad_002" classname="test_cmac_pad" file="/home/playmaker/Desktop/mkxue/corundum/.tox/py3/lib/python3.10/site-packages/cocotb/regression.py" lineno="713" time="0.4023411273956299" sim_time_ns="976.0010000000002" ratio_time="2425.8047053695295" />
+  </testsuite>
+</testsuites>

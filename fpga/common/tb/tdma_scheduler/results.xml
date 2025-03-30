@@ -1,0 +1,6 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1737332049" />
+    <testcase name="run_test_001" classname="test_tdma_scheduler" file="/home/playmaker/.local/lib/python3.10/site-packages/cocotb/regression.py" lineno="713" time="0.462573766708374" sim_time_ns="10032.001" ratio_time="21687.35393575528" />
+  </testsuite>
+</testsuites>
