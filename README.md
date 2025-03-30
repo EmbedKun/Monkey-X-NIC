@@ -37,11 +37,11 @@ python3 testz
 
 整体设计：
 
-![image/image-20241201121237333.png](image-20241201121237333.png)
+![image-20241201121237333.png](image/image-20241201121237333.png)
 
 时钟树逻辑整理：
 
-![image/image.png](image.png)
+![image.png](image/image.png)
 
 ## 1.移植准备
 
@@ -63,7 +63,7 @@ python3 testz
 
 6.HOST和NIC双方维护发送数据的方式是通过**高度同步的队列生产者指针和消费者指针**。
 
-![image/image.png](image%201.png)
+![image.png](image/image%201.png)
 
 7.调度器模块能看到的队列信息**只有门铃事件**，**以及调度后的反馈**（成功还是失败，队列是否已经为空）。（即，通知哪个队列有更新），并没有任何优先级信息供给调度器，所以必须增加优先级引脚。
 
@@ -110,7 +110,7 @@ python3 testz
 
 **1.驱动端：**
 
-![image.png](image%202.png)
+![image.png](image/image%202.png)
 
 对⑥进行更改
 
@@ -147,25 +147,25 @@ void mqnic_tx_write_prod_ptr(struct mqnic_ring *ring,u32 priority)
 
 增加一个case分支如下，引入了**queue_priority_pipeline_reg**，需要正确处理此逻辑：
 
-![image.png](image%203.png)
+![image.png](image/image%203.png)
 
 为什么不覆盖原本的8080zzzz？因为还有不需要传递优先级的过程调用此命令。
 
 **3.NIC端Queue-Manager：**
 
-![image.png](image%204.png)
+![image.png](image/image%204.png)
 
 **4.Queue_Manager的output到达NIC端的scheduler**
 
 原本的架构如下所示：
 
-![image.png](image%205.png)
+![image.png](image/image%205.png)
 
-![调度器架构图.svg](%25E8%25B0%2583%25E5%25BA%25A6%25E5%2599%25A8%25E6%259E%25B6%25E6%259E%2584%25E5%259B%25BE.svg)
+![调度器架构图.svg](image/%25E8%25B0%2583%25E5%25BA%25A6%25E5%2599%25A8%25E6%259E%25B6%25E6%259E%2584%25E5%259B%25BE.svg)
 
 引入优先级的流程如下：
 
-![图片2.png](%25E5%259B%25BE%25E7%2589%25872.png)
+![图片2.png](image/%25E5%259B%25BE%25E7%2589%25872.png)
 
 **梗概：**我做的修改是将queue_ram拓展16bit，用于存放队列的优先级字段。好处在于：不用再自己手动添加复杂的流水线推进（毕竟有近十个事件需要考虑，很容易出错）。
 
@@ -337,7 +337,7 @@ skb的结构：[blog.csdn.net/YuZhiHui_No1/article/details/38666589](https://blo
 7.**入队数据包**：`mqnic_start_xmit()`函数通过增加生产者指针的本地副本来入队数据包。
 8.**更新生产者指针(producer consumer)**：在一批数据包处理结束后，`mqnic_start_xmit()`函数通过MMIO将更新后的生产者指针写入网卡。
 
-![image/image.png](image%206.png)
+![image.png](image/image%206.png)
 
 ### 7.2 queue manager阶段
 
