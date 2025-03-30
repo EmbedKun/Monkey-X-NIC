@@ -1,6 +1,6 @@
 # README:Monkey-X-NIC
 
-这是电子科技大学本科毕设:Monkey-X-NIC（Minkun-Xue-NIC）。近期**英伟达收购mellanox**这一重磅事件也提示我们网卡的重要性，本毕业设计聚焦于前沿领域，NIC、路由器是下个时代极其重要的构件，它为分布式机器学习、分布式训练、分布式存储、存算分离、物联网、嵌入式领域、网络安全打下了基础。网卡如何设计？存储、计算、网络如何协同？架构的改进将会产生极大的经济效益。更多介绍见下文。
+这是电子科技大学本科毕设:Monkey-X-NIC（Minkun-Xue-NIC）。对Corundum的调度器进行了改动，实现了SIGCOMM23和SIGCOMM24的可编程调度器设计BMW-Tree和vPIFO。这两项工作是发表于SIGCOMM16的可编程调度模型PIFO的拓展。PIFO此前已经受到广泛的关注和研究。本项目基于Corundum开源网卡，实现了首个支持可编程调度的开源网卡。
 
 ## 写作前面
 
@@ -37,11 +37,11 @@ python3 testz
 
 整体设计：
 
-![image-20241201121237333.png](image-20241201121237333.png)
+![image/image-20241201121237333.png](image-20241201121237333.png)
 
 时钟树逻辑整理：
 
-![image.png](image.png)
+![image/image.png](image.png)
 
 ## 1.移植准备
 
@@ -63,7 +63,7 @@ python3 testz
 
 6.HOST和NIC双方维护发送数据的方式是通过**高度同步的队列生产者指针和消费者指针**。
 
-![image.png](image%201.png)
+![image/image.png](image%201.png)
 
 7.调度器模块能看到的队列信息**只有门铃事件**，**以及调度后的反馈**（成功还是失败，队列是否已经为空）。（即，通知哪个队列有更新），并没有任何优先级信息供给调度器，所以必须增加优先级引脚。
 
@@ -337,7 +337,7 @@ skb的结构：[blog.csdn.net/YuZhiHui_No1/article/details/38666589](https://blo
 7.**入队数据包**：`mqnic_start_xmit()`函数通过增加生产者指针的本地副本来入队数据包。
 8.**更新生产者指针(producer consumer)**：在一批数据包处理结束后，`mqnic_start_xmit()`函数通过MMIO将更新后的生产者指针写入网卡。
 
-![image.png](image%206.png)
+![image/image.png](image%206.png)
 
 ### 7.2 queue manager阶段
 
