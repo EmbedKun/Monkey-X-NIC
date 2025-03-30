@@ -191,7 +191,7 @@ void mqnic_tx_write_prod_ptr(struct mqnic_ring *ring,u32 priority)
 
 **新架构-v2设计**
 
-![图片1.svg](%25E5%259B%25BE%25E7%2589%25871.svg)
+![图片1.svg](image/%25E5%259B%25BE%25E7%2589%25871.svg)
 
 **5.接口设计**
 
